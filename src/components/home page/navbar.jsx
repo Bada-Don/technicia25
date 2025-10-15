@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-
+import { Link } from "react-router-dom";
 const Logo = () => (
   <div className="flex items-center">
     <h3 className="cursor-pointer max-sm:text-[1rem]">Nayi Disha</h3>
@@ -101,30 +101,30 @@ export default function Navbar() {
                 </ul>
               </div>
               <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
-                <a
-                  href="#login"
+                <Link
+                  to="/login"
                   className={`inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors border-2 border-gray-300 bg-transparent hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 ${
                     isScrolled ? "lg:hidden" : ""
                   }`}
                 >
                   <span>Login</span>
-                </a>
-                <a
-                  href="#signup"
+                </Link>
+                <Link
+                  to="/signup"
                   className={`inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors bg-[#7c35c7] hover:bg-[#4d217b] text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 ${
                     isScrolled ? "lg:hidden" : ""
                   }`}
                 >
                   <span>Sign Up</span>
-                </a>
-                <a
-                  href="#get-started"
+                </Link>
+                <Link
+                  to="/get-started"
                   className={`inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors bg-[#7c35c7] hover:bg-[#4d217b] text-white  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 ${
                     isScrolled ? "lg:inline-flex" : "hidden"
                   }`}
                 >
                   <span>Get Started</span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
