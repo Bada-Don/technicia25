@@ -14,14 +14,14 @@ function Hero() {
         full-time or contract roles
       </p>
       <div className="flex justify-center items-center gap-10">
-        <Link to="/signup">
+        <Link to="/login">
           <button className="max-xl:hidden w-fit px-[1.5rem] py-[.2rem] rounded-xl bg-[#7c35c7] hover:bg-[#4d217b] text-white hover:text-[#3f3f46] text-xl shadow-md">
-            <p className="text-lg drop-shadow-md">Hire</p>
+            <p className="text-lg drop-shadow-md">Start Learning</p>
           </button>
         </Link>
         <Link to="/jobs">
           <button className=" max-xl:block px-[1.5rem] py-[.25rem] rounded-xl border-[1px] border-slate-500 hover:bg-[#29282a] hover:border-white">
-            Find Jobs
+            Start Teaching
           </button>
         </Link>
       </div>
