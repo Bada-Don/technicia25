@@ -4,6 +4,7 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
+import ProtectedRoute from "./components/ProtectedRoute";
 import CompanySignupPage from "./pages/auth/CompanySignupPage"; // Import CompanySignupPage
 import CompanyLoginPage from "./pages/CompanyLoginPage";
 import CompanyProfilePage from "./pages/CompanyProfilePage";
@@ -16,7 +17,7 @@ import TestPage from "./pages/testPage";
 import TalentForm from "./pages/Talentform";
 import ResumeScorerTestPage from "./pages/ResumeScorerTestPage"; // Import ResumeScorerTestPage
 import LoginPageTeachers from "./pages/auth/LoginPageTeachers";
-import StudentSingup from "./pages/auth/StudentSingup";
+import StudentSignup from "./pages/auth/Studentsignup";
 import TeacherSignup from "./pages/auth/TeacherSignup";
 import LeaderBoardPage from "./pages/LeaderBoard";
 function App() {
@@ -30,20 +31,58 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/login-teachers" element={<LoginPageTeachers />} />
-        <Route path="/singup-students" element={<StudentSingup />} />
-        <Route path="/singup-teachers" element={<TeacherSignup />} />
+        <Route path="/signup-students" element={<StudentSignup />} />
+        <Route path="/signup-teachers" element={<TeacherSignup />} />
         <Route path="/leaderboard" element={<LeaderBoardPage />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/jobs" element={<Jobs />} />
-        <Route path="/profile" element={<Profile />} />
+        <Route
+          path="/jobs"
+          element={
+            <ProtectedRoute>
+              <Jobs />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/profile"
+          element={
+            <ProtectedRoute>
+              <Profile />
+            </ProtectedRoute>
+          }
+        />
         <Route
           path="/profile/courses"
-          element={<Navigate to="/profile" state={{ activeTab: "courses" }} />}
+          element={
+            <ProtectedRoute>
+              <Navigate to="/profile" state={{ activeTab: "courses" }} />
+            </ProtectedRoute>
+          }
         />
-        <Route path="/company/profile" element={<CompanyProfilePage />} />
-        <Route path="/application" element={<JobAppStat />} />
-        <Route path="/test" element={<TestPage />} />
-        <Route path="/talent" element={<TalentForm />} />
+        <Route
+          path="/company/profile"
+          element={
+            <ProtectedRoute>
+              <CompanyProfilePage />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/application"
+          element={
+            <ProtectedRoute>
+              <JobAppStat />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/test"
+          element={
+            <ProtectedRoute>
+              <TestPage />
+            </ProtectedRoute>
+          }
+        />
+        <Route path="/signup-students" element={<TalentForm />} />
         <Route path="/resume-scorer-test" element={<ResumeScorerTestPage />} />
       </Routes>
     </Router>

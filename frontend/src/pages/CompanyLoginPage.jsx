@@ -1,35 +1,29 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Header from "../components/Header.jsx";
-import axios from 'axios';
+import { useAuth } from "../context/AuthContext.jsx";
 
 function CompanyLoginPage() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [message, setMessage] = useState('');
+    const [isLoading, setIsLoading] = useState(false);
     const navigate = useNavigate();
+    const { login } = useAuth();
 
     const handleSubmit = async (event) => {
         event.preventDefault();
+        setIsLoading(true);
+        setMessage('');
 
-        const loginData = {
-            email: email,
-            password: password
-        };
-
-        try {
-            const response = await axios.post('http://localhost:5000/company/login', loginData, { withCredentials: true }); // Updated API endpoint to /company/login
-            setMessage(response.data.message);
-            console.log("Company Login successful:", response.data);
+        const result = await login(email, password);
+        
+        setIsLoading(false);
+        
+        if (result.success) {
             navigate('/company/profile');
-        } catch (error) {
-            if (error.response) {
-                setMessage(error.response.data.error);
-                console.error("Company Login error:", error.response.data);
-            } else {
-                setMessage("Company Login failed. Please check your connection and try again.");
-                console.error("Company Login error:", error.message);
-            }
+        } else {
+            setMessage(result.error);
         }
     };
 
@@ -97,12 +91,13 @@ function CompanyLoginPage() {
 
                             <button
                                 type="submit"
-                                className=" mt-6 w-full py-3 bg-purple-700 hover:bg-purple-600 text-white text-lg font-Arial rounded"
+                                disabled={isLoading}
+                                className=" mt-6 w-full py-3 bg-purple-700 hover:bg-purple-600 disabled:bg-purple-900 disabled:cursor-not-allowed text-white text-lg font-Arial rounded"
                             >
-                                Continue
+                                {isLoading ? "Logging in..." : "Continue"}
                             </button>
 
-                            {message && <p className={message.includes('success') ? 'text-green-500' : 'text-red-500'}>{message}</p>}
+                            {message && <p className="text-red-500 text-center">{message}</p>}
 
                         </form>
                         <div className=" text-center">

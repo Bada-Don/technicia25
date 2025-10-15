@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import Header from "../../components/Header.jsx";
 import { useAuth } from "../../context/AuthContext.jsx";
 
-function TeacherSignup() {
+function StudentSignup() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -18,7 +18,7 @@ function TeacherSignup() {
     setIsLoading(true);
     setMessage("");
 
-    const result = await register("/auth/register/educator", {
+    const result = await register("/auth/register/student", {
       email,
       password,
       first_name: firstName,
@@ -46,8 +46,8 @@ function TeacherSignup() {
         {/* Text Section */}
         <div className="space-y-8 text-left w-[45%] max-md:w-full max-md:text-center max-md:my-8">
           <h1 className="text-7xl max-lg:text-6xl w-full font-bold text-white max-md:text-4xl">
-            Join Our Team! <br />{" "}
-            <span className="text-purple-500">Create Educator Account</span>
+            Join Us! <br />{" "}
+            <span className="text-purple-500">Create Student Account</span>
           </h1>
         </div>
 
@@ -55,7 +55,7 @@ function TeacherSignup() {
         <div className="flex items-center justify-center max-md:w-[90%]">
           <div className="w-full h-fit border flex flex-col gap-6 max-md:gap-3 border-gray-700 max-w-2xl bg-[#1a1a24] p-8 rounded-lg shadow-lg">
             <h2 className="text-3xl font-light text-center">
-              Educator Registration
+              Student Registration
             </h2>
 
             <form className="space-y-6" onSubmit={handleSubmit}>
@@ -94,7 +94,7 @@ function TeacherSignup() {
                 </label>
                 <input
                   type="email"
-                  placeholder="teacher@mail.com"
+                  placeholder="name@mail.com"
                   className="w-full p-3 bg-gray-800 font-Arial text-white rounded focus:outline-none focus:ring-2 focus:ring-purple-500"
                   required
                   value={email}
@@ -131,7 +131,7 @@ function TeacherSignup() {
             </form>
 
             <div className="text-center">
-              <Link to="/login-teachers">
+              <Link to="/login">
                 <button className="text-purple-500 hover:underline">
                   Already have an account? Login
                 </button>
@@ -144,4 +144,4 @@ function TeacherSignup() {
   );
 }
 
-export default TeacherSignup;
+export default StudentSignup;

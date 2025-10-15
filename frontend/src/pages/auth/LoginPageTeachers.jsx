@@ -1,40 +1,30 @@
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom"; // Import useNavigate
+import { Link, useNavigate } from "react-router-dom";
 import Header from "../../components/Header.jsx";
-import axios from "axios";
+import { useAuth } from "../../context/AuthContext.jsx";
 
 function LoginPageTeachers() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
-  const navigate = useNavigate(); // Initialize useNavigate hook
+  const [isLoading, setIsLoading] = useState(false);
+  const navigate = useNavigate();
+  const { login } = useAuth();
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    setIsLoading(true);
+    setMessage("");
 
-    const loginData = {
-      email: email,
-      password: password,
-    };
+    const result = await login(email, password);
 
-    try {
-      const response = await axios.post(
-        "http://localhost:5000/login",
-        loginData,
-        { withCredentials: true }
-      );
-      setMessage(response.data.message);
-      console.log("Login successful:", response.data);
-      // Redirect to profile page after successful login
-      navigate("/profile"); // Use navigate to redirect
-    } catch (error) {
-      if (error.response) {
-        setMessage(error.response.data.error);
-        console.error("Login error:", error.response.data);
-      } else {
-        setMessage("Login failed. Please check your connection and try again.");
-        console.error("Login error:", error.message);
-      }
+    setIsLoading(false);
+
+    if (result.success) {
+      // Redirect to profile for all users
+      navigate("/profile");
+    } else {
+      setMessage(result.error);
     }
   };
 
@@ -95,25 +85,15 @@ function LoginPageTeachers() {
               </div>
               <button
                 type="submit"
-                className=" mt-6 w-full py-3 bg-purple-700 hover:bg-purple-600 text-white text-lg font-Arial rounded"
+                disabled={isLoading}
+                className=" mt-6 w-full py-3 bg-purple-700 hover:bg-purple-600 disabled:bg-purple-900 disabled:cursor-not-allowed text-white text-lg font-Arial rounded"
               >
-                Continue
+                {isLoading ? "Logging in..." : "Continue"}
               </button>
-              {message && (
-                <p
-                  className={
-                    message.includes("success")
-                      ? "text-green-500"
-                      : "text-red-500"
-                  }
-                >
-                  {message}
-                </p>
-              )}{" "}
-              {/* Display message */}
+              {message && <p className="text-red-500 text-center">{message}</p>}
             </form>
             <div className=" text-center">
-              <Link to="/talent">
+              <Link to="/signup-students">
                 <button className="text-purple-500 hover:underline">
                   Don't have an account? Sign Up
                 </button>
