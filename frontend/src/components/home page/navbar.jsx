@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useAuth } from "../../context/AuthContext";
 const Logo = () => (
   <div className="flex items-center">
     <h3 className="cursor-pointer max-sm:text-[1rem]">Nayi Disha</h3>
@@ -17,6 +18,7 @@ const menuItems = [
 export default function Navbar() {
   const [menuState, setMenuState] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const { isAuthenticated } = useAuth();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -101,30 +103,43 @@ export default function Navbar() {
                 </ul>
               </div>
               <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
-                <Link
-                  to="/login-teachers"
-                  className={`inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors border-2 hover:bg-[#29282a] hover:border-white border-gray-300 bg-transparent  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 ${
-                    isScrolled ? "lg:hidden" : ""
-                  }`}
-                >
-                  <span>Start Teaching</span>
-                </Link>
-                <Link
-                  to="/signup-students"
-                  className={`inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors bg-[#7c35c7] hover:bg-[#4d217b] text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 ${
-                    isScrolled ? "lg:hidden" : ""
-                  }`}
-                >
-                  <span>Start Learning</span>
-                </Link>
-                <Link
-                  to="/signup"
-                  className={`inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors bg-[#7c35c7] hover:bg-[#4d217b] text-white  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 ${
-                    isScrolled ? "lg:inline-flex" : "hidden"
-                  }`}
-                >
-                  <span>Hire Talent</span>
-                </Link>
+                {isAuthenticated ? (
+                  // Show Dashboard button when logged in
+                  <Link
+                    to="/dashboard"
+                    className="inline-flex items-center justify-center rounded-md px-6 py-2 text-sm font-medium transition-colors bg-[#7c35c7] hover:bg-[#4d217b] text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
+                  >
+                    <span>Dashboard</span>
+                  </Link>
+                ) : (
+                  // Show authentication buttons when not logged in
+                  <>
+                    <Link
+                      to="/auth?type=educator&mode=login"
+                      className={`inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors border-2 hover:bg-[#29282a] hover:border-white border-gray-300 bg-transparent  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 ${
+                        isScrolled ? "lg:hidden" : ""
+                      }`}
+                    >
+                      <span>Start Teaching</span>
+                    </Link>
+                    <Link
+                      to="/auth?type=student&mode=signup"
+                      className={`inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors bg-[#7c35c7] hover:bg-[#4d217b] text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 ${
+                        isScrolled ? "lg:hidden" : ""
+                      }`}
+                    >
+                      <span>Start Learning</span>
+                    </Link>
+                    <Link
+                      to="/auth?type=company&mode=signup"
+                      className={`inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors bg-[#7c35c7] hover:bg-[#4d217b] text-white  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 ${
+                        isScrolled ? "lg:inline-flex" : "hidden"
+                      }`}
+                    >
+                      <span>Hire Talent</span>
+                    </Link>
+                  </>
+                )}
               </div>
             </div>
           </div>

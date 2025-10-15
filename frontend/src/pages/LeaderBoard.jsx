@@ -1,5 +1,43 @@
 import React, { useEffect, useMemo, useState } from "react";
-import NavBar from "../components/home page/navbar";
+import LeaderboardNavbar from "../components/LeaderboardNavbar";
+
+// ProfilePhoto component for circular profile images
+const ProfilePhoto = ({ name, size = "w-8 h-8" }) => {
+  // Generate consistent colors based on name
+  const getInitials = (fullName) => {
+    return fullName
+      .split(" ")
+      .map((name) => name.charAt(0))
+      .join("")
+      .toUpperCase();
+  };
+
+  const getBackgroundColor = (name) => {
+    const colors = [
+      "bg-purple-600",
+      "bg-blue-600",
+      "bg-green-600",
+      "bg-yellow-600",
+      "bg-pink-600",
+      "bg-indigo-600",
+      "bg-red-600",
+      "bg-teal-600",
+    ];
+    const index = name.length % colors.length;
+    return colors[index];
+  };
+
+  return (
+    <div
+      className={`${size} rounded-full ${getBackgroundColor(
+        name
+      )} flex items-center justify-center text-white text-xs font-semibold shadow-sm ring-2 ring-gray-800`}
+    >
+      {getInitials(name)}
+    </div>
+  );
+};
+
 // Mock data generator for the updated structure
 const generateMockData = (selectedSkills) => {
   const names = [
@@ -19,6 +57,40 @@ const generateMockData = (selectedSkills) => {
     "Rachel Green",
     "Tom Harris",
   ];
+  const countries = [
+    "United States",
+    "China",
+    "United Kingdom",
+    "Canada",
+    "Australia",
+    "Spain",
+    "South Korea",
+    "United States",
+    "Mexico",
+    "United States",
+    "Canada",
+    "United States",
+    "United Kingdom",
+    "United States",
+    "United States",
+  ];
+  const technologies = [
+    "React",
+    "Node.js",
+    "Python",
+    "Express",
+    "React",
+    "Python",
+    "Node.js",
+    "Express",
+    "React",
+    "Python",
+    "Node.js",
+    "Express",
+    "React",
+    "Python",
+    "Express",
+  ];
   const roles = ["Student", "Teacher"];
 
   // Combine data for all selected skills
@@ -34,6 +106,8 @@ const generateMockData = (selectedSkills) => {
       id: `u${i + 1}`,
       name: names[i],
       role: role,
+      country: countries[i],
+      technology: technologies[i],
       skill: primarySkill, // Use single skill for display, even if multiple are selected for context
       score: Math.floor(Math.random() * 100) + (isStudent ? 0 : 20), // Teachers often have higher scores in this mock
       skills: selectedSkills, // Pass all selected skills for context
@@ -64,52 +138,10 @@ const NoData = ({ message = "No leaderboard data available." }) => (
 );
 
 const RankHighlight = ({ rank }) => (
-  <div className="px-3 py-1 rounded-full text-xs font-semibold bg-opacity-20 bg-purple-700 text-purple-300">
+  <div className="px-2 py-0.5 rounded-md text-xs font-medium bg-purple-600/10 text-purple-400 border border-purple-600/20">
     #{rank}
   </div>
 );
-
-// New component for Dropdown Selector
-const SkillDropdown = ({ skills, selected, onChange }) => {
-  // Always select all if no skill is selected initially for simplicity
-  const handleChange = (e) => {
-    const value = e.target.value;
-    if (value === "all") {
-      onChange(skills);
-    } else {
-      onChange([value]);
-    }
-  };
-
-  const currentValue =
-    selected.length === skills.length
-      ? "all"
-      : selected.length === 1
-      ? selected[0]
-      : "default";
-
-  return (
-    <>
-      <NavBar />
-
-      <select
-        value={currentValue}
-        onChange={handleChange}
-        className="px-4 py-2 rounded-lg border border-gray-700 bg-[#121212] text-white text-sm font-medium focus:ring-purple-500 focus:border-purple-500 transition-colors"
-      >
-        <option value="default" disabled hidden>
-          Select Skill...
-        </option>
-        {skills.map((skill) => (
-          <option key={skill} value={skill}>
-            {skill}
-          </option>
-        ))}
-        <option value="all">All Skills (Combined)</option>
-      </select>
-    </>
-  );
-};
 
 const LeaderBoardTable = React.memo(function LeaderBoardTable({
   rows,
@@ -121,11 +153,21 @@ const LeaderBoardTable = React.memo(function LeaderBoardTable({
   return (
     <div className="overflow-x-auto rounded-lg border border-gray-800">
       <table className="min-w-full divide-y divide-gray-800 table-auto">
+        <colgroup>
+          <col className="w-16" />
+          <col className="w-48" />
+          <col className="w-20" />
+          <col className="w-24" />
+          <col className="w-32" />
+          <col className="w-16" />
+        </colgroup>
         <thead className="sticky top-0 bg-[#0d0d0d]">
           <tr className="text-left text-sm uppercase text-gray-300">
             <th className="px-4 py-3">Rank</th>
             <th className="px-4 py-3">Name</th>
             <th className="px-4 py-3">Role</th>
+            <th className="px-4 py-3">Technology</th>
+            <th className="px-4 py-3">Country</th>
             <th className="px-4 py-3">Score</th>
           </tr>
         </thead>
@@ -133,7 +175,7 @@ const LeaderBoardTable = React.memo(function LeaderBoardTable({
           {rows.map((row) => (
             <tr
               key={row.id}
-              className={`hover:bg-[#111] transition ${
+              className={`hover:bg-[#111] transition-colors duration-200 ${
                 row.id === currentUserId
                   ? "bg-gradient-to-r from-purple-900/40 to-transparent"
                   : ""
@@ -143,11 +185,24 @@ const LeaderBoardTable = React.memo(function LeaderBoardTable({
                 <RankHighlight rank={row.rank} />
               </td>
               <td className="px-4 py-3 align-middle">
-                <div className="font-medium text-white">{row.name}</div>
-                <div className="text-xs text-gray-400">ID: {row.id}</div>
+                <div className="flex items-center gap-3">
+                  <ProfilePhoto name={row.name} />
+                  <div>
+                    <div className="font-medium text-white">{row.name}</div>
+                    <div className="text-xs text-gray-400">ID: {row.id}</div>
+                  </div>
+                </div>
               </td>
               <td className="px-4 py-3 align-middle text-gray-300">
                 {row.role}
+              </td>
+              <td className="px-4 py-3 align-middle">
+                <span className="px-2 py-1 bg-blue-900/30 border border-blue-600/30 rounded-md text-xs font-medium text-blue-300">
+                  {row.technology}
+                </span>
+              </td>
+              <td className="px-4 py-3 align-middle text-gray-300">
+                {row.country}
               </td>
               <td className="px-4 py-3 align-middle font-semibold text-purple-400">
                 {row.score}
@@ -172,7 +227,7 @@ const LeaderBoardCard = React.memo(function LeaderBoardCard({
       {rows.map((row) => (
         <div
           key={row.id}
-          className={`p-4 rounded-2xl border border-gray-800 shadow-sm ${
+          className={`p-4 rounded-2xl border border-gray-800 shadow-sm hover:bg-gray-900/50 transition-colors duration-200 ${
             row.id === currentUserId
               ? "bg-purple-950/40 border-purple-600"
               : "bg-[#070707]"
@@ -181,9 +236,15 @@ const LeaderBoardCard = React.memo(function LeaderBoardCard({
           <div className="flex justify-between items-center">
             <div className="flex items-center gap-3">
               <RankHighlight rank={row.rank} />
+              <ProfilePhoto name={row.name} size="w-10 h-10" />
               <div>
                 <div className="font-semibold text-white">{row.name}</div>
-                <div className="text-xs text-gray-400">{row.role}</div>
+                <div className="text-xs text-gray-400 mb-1">
+                  {row.role} • {row.country}
+                </div>
+                <span className="px-2 py-0.5 bg-blue-900/30 border border-blue-600/30 rounded-md text-xs font-medium text-blue-300">
+                  {row.technology}
+                </span>
               </div>
             </div>
             <div className="text-xl font-bold text-purple-400">{row.score}</div>
@@ -226,8 +287,9 @@ export default function LeaderBoardPage({
   currentUserId = "u3",
 }) {
   const [availableSkills] = useState(initialSkills);
-  const [selectedSkills, setSelectedSkills] = useState([initialSkills[0]]);
+  const [selectedSkills, setSelectedSkills] = useState(initialSkills); // Show all skills by default
   const [activeRole, setActiveRole] = useState("Student"); // New state for role filter
+  const [searchQuery, setSearchQuery] = useState(""); // New search state
   const [loading, setLoading] = useState(false);
   const [rawRows, setRawRows] = useState([]);
   const [page, setPage] = useState(1);
@@ -264,16 +326,28 @@ export default function LeaderBoardPage({
     if (!rawRows || rawRows.length === 0) return [];
 
     // 1. Role Filter
-    const filteredByRole = rawRows.filter((row) => row.role === activeRole);
+    let filteredData = rawRows.filter((row) => row.role === activeRole);
 
-    // 2. Sort by score
-    const sortedArr = [...filteredByRole].sort((a, b) => b.score - a.score);
+    // 2. Search Filter
+    if (searchQuery.trim()) {
+      const query = searchQuery.toLowerCase();
+      filteredData = filteredData.filter(
+        (row) =>
+          row.name.toLowerCase().includes(query) ||
+          row.country.toLowerCase().includes(query) ||
+          row.technology.toLowerCase().includes(query) ||
+          row.id.toLowerCase().includes(query)
+      );
+    }
 
-    // 3. Re-apply ranks after filtering and sorting
+    // 3. Sort by score
+    const sortedArr = [...filteredData].sort((a, b) => b.score - a.score);
+
+    // 4. Re-apply ranks after filtering and sorting
     sortedArr.forEach((r, i) => (r.rank = i + 1));
 
     return sortedArr;
-  }, [rawRows, activeRole]);
+  }, [rawRows, activeRole, searchQuery]);
 
   const paginatedRows = useMemo(() => {
     const start = (page - 1) * pageSize;
@@ -290,102 +364,143 @@ export default function LeaderBoardPage({
   }, []);
 
   return (
-    <div className="p-6 lg:p-12 min-h-screen bg-[#000]">
-      <header className="mb-6 text-white">
-        <h1 className="text-3xl font-extrabold text-purple-400">
-          Leaderboards
-        </h1>
-        <p className="text-sm text-gray-400 mt-1">
-          {selectedSkills.length === 1 && selectedSkills[0] !== "all"
-            ? `Rankings for ${selectedSkills[0]}`
-            : `Rankings for ${selectedSkills.length} skills (Combined)`}
-        </p>
-      </header>
+    <>
+      <LeaderboardNavbar
+        searchQuery={searchQuery}
+        onSearchChange={(query) => {
+          setSearchQuery(query);
+          setPage(1); // Reset page on search
+        }}
+      />
+      <div className="pt-8 p-4 sm:p-6 lg:p-12 min-h-screen bg-[#000]">
+        {/* Leaderboard Section */}
+        <section className="mb-8 sm:mb-10">
+          {/* Centered Leaderboard Heading */}
+          <div className="text-center mb-8">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+              Leaderboard
+            </h1>
+          </div>
 
-      <section className="mb-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-        {/* Skill Dropdown */}
-        <div className="w-full md:w-auto">
-          <SkillDropdown
-            skills={availableSkills}
-            selected={selectedSkills}
-            onChange={(s) => {
-              setSelectedSkills(s);
-              setPage(1);
+          {/* Badge and Description */}
+          <div className="flex items-center gap-3 mb-6">
+            <div className="px-4 py-2 bg-purple-600/25 border border-purple-500/40 rounded-lg backdrop-blur-sm shadow-sm">
+              <span className="text-purple-300 text-lg font-semibold">
+                🏆 Rankings
+              </span>
+            </div>
+          </div>
+          <p className="text-gray-400 text-sm mb-6">
+            Compete with peers and track your progress across different skills.
+            Rankings are updated in real-time based on performance and
+            achievements.
+          </p>
+        </section>
+
+        <section className="mb-4 sm:mb-6 text-white">
+          <div className="flex items-center justify-between mb-3 sm:mb-4">
+            <h3 className="text-xl sm:text-2xl font-bold">
+              {searchQuery
+                ? `Search Results - ${activeRole}s`
+                : `Top ${activeRole}s`}
+            </h3>
+            <div className="text-xs sm:text-sm text-gray-400">
+              {searchQuery ? (
+                <span>
+                  Found {filteredAndAggregatedRows.length}{" "}
+                  {activeRole.toLowerCase()}(s)
+                </span>
+              ) : (
+                <span>Showing {filteredAndAggregatedRows.length} users</span>
+              )}
+            </div>
+          </div>
+
+          {/* Search Results Indicator */}
+          {searchQuery && (
+            <div className="mb-4 px-3 py-2 bg-purple-900/20 border border-purple-600/30 rounded-lg">
+              <span className="text-sm text-purple-300">
+                Searching for:{" "}
+                <span className="font-medium text-purple-200">
+                  "{searchQuery}"
+                </span>
+                <button
+                  onClick={() => setSearchQuery("")}
+                  className="ml-3 text-purple-400 hover:text-purple-200 text-xs underline"
+                >
+                  Clear search
+                </button>
+              </span>
+            </div>
+          )}
+
+          {/* Role Tab Switcher */}
+          <RoleTabs
+            activeRole={activeRole}
+            onRoleChange={(role) => {
+              setActiveRole(role);
+              setPage(1); // Reset page on role change
             }}
           />
-        </div>
-      </section>
 
-      <section className="mb-6 text-white">
-        <div className="flex items-center justify-between mb-4">
-          <h3 className="text-2xl font-bold">Top {activeRole}s</h3>
-          <div className="text-sm text-gray-400">
-            Showing {filteredAndAggregatedRows.length} users
-          </div>
-        </div>
-
-        {/* Role Tab Switcher */}
-        <RoleTabs
-          activeRole={activeRole}
-          onRoleChange={(role) => {
-            setActiveRole(role);
-            setPage(1); // Reset page on role change
-          }}
-        />
-
-        <div className="mb-4">
-          {loading ? (
-            <Loader />
-          ) : paginatedRows.length === 0 ? (
-            <NoData
-              message={`No ${activeRole.toLowerCase()}s found for the selected skill(s).`}
-            />
-          ) : isMobile ? (
-            <LeaderBoardCard
-              rows={paginatedRows}
-              currentUserId={currentUserId}
-            />
-          ) : (
-            <LeaderBoardTable
-              rows={paginatedRows}
-              currentUserId={currentUserId}
-            />
-          )}
-        </div>
-
-        {/* Pagination Controls */}
-        {filteredAndAggregatedRows.length > pageSize && (
-          <div className="flex justify-between items-center mt-4 text-gray-300">
-            <div className="text-sm text-gray-400">
-              Page {page} /{" "}
-              {Math.ceil(filteredAndAggregatedRows.length / pageSize)}
-            </div>
-            <div className="flex gap-2">
-              <button
-                className="px-3 py-1 rounded border border-gray-700 bg-[#121212] hover:bg-purple-900 transition disabled:opacity-50"
-                onClick={() => setPage((p) => Math.max(1, p - 1))}
-                disabled={page === 1}
-              >
-                Prev
-              </button>
-              <button
-                className="px-3 py-1 rounded border border-gray-700 bg-[#121212] hover:bg-purple-900 transition disabled:opacity-50"
-                onClick={() =>
-                  setPage((p) =>
-                    Math.min(
-                      Math.ceil(filteredAndAggregatedRows.length / pageSize),
-                      p + 1
-                    )
-                  )
+          <div className="mb-4">
+            {loading ? (
+              <Loader />
+            ) : paginatedRows.length === 0 ? (
+              <NoData
+                message={
+                  searchQuery
+                    ? `No ${activeRole.toLowerCase()}s found matching "${searchQuery}".`
+                    : `No ${activeRole.toLowerCase()}s found.`
                 }
-                disabled={page * pageSize >= filteredAndAggregatedRows.length}
-              >
-                Next
-              </button>
-            </div>
+              />
+            ) : isMobile ? (
+              <LeaderBoardCard
+                rows={paginatedRows}
+                currentUserId={currentUserId}
+              />
+            ) : (
+              <LeaderBoardTable
+                rows={paginatedRows}
+                currentUserId={currentUserId}
+              />
+            )}
           </div>
-        )}
-      </section>
-    </div>
+
+          {/* Pagination Controls */}
+          {filteredAndAggregatedRows.length > pageSize && (
+            <div className="flex justify-between items-center mt-4 text-gray-300">
+              <div className="text-sm text-gray-400">
+                Page {page} /{" "}
+                {Math.ceil(filteredAndAggregatedRows.length / pageSize)}
+              </div>
+              <div className="flex gap-2">
+                <button
+                  className="px-3 py-1 rounded border border-gray-700 bg-[#121212] hover:bg-purple-900 transition disabled:opacity-50"
+                  onClick={() => setPage((p) => Math.max(1, p - 1))}
+                  disabled={page === 1}
+                >
+                  Prev
+                </button>
+                <button
+                  className="px-3 py-1 rounded border border-gray-700 bg-[#121212] hover:bg-purple-900 transition disabled:opacity-50"
+                  onClick={() =>
+                    setPage((p) =>
+                      Math.min(
+                        Math.ceil(filteredAndAggregatedRows.length / pageSize),
+                        p + 1
+                      )
+                    )
+                  }
+                  disabled={page * pageSize >= filteredAndAggregatedRows.length}
+                >
+                  Next
+                </button>
+              </div>
+            </div>
+          )}
+        </section>
+      </div>
+    </>
   );
 }

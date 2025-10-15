@@ -17,22 +17,29 @@ import TestPage from "./pages/testPage";
 import TalentForm from "./pages/Talentform";
 import ResumeScorerTestPage from "./pages/ResumeScorerTestPage"; // Import ResumeScorerTestPage
 import LoginPageTeachers from "./pages/auth/LoginPageTeachers";
-import StudentSignup from "./pages/auth/Studentsignup";
+import StudentSignup from "./pages/auth/StudentSignup";
 import TeacherSignup from "./pages/auth/TeacherSignup";
 import LeaderBoardPage from "./pages/LeaderBoard";
+import UnifiedAuthPage from "./pages/auth/UnifiedAuthPage";
+import Dashboard from "./pages/Dashboard";
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/signup" element={<CompanySignupPage />} />{" "}
-        {/* Route for Company Signup */}
-        <Route path="/company/login" element={<CompanyLoginPage />} />{" "}
-        {/* Route for Company Login */}
+        {/* NEW: Unified Authentication Page */}
+        <Route path="/auth" element={<UnifiedAuthPage />} />
+        
+        {/* Dashboard - Protected */}
+        <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
+
+        {/* OLD Routes - Keep for backward compatibility */}
+        <Route path="/signup" element={<CompanySignupPage />} />
+        <Route path="/company/login" element={<CompanyLoginPage />} />
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/login-teachers" element={<LoginPageTeachers />} />
-        <Route path="/signup-students" element={<StudentSignup />} />
-        <Route path="/signup-teachers" element={<TeacherSignup />} />
+        <Route path="/singup-students" element={<StudentSignup />} />
+        <Route path="/singup-teachers" element={<TeacherSignup />} />
         <Route path="/leaderboard" element={<LeaderBoardPage />} />
         <Route
           path="/jobs"
