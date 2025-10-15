@@ -107,7 +107,7 @@ export default function Navbar() {
                     isScrolled ? "lg:hidden" : ""
                   }`}
                 >
-                  <span>Login</span>
+                  <span>Start Learning</span>
                 </Link>
                 <Link
                   to="/signup"
@@ -115,7 +115,7 @@ export default function Navbar() {
                     isScrolled ? "lg:hidden" : ""
                   }`}
                 >
-                  <span>Sign Up</span>
+                  <span>Start Teaching</span>
                 </Link>
                 <Link
                   to="/get-started"

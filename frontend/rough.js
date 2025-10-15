@@ -1,0 +1,21 @@
+[
+  {
+    idx: 0,
+    educator_id: "dddb8fb7-2390-4e9d-9924-dabbd460b3bb",
+    first_name: "Sarah",
+    last_name: "Wilson",
+    date_of_birth: null,
+    phone_number: null,
+    address: null,
+    bio: null,
+    profile_picture_url: null,
+    years_of_experience: "10.5",
+    specialization: null,
+    teaching_certifications: null,
+    linkedin_profile: null,
+    verification_status: "Verified",
+    approval_date: "2025-10-15",
+    created_at: "2025-10-15 14:32:51.929485+00",
+    updated_at: "2025-10-15 14:32:51.929485+00",
+  },
+];

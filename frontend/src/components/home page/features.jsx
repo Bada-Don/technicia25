@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 function Features() {
   return (
     <div className="w-[90%] -z-10">
@@ -22,6 +23,11 @@ function Features() {
               Dishas talent who are carefully vetted through an extensive
               screening process.
             </p>
+            <Link to="/jobs">
+              <button className="max-xl:hidden w-fit px-[1.5rem] py-[.2rem] rounded-xl bg-[#7c35c7] hover:bg-[#4d217b] text-white hover:text-[#3f3f46] text-xl shadow-md">
+                <p className="text-lg drop-shadow-md">Hire Now</p>
+              </button>
+            </Link>
           </div>
         </div>
       </div>
