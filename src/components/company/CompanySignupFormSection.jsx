@@ -1,0 +1,13 @@
+import React from 'react';
+import CompanyLeftSection from './CompanyLeftSection'; 
+import CompanySignupForm from './CompanySignupForm';
+const CompanySignupFormSection = () => {
+  return (
+    <div className="flex xl:flex-row max-sm:flex-col md:gap-6 items-center md:flex-col justify-center lg:p-10 max-xl:p-0 text-white h-fit relative">
+      <CompanyLeftSection />
+      <CompanySignupForm />
+    </div>
+  );
+};
+
+export default CompanySignupFormSection;
