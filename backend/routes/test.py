@@ -8,7 +8,7 @@ from models.test import (
 )
 from utils.security import get_current_active_user
 from typing import Dict, Any, List
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from uuid import UUID
 import random
 
@@ -95,7 +95,7 @@ async def create_test_session(
             "status": "NotStarted",
             "total_questions": TOTAL_QUESTIONS_PER_TEST,
             "total_score": total_score,
-            "created_at": datetime.utcnow().isoformat()
+            "created_at": datetime.now(timezone.utc).isoformat()
         }
         
         session_response = db.table("test_sessions").insert(session_data_dict).execute()
@@ -170,7 +170,7 @@ async def start_test_session(
         # Update session status
         update_data = {
             "status": "InProgress",
-            "started_at": datetime.utcnow().isoformat()
+            "started_at": datetime.now(timezone.utc).isoformat()
         }
         
         db.table("test_sessions").update(update_data).eq(
@@ -317,7 +317,7 @@ async def submit_answer(
             "is_correct": is_correct if question["question_type"] == "MCQ" else None,
             "points_earned": points_earned,
             "time_taken_seconds": answer_data.time_taken_seconds,
-            "submitted_at": datetime.utcnow().isoformat()
+            "submitted_at": datetime.now(timezone.utc).isoformat()
         }
         
         # Insert or update answer
@@ -395,7 +395,7 @@ async def submit_test(
         
         # Calculate duration
         started_at = datetime.fromisoformat(session["started_at"].replace('Z', '+00:00'))
-        completed_at = datetime.utcnow()
+        completed_at = datetime.now(timezone.utc)
         duration = completed_at - started_at
         duration_minutes = int(duration.total_seconds() / 60)
         

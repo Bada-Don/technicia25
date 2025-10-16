@@ -20,10 +20,11 @@ load_dotenv()
 def get_supabase_client() -> Client:
     """Initialize Supabase client"""
     url = os.getenv("SUPABASE_URL")
-    key = os.getenv("SUPABASE_SERVICE_ROLE_KEY")
+    # Try both possible env variable names
+    key = os.getenv("SUPABASE_SERVICE_ROLE_KEY") or os.getenv("SUPABASE_SERVICE_KEY")
     
     if not url or not key:
-        raise ValueError("Missing SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY in .env file")
+        raise ValueError("Missing SUPABASE_URL or SUPABASE_SERVICE_KEY in .env file")
     
     return create_client(url, key)
 
