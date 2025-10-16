@@ -1,0 +1,814 @@
+[
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the name of the JavaScript engine that powers Node.js?",
+    "options": [
+      {"option_id": "A", "option_text": "SpiderMonkey"},
+      {"option_id": "B", "option_text": "Chakra"},
+      {"option_id": "C", "option_text": "V8"},
+      {"option_id": "D", "option_text": "Rhino"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which command is used to start a Node.js application file named 'app.js'?",
+    "options": [
+      {"option_id": "A", "option_text": "start app.js"},
+      {"option_id": "B", "option_text": "node app.js"},
+      {"option_id": "C", "option_text": "run app.js"},
+      {"option_id": "D", "option_text": "npm start app.js"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the primary function of the `require()` function in Node.js?",
+    "options": [
+      {"option_id": "A", "option_text": "To define a new function"},
+      {"option_id": "B", "option_text": "To export variables from a module"},
+      {"option_id": "C", "option_text": "To import modules and external packages"},
+      {"option_id": "D", "option_text": "To print output to the console"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which core module is essential for creating an HTTP server in Node.js?",
+    "options": [
+      {"option_id": "A", "option_text": "fs"},
+      {"option_id": "B", "option_text": "path"},
+      {"option_id": "C", "option_text": "http"},
+      {"option_id": "D", "option_text": "url"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What does NPM stand for?",
+    "options": [
+      {"option_id": "A", "option_text": "Node Program Manager"},
+      {"option_id": "B", "option_text": "New Project Module"},
+      {"option_id": "C", "option_text": "Node Package Manager"},
+      {"option_id": "D", "option_text": "Network Protocol Manager"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which object is used to export functionality from a local Node.js module so it can be used elsewhere?",
+    "options": [
+      {"option_id": "A", "option_text": "exports"},
+      {"option_id": "B", "option_text": "require.export"},
+      {"option_id": "C", "option_text": "module.exports"},
+      {"option_id": "D", "option_text": "global.export"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which command is used to create a `package.json` file interactively in a Node.js project?",
+    "options": [
+      {"option_id": "A", "option_text": "npm init"},
+      {"option_id": "B", "option_text": "npm create"},
+      {"option_id": "C", "option_text": "node init"},
+      {"option_id": "D", "option_text": "npm build"}
+    ],
+    "correct_answer": "A",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Node.js is primarily known for its architectural model. What is this model?",
+    "options": [
+      {"option_id": "A", "option_text": "Multi-threaded, Blocking I/O"},
+      {"option_id": "B", "option_text": "Single-threaded, Blocking I/O"},
+      {"option_id": "C", "option_text": "Single-threaded, Non-blocking I/O"},
+      {"option_id": "D", "option_text": "Multi-threaded, Non-blocking I/O"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which of the following is a synchronous file reading function in the `fs` module?",
+    "options": [
+      {"option_id": "A", "option_text": "fs.readFile()"},
+      {"option_id": "B", "option_text": "fs.readFileSync()"},
+      {"option_id": "C", "option_text": "fs.read()"},
+      {"option_id": "D", "option_text": "fs.readStream()"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the function of a 'callback' in Node.js?",
+    "options": [
+      {"option_id": "A", "option_text": "A function that is executed immediately"},
+      {"option_id": "B", "option_text": "A function passed as an argument to another function, to be executed later"},
+      {"option_id": "C", "option_text": "A synchronous loop construct"},
+      {"option_id": "D", "option_text": "The main entry point of a program"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which built-in object provides information about the current Node.js process and control over it?",
+    "options": [
+      {"option_id": "A", "option_text": "Console"},
+      {"option_id": "B", "option_text": "Buffer"},
+      {"option_id": "C", "option_text": "Process"},
+      {"option_id": "D", "option_text": "OS"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the purpose of the `console.log()` function in Node.js?",
+    "options": [
+      {"option_id": "A", "option_text": "To log messages to the browser's console"},
+      {"option_id": "B", "option_text": "To write messages to the operating system's log file"},
+      {"option_id": "C", "option_text": "To output messages to the standard output stream (terminal/console)"},
+      {"option_id": "D", "option_text": "To create a log file for the application"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which file in a Node.js project defines the project's dependencies and scripts?",
+    "options": [
+      {"option_id": "A", "option_text": "config.js"},
+      {"option_id": "B", "option_text": "index.js"},
+      {"option_id": "C", "option_text": "package-lock.json"},
+      {"option_id": "D", "option_text": "package.json"}
+    ],
+    "correct_answer": "D",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which core module is used for working with file and directory paths?",
+    "options": [
+      {"option_id": "A", "option_text": "url"},
+      {"option_id": "B", "option_text": "path"},
+      {"option_id": "C", "option_text": "fs"},
+      {"option_id": "D", "option_text": "os"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the purpose of the global `__dirname` variable in a Node.js module?",
+    "options": [
+      {"option_id": "A", "option_text": "It holds the current file's name."},
+      {"option_id": "B", "option_text": "It holds the path to the current module file."},
+      {"option_id": "C", "option_text": "It holds the path to the directory containing the current module file."},
+      {"option_id": "D", "option_text": "It holds the current working directory."}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which of these is a popular minimalist web framework for Node.js?",
+    "options": [
+      {"option_id": "A", "option_text": "React"},
+      {"option_id": "B", "option_text": "Angular"},
+      {"option_id": "C", "option_text": "Express.js"},
+      {"option_id": "D", "option_text": "Django"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "How do you install the Express.js framework using NPM?",
+    "options": [
+      {"option_id": "A", "option_text": "npm get express"},
+      {"option_id": "B", "option_text": "npm add express"},
+      {"option_id": "C", "option_text": "npm install express"},
+      {"option_id": "D", "option_text": "node install express"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the main advantage of Node.js's non-blocking I/O model?",
+    "options": [
+      {"option_id": "A", "option_text": "It simplifies the debugging process."},
+      {"option_id": "B", "option_text": "It allows the server to handle a large number of concurrent connections efficiently."},
+      {"option_id": "C", "option_text": "It forces all code to be synchronous."},
+      {"option_id": "D", "option_text": "It guarantees that no runtime errors will occur."}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which term describes the process of running Node.js commands interactively in the terminal?",
+    "options": [
+      {"option_id": "A", "option_text": "CLI"},
+      {"option_id": "B", "option_text": "REPL"},
+      {"option_id": "C", "option_text": "JIT"},
+      {"option_id": "D", "option_text": "NPM"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "The `EventEmitter` class is part of which Node.js core module?",
+    "options": [
+      {"option_id": "A", "option_text": "process"},
+      {"option_id": "B", "option_text": "events"},
+      {"option_id": "C", "option_text": "http"},
+      {"option_id": "D", "option_text": "util"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "In Express.js, what is the purpose of the `next()` function in a middleware?",
+    "options": [
+      {"option_id": "A", "option_text": "To stop the request processing and send an error response."},
+      {"option_id": "B", "option_text": "To immediately send the final response to the client."},
+      {"option_id": "C", "option_text": "To pass control to the next handler function or middleware in the stack."},
+      {"option_id": "D", "option_text": "To restart the request-response cycle."}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which mechanism is used to resolve the issue known as 'Callback Hell' in asynchronous Node.js code?",
+    "options": [
+      {"option_id": "A", "option_text": "Synchronous functions"},
+      {"option_id": "B", "option_text": "The `try...catch` block"},
+      {"option_id": "C", "option_text": "Promises and async/await"},
+      {"option_id": "D", "option_text": "The Event Emitter"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "In Node.js, what is a `Buffer` primarily used for?",
+    "options": [
+      {"option_id": "A", "option_text": "Storing temporary data structures like arrays or objects."},
+      {"option_id": "B", "option_text": "Handling streams of raw binary data outside of the V8 heap."},
+      {"option_id": "C", "option_text": "Managing HTTP session data."},
+      {"option_id": "D", "option_text": "A specialized logging mechanism."}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which of the following methods is the *preferred* way to handle global exceptions in a synchronous part of a Node.js application?",
+    "options": [
+      {"option_id": "A", "option_text": "process.on('uncaughtException', handler)"},
+      {"option_id": "B", "option_text": "domain.run(handler)"},
+      {"option_id": "C", "option_text": "new Promise().catch(handler)"},
+      {"option_id": "D", "option_text": "try...catch block around the synchronous code"}
+    ],
+    "correct_answer": "D",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What does the `process.env` object in Node.js allow you to access?",
+    "options": [
+      {"option_id": "A", "option_text": "The user-defined application settings from a configuration file."},
+      {"option_id": "B", "option_text": "The standard input and output streams."},
+      {"option_id": "C", "option_text": "The environment variables set on the operating system where the process is running."},
+      {"option_id": "D", "option_text": "The command-line arguments passed to the script."}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which of the following is NOT a type of Stream in Node.js?",
+    "options": [
+      {"option_id": "A", "option_text": "Writable"},
+      {"option_id": "B", "option_text": "Duplex"},
+      {"option_id": "C", "option_text": "Transfer"},
+      {"option_id": "D", "option_text": "Transform"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the purpose of piping in Node.js Streams?",
+    "options": [
+      {"option_id": "A", "option_text": "To write synchronous code for file operations."},
+      {"option_id": "B", "option_text": "To connect the output of a Readable Stream to the input of a Writable Stream."},
+      {"option_id": "C", "option_text": "To increase the buffer size for a stream."},
+      {"option_id": "D", "option_text": "To compress data before sending it over the network."}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Consider the following code: `const { name } = require('./user-module');`. What module system is this using?",
+    "options": [
+      {"option_id": "A", "option_text": "ES Modules (ESM)"},
+      {"option_id": "B", "option_text": "TypeScript Modules"},
+      {"option_id": "C", "option_text": "CommonJS (CJS)"},
+      {"option_id": "D", "option_text": "AMD Modules"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "When using `Promise.all([p1, p2, p3])`, what happens if one of the Promises (e.g., p2) rejects?",
+    "options": [
+      {"option_id": "A", "option_text": "It waits for the other Promises to resolve and then returns an array of resolved values and the single rejection error."},
+      {"option_id": "B", "option_text": "The entire `Promise.all` immediately rejects with the reason of the first rejected Promise."},
+      {"option_id": "C", "option_text": "The rejected Promise is simply ignored, and it proceeds with the resolved Promises."},
+      {"option_id": "D", "option_text": "It throws an `uncaughtException` in the main thread."}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the correct way to register a global error-handling middleware in Express.js?",
+    "options": [
+      {"option_id": "A", "option_text": "A middleware function with parameters (req, res, err, next)"},
+      {"option_id": "B", "option_text": "A middleware function with parameters (req, res, next, err)"},
+      {"option_id": "C", "option_text": "A middleware function with parameters (err, req, res, next)"},
+      {"option_id": "D", "option_text": "A middleware function with parameters (err, next)"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which of the following is NOT a phase in the Node.js Event Loop?",
+    "options": [
+      {"option_id": "A", "option_text": "Timers"},
+      {"option_id": "B", "option_text": "Poll"},
+      {"option_id": "C", "option_text": "Await"},
+      {"option_id": "D", "option_text": "Check"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the purpose of the `res.json()` method in Express.js?",
+    "options": [
+      {"option_id": "A", "option_text": "To parse incoming request JSON data."},
+      {"option_id": "B", "option_text": "To serialize an object to a JSON string and send it as the response, setting the correct Content-Type."},
+      {"option_id": "C", "option_text": "To redirect the client to a different URL."},
+      {"option_id": "D", "option_text": "To only send a JSON status code."}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which module allows you to implement the publish/subscribe (pub/sub) pattern in Node.js by emitting named events?",
+    "options": [
+      {"option_id": "A", "option_text": "stream"},
+      {"option_id": "B", "option_text": "emitter"},
+      {"option_id": "C", "option_text": "events"},
+      {"option_id": "D", "option_text": "util"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "When is the `npm install --save-dev` command typically used?",
+    "options": [
+      {"option_id": "A", "option_text": "To install dependencies required for the application to run in production."},
+      {"option_id": "B", "option_text": "To install packages only needed during development, such as testing and linting tools."},
+      {"option_id": "C", "option_text": "To install packages globally on the system."},
+      {"option_id": "D", "option_text": "To install optional dependencies that may not be available on all target environments."}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the default limit on the number of listeners that can be attached to a single event on an `EventEmitter` instance?",
+    "options": [
+      {"option_id": "A", "option_text": "5"},
+      {"option_id": "B", "option_text": "10"},
+      {"option_id": "C", "option_text": "15"},
+      {"option_id": "D", "option_text": "Unlimited"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "How do you correctly handle an error in an `async` function using `await`?",
+    "options": [
+      {"option_id": "A", "option_text": "Using a `.catch()` block after the function call."},
+      {"option_id": "B", "option_text": "Using a `try...catch` block inside the `async` function."},
+      {"option_id": "C", "option_text": "Using an `if (error)` check after the `await` expression."},
+      {"option_id": "D", "option_text": "Errors in `async` functions are automatically handled by Node.js."}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which statement correctly describes the nature of Node.js modules?",
+    "options": [
+      {"option_id": "A", "option_text": "Modules are executed globally and share the same scope."},
+      {"option_id": "B", "option_text": "Each module is executed in its own isolated scope."},
+      {"option_id": "C", "option_text": "Modules are always cached, and the code is re-executed on every `require()`."},
+      {"option_id": "D", "option_text": "Modules are purely static files and cannot contain executable code."}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the primary difference between `fs.readFile()` and `fs.createReadStream()`?",
+    "options": [
+      {"option_id": "A", "option_text": "`readFile` is synchronous, and `createReadStream` is asynchronous."},
+      {"option_id": "B", "option_text": "`readFile` is faster for all file sizes."},
+      {"option_id": "C", "option_text": "`readFile` reads the entire file into memory, while `createReadStream` reads data in chunks."},
+      {"option_id": "D", "option_text": "`createReadStream` can only be used for network I/O, not local files."}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "In Express.js, how can you extract a URL parameter named `id` from a request for the route `/users/:id`?",
+    "options": [
+      {"option_id": "A", "option_text": "req.query.id"},
+      {"option_id": "B", "option_text": "req.body.id"},
+      {"option_id": "C", "option_text": "req.params.id"},
+      {"option_id": "D", "option_text": "req.url.id"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "When comparing `setTimeout(fn, 0)` and `setImmediate(fn)`, which statement is generally true about their execution order within the event loop?",
+    "options": [
+      {"option_id": "A", "option_text": "`setTimeout(fn, 0)` always executes first."},
+      {"option_id": "B", "option_text": "`setImmediate(fn)` always executes first."},
+      {"option_id": "C", "option_text": "The order is non-deterministic and depends on system performance and other factors."},
+      {"option_id": "D", "option_text": "They run in the same phase and are processed simultaneously."}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the recommended best practice for storing sensitive configuration values like API keys in a Node.js application?",
+    "options": [
+      {"option_id": "A", "option_text": "Hardcode them directly in the application's source code."},
+      {"option_id": "B", "option_text": "Store them in a committed `config.json` file."},
+      {"option_id": "C", "option_text": "Use environment variables (e.g., loaded from a `.env` file that is git-ignored)."},
+      {"option_id": "D", "option_text": "Use them as default function parameters."}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "The `util.promisify()` method is primarily used to:",
+    "options": [
+      {"option_id": "A", "option_text": "Convert a Promise into a standard synchronous function."},
+      {"option_id": "B", "option_text": "Convert a function that returns a Promise into a callback-style function."},
+      {"option_id": "C", "option_text": "Convert a traditional Node.js callback-style function into a Promise-returning function."},
+      {"option_id": "D", "option_text": "Execute multiple promises in parallel."}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What does a `Transform` stream do in Node.js?",
+    "options": [
+      {"option_id": "A", "option_text": "It can only be written to, not read from."},
+      {"option_id": "B", "option_text": "It is a Duplex stream that can modify or transform the data as it is written and then read."},
+      {"option_id": "C", "option_text": "It is used exclusively for encrypting and decrypting data."},
+      {"option_id": "D", "option_text": "It is a new type of stream that replaces Writable and Readable streams."}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which HTTP method is generally considered *idempotent*?",
+    "options": [
+      {"option_id": "A", "option_text": "POST"},
+      {"option_id": "B", "option_text": "GET"},
+      {"option_id": "C", "option_text": "PATCH"},
+      {"option_id": "D", "option_text": "All of the above"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the primary role of the `package-lock.json` file?",
+    "options": [
+      {"option_id": "A", "option_text": "To list all direct dependencies of the project."},
+      {"option_id": "B", "option_text": "To define the scripts and metadata of the project."},
+      {"option_id": "C", "option_text": "To lock the exact version and structure of the entire dependency tree for reliable builds."},
+      {"option_id": "D", "option_text": "To prevent accidental deletion of node modules."}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "In a Node.js process, what is the maximum number of threads typically available in the libuv thread pool by default (for I/O-heavy tasks)?",
+    "options": [
+      {"option_id": "A", "option_text": "1"},
+      {"option_id": "B", "option_text": "4"},
+      {"option_id": "C", "option_text": "8"},
+      {"option_id": "D", "option_text": "16"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is 'backpressure' in the context of Node.js Streams?",
+    "options": [
+      {"option_id": "A", "option_text": "The memory limit for a Writable stream."},
+      {"option_id": "B", "option_text": "A mechanism to slow down a Readable stream when a Writable stream cannot keep up."},
+      {"option_id": "C", "option_text": "An error that occurs when a pipe operation fails."},
+      {"option_id": "D", "option_text": "A feature used to compress data transferred between streams."}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which of the following modules is used for creating child processes in Node.js?",
+    "options": [
+      {"option_id": "A", "option_text": "worker_threads"},
+      {"option_id": "B", "option_text": "cluster"},
+      {"option_id": "C", "option_text": "child_process"},
+      {"option_id": "D", "option_text": "process"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "What is the strict execution order priority among `process.nextTick()`, `setTimeout(fn, 0)`, and `setImmediate()` within a single Event Loop tick, assuming all are called immediately after each other?",
+    "options": [
+      {"option_id": "A", "option_text": "`setTimeout` > `setImmediate` > `process.nextTick`"},
+      {"option_id": "B", "option_text": "`process.nextTick` > `setImmediate` > `setTimeout`"},
+      {"option_id": "C", "option_text": "`setImmediate` > `setTimeout` > `process.nextTick`"},
+      {"option_id": "D", "option_text": "`process.nextTick` > `setTimeout` (or `setImmediate`, non-deterministic) > `setImmediate` (or `setTimeout`, non-deterministic)"}
+    ],
+    "correct_answer": "D",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "What is the primary mechanism by which Node.js's single-threaded Event Loop achieves high concurrency, particularly for I/O operations?",
+    "options": [
+      {"option_id": "A", "option_text": "It uses the built-in V8 multi-threading capabilities for I/O."},
+      {"option_id": "B", "option_text": "It offloads blocking I/O tasks to the kernel and a dedicated thread pool managed by libuv."},
+      {"option_id": "C", "option_text": "It serializes all I/O operations to run one after the other very quickly."},
+      {"option_id": "D", "option_text": "It clones the main thread for every incoming I/O request."}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "When is it appropriate to use the Node.js `cluster` module?",
+    "options": [
+      {"option_id": "A", "option_text": "To handle asynchronous I/O operations instead of using callbacks or promises."},
+      {"option_id": "B", "option_text": "To create multiple child processes that share the same server port and leverage multi-core CPUs for CPU-bound tasks."},
+      {"option_id": "C", "option_text": "To manage application dependencies and package versions."},
+      {"option_id": "D", "option_text": "To run a Node.js process as a background service."}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "Which action can cause *Event Loop Starvation* (blocking the Event Loop) and should be avoided in the main thread?",
+    "options": [
+      {"option_id": "A", "option_text": "Using `fs.readFile()` for a small file."},
+      {"option_id": "B", "option_text": "Making an HTTP request using the `http` module."},
+      {"option_id": "C", "option_text": "Executing a long-running, CPU-intensive `for` loop (e.g., complex calculations)."},
+      {"option_id": "D", "option_text": "Calling `process.nextTick()` multiple times."}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "What is the purpose of the `drain` event on a Writable Stream?",
+    "options": [
+      {"option_id": "A", "option_text": "It signals that the stream has finished writing all data and closed."},
+      {"option_id": "B", "option_text": "It signals that the internal buffer is empty and it is safe to resume writing data after a call to `write()` returned `false`."},
+      {"option_id": "C", "option_text": "It is an error event indicating a connection drop."},
+      {"option_id": "D", "option_text": "It signals that the stream is ready to be piped to a Readable stream."}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "Which of the following is executed *after* the `poll` phase and before the `close callbacks` phase in the Event Loop, for tasks scheduled from the current cycle?",
+    "options": [
+      {"option_id": "A", "option_text": "Timers"},
+      {"option_id": "B", "option_text": "Pending callbacks"},
+      {"option_id": "C", "option_text": "Check (setImmediate)"},
+      {"option_id": "D", "option_text": "NextTick (microtask queue)"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "In Node.js, what is the key advantage of using `Worker Threads` over `Child Processes` (fork/spawn) for CPU-intensive tasks?",
+    "options": [
+      {"option_id": "A", "option_text": "Worker Threads are a more synchronous way to run code."},
+      {"option_id": "B", "option_text": "Worker Threads share the memory space, leading to less overhead for data transfer, unlike Child Processes."},
+      {"option_id": "C", "option_text": "Worker Threads are only available in older Node.js versions."},
+      {"option_id": "D", "option_text": "Child Processes are preferred for CPU-intensive tasks."}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "What does a call to `write()` on a Writable Stream return when the internal buffer has exceeded the `highWaterMark`?",
+    "options": [
+      {"option_id": "A", "option_text": "`true`"},
+      {"option_id": "B", "option_text": "`undefined`"},
+      {"option_id": "C", "option_text": "`false`"},
+      {"option_id": "D", "option_text": "An error object"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "Which queue does a Promise's `.then()` callback enter, and when is it processed relative to the Event Loop phases?",
+    "options": [
+      {"option_id": "A", "option_text": "Timer Queue; processed in the Timers phase."},
+      {"option_id": "B", "option_text": "Check Queue; processed in the Check phase."},
+      {"option_id": "C", "option_text": "Microtask Queue; processed after the current stack is empty and before the next Event Loop phase."},
+      {"option_id": "D", "option_text": "I/O Queue; processed in the Poll phase."}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "Which security vulnerability is mitigated by setting the `X-Content-Type-Options: nosniff` header in an Express.js application?",
+    "options": [
+      {"option_id": "A", "option_text": "Cross-Site Scripting (XSS)"},
+      {"option_id": "B", "option_text": "MIME-Type Sniffing attacks"},
+      {"option_id": "C", "option_text": "Cross-Site Request Forgery (CSRF)"},
+      {"option_id": "D", "option_text": "SQL Injection"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  }
+]

@@ -1,0 +1,786 @@
+[
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What does the 'CI' in CI/CD primarily stand for in the context of DevOps?",
+    "options": [
+      {"option_id": "A", "option_text": "Continuous Improvement"},
+      {"option_id": "B", "option_text": "Code Integration"},
+      {"option_id": "C", "option_text": "Continuous Integration"},
+      {"option_id": "D", "option_text": "Custom Implementation"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which tool is primarily used for version control in a typical DevOps toolchain?",
+    "options": [
+      {"option_id": "A", "option_text": "Jenkins"},
+      {"option_id": "B", "option_text": "Git"},
+      {"option_id": "C", "option_text": "Ansible"},
+      {"option_id": "D", "option_text": "Grafana"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the main purpose of Docker in a DevOps environment?",
+    "options": [
+      {"option_id": "A", "option_text": "Project management and issue tracking"},
+      {"option_id": "B", "option_text": "Automating server configuration"},
+      {"option_id": "C", "option_text": "Containerization of applications"},
+      {"option_id": "D", "option_text": "Code quality static analysis"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which of the following describes Infrastructure as Code (IaC)?",
+    "options": [
+      {"option_id": "A", "option_text": "Manually configuring cloud servers using the web console."},
+      {"option_id": "B", "option_text": "Managing and provisioning infrastructure through code, not manual processes."},
+      {"option_id": "C", "option_text": "Writing application code in an infrastructure-specific language."},
+      {"option_id": "D", "option_text": "A method for securely storing application secrets."}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which popular open-source tool is primarily used for Continuous Integration (CI) and automating the build and test process?",
+    "options": [
+      {"option_id": "A", "option_text": "Kubernetes"},
+      {"option_id": "B", "option_text": "Jenkins"},
+      {"option_id": "C", "option_text": "Prometheus"},
+      {"option_id": "D", "option_text": "Terraform"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "In DevOps, what is the main goal of Continuous Monitoring?",
+    "options": [
+      {"option_id": "A", "option_text": "To stop the CI/CD pipeline if a code review fails."},
+      {"option_id": "B", "option_text": "To continuously track and analyze system health and application performance in production."},
+      {"option_id": "C", "option_text": "To automatically deploy code to the final environment."},
+      {"option_id": "D", "option_text": "To manage the deployment configuration files."}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the primary function of a configuration management tool like Ansible, Puppet, or Chef?",
+    "options": [
+      {"option_id": "A", "option_text": "Managing cloud service billing"},
+      {"option_id": "B", "option_text": "Automating the setup, configuration, and management of servers and systems."},
+      {"option_id": "C", "option_text": "Storing and securing application secrets."},
+      {"option_id": "D", "option_text": "Running unit tests against application code."}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the core cultural tenet of DevOps aimed at improving team performance and learning from failures?",
+    "options": [
+      {"option_id": "A", "option_text": "The Waterfall Model"},
+      {"option_id": "B", "option_text": "Siloed Operations"},
+      {"option_id": "C", "option_text": "Collaboration and Communication"},
+      {"option_id": "D", "option_text": "Strict Change Advisory Board (CAB) review"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which term describes the practice of frequently merging code changes into a central repository where automated builds and tests are run?",
+    "options": [
+      {"option_id": "A", "option_text": "Continuous Delivery"},
+      {"option_id": "B", "option_text": "Continuous Integration"},
+      {"option_id": "C", "option_text": "Continuous Deployment"},
+      {"option_id": "D", "option_text": "Continuous Feedback"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is Kubernetes primarily used for in a modern infrastructure?",
+    "options": [
+      {"option_id": "A", "option_text": "Writing infrastructure code"},
+      {"option_id": "B", "option_text": "Container orchestration"},
+      {"option_id": "C", "option_text": "Serverless function execution"},
+      {"option_id": "D", "option_text": "Database management"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the purpose of a 'Dockerfile'?",
+    "options": [
+      {"option_id": "A", "option_text": "A configuration file for Jenkins pipelines."},
+      {"option_id": "B", "option_text": "A definition file for building a Docker image."},
+      {"option_id": "C", "option_text": "A script for automating server reboots."},
+      {"option_id": "D", "option_text": "A manifest file for Kubernetes Deployments."}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which of the following is NOT a core principle of DevOps?",
+    "options": [
+      {"option_id": "A", "option_text": "Automation"},
+      {"option_id": "B", "option_text": "Siloed Teams"},
+      {"option_id": "C", "option_text": "Continuous Feedback"},
+      {"option_id": "D", "option_text": "Measurement"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is a key benefit of using automated tests in a CI/CD pipeline?",
+    "options": [
+      {"option_id": "A", "option_text": "They increase the time required to merge code."},
+      {"option_id": "B", "option_text": "They provide fast and early feedback on code quality and integration issues."},
+      {"option_id": "C", "option_text": "They replace the need for operations teams."},
+      {"option_id": "D", "option_text": "They are only run right before the final production release."}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which tool is commonly used to visualize metrics and logs collected from an application or infrastructure?",
+    "options": [
+      {"option_id": "A", "option_text": "Vagrant"},
+      {"option_id": "B", "option_text": "Terraform"},
+      {"option_id": "C", "option_text": "Grafana"},
+      {"option_id": "D", "option_text": "SVN"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "The concept of 'Shift Left' in DevOps refers to:",
+    "options": [
+      {"option_id": "A", "option_text": "Moving production servers to the left side of the data center."},
+      {"option_id": "B", "option_text": "Performing tasks like testing and security earlier in the development lifecycle."},
+      {"option_id": "C", "option_text": "Delegating development tasks to the operations team."},
+      {"option_id": "D", "option_text": "Using left-to-right languages for coding."}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which of these is the primary difference between a container and a virtual machine (VM)?",
+    "options": [
+      {"option_id": "A", "option_text": "A VM uses a shared host OS kernel, while a container runs a full, dedicated OS."},
+      {"option_id": "B", "option_text": "A container uses a shared host OS kernel, while a VM runs a full, dedicated OS."},
+      {"option_id": "C", "option_text": "Containers require significantly more CPU and memory resources."},
+      {"option_id": "D", "option_text": "VMs are only used for development, and containers are only for production."}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which DevOps practice involves making changes to a central code repository several times a day?",
+    "options": [
+      {"option_id": "A", "option_text": "Continuous Delivery"},
+      {"option_id": "B", "option_text": "Trunk-Based Development"},
+      {"option_id": "C", "option_text": "Kanban Methodology"},
+      {"option_id": "D", "option_text": "Continuous Monitoring"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the primary role of the 'Test' stage in a CI/CD pipeline?",
+    "options": [
+      {"option_id": "A", "option_text": "To package the application into a deployable artifact."},
+      {"option_id": "B", "option_text": "To run automated checks (unit, integration, smoke) to validate the code changes."},
+      {"option_id": "C", "option_text": "To notify the development team of a successful deployment."},
+      {"option_id": "D", "option_text": "To provision the necessary infrastructure for the application."}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which tool is known for its agentless architecture and use of YAML for simple configuration management?",
+    "options": [
+      {"option_id": "A", "option_text": "Chef"},
+      {"option_id": "B", "option_text": "Puppet"},
+      {"option_id": "C", "option_text": "Ansible"},
+      {"option_id": "D", "option_text": "JIRA"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "The primary goal of DevOps is to:",
+    "options": [
+      {"option_id": "A", "option_text": "Eliminate the need for operations engineers."},
+      {"option_id": "B", "option_text": "Increase the time taken to deploy software to production."},
+      {"option_id": "C", "option_text": "Shorten the systems development life cycle and provide continuous delivery with high software quality."},
+      {"option_id": "D", "option_text": "Focus solely on application coding and ignore infrastructure."}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "A team uses **Continuous Delivery**. What is the *key difference* from **Continuous Deployment**?",
+    "options": [
+      {"option_id": "A", "option_text": "Continuous Delivery means all code is released manually, while Deployment is automated."},
+      {"option_id": "B", "option_text": "Continuous Delivery ensures code is always ready for release but requires a manual step to push to production."},
+      {"option_id": "C", "option_text": "Continuous Deployment requires manual testing before deployment, while Delivery is fully automated."},
+      {"option_id": "D", "option_text": "Continuous Delivery only covers integration, while Deployment includes testing."}
+    ],
+    "correct_answer": "B",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "In a **Blue-Green Deployment** strategy, what is the primary purpose of the 'Blue' environment once the 'Green' environment is live and validated?",
+    "options": [
+      {"option_id": "A", "option_text": "It is immediately terminated to save costs."},
+      {"option_id": "B", "option_text": "It becomes the new 'Green' for the next release cycle."},
+      {"option_id": "C", "option_text": "It is held back as a potential environment for an immediate rollback."},
+      {"option_id": "D", "option_text": "It is used for Chaos Engineering experiments."}
+    ],
+    "correct_answer": "C",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What does 'idempotency' mean in the context of configuration management tools like Ansible or Chef?",
+    "options": [
+      {"option_id": "A", "option_text": "The configuration can only be run once successfully."},
+      {"option_id": "B", "option_text": "The configuration must be manually approved before execution."},
+      {"option_id": "C", "option_text": "Applying the same configuration multiple times will result in the same system state without unintended side effects."},
+      {"option_id": "D", "option_text": "The configuration changes only when the code repository changes."}
+    ],
+    "correct_answer": "C",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which deployment strategy involves releasing an application update to a small subset of users or servers first, observing its stability, and then rolling it out wider?",
+    "options": [
+      {"option_id": "A", "option_text": "Blue-Green Deployment"},
+      {"option_id": "B", "option_text": "Big-Bang Deployment"},
+      {"option_id": "C", "option_text": "Canary Deployment"},
+      {"option_id": "D", "option_text": "Rolling Update"}
+    ],
+    "correct_answer": "C",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "In a Kubernetes environment, what is the primary responsibility of a **Service** object?",
+    "options": [
+      {"option_id": "A", "option_text": "To define the desired state of a deployment (e.g., number of replicas)."},
+      {"option_id": "B", "option_text": "To provide a stable network endpoint (IP address and DNS name) for a set of Pods."},
+      {"option_id": "C", "option_text": "To manage the persistent storage volumes."},
+      {"option_id": "D", "option_text": "To securely store sensitive configuration data."}
+    ],
+    "correct_answer": "B",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is 'Immutable Infrastructure' and what is its main benefit?",
+    "options": [
+      {"option_id": "A", "option_text": "Infrastructure that is constantly modified after deployment; High flexibility."},
+      {"option_id": "B", "option_text": "Infrastructure that is manually managed; Low cost."},
+      {"option_id": "C", "option_text": "Infrastructure that is replaced entirely on every update rather than being modified in place; Increased consistency and reliability."},
+      {"option_id": "D", "option_text": "Infrastructure that is only managed by the Operations team; Stronger security."}
+    ],
+    "correct_answer": "C",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which principle is a core tenet of **DevSecOps**?",
+    "options": [
+      {"option_id": "A", "option_text": "Security is a final gate to be checked manually before production deployment."},
+      {"option_id": "B", "option_text": "Security scanning and testing should be integrated early and throughout the CI/CD pipeline."},
+      {"option_id": "C", "option_text": "Developers are not responsible for security; it is solely the security team's job."},
+      {"option_id": "D", "option_text": "Security tools must only run on the production environment to ensure realism."}
+    ],
+    "correct_answer": "B",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the key difference in philosophy between **Terraform** and **Ansible**?",
+    "options": [
+      {"option_id": "A", "option_text": "Terraform is a configuration management tool (CM), and Ansible is an orchestration tool (Orch)."},
+      {"option_id": "B", "option_text": "Terraform is declarative for infrastructure provisioning (IaC), while Ansible is often procedural for configuration management (CM)."},
+      {"option_id": "C", "option_text": "Terraform is cloud-agnostic, while Ansible is only for AWS."},
+      {"option_id": "D", "option_text": "Terraform is used for application deployment, and Ansible is used for testing."}
+    ],
+    "correct_answer": "B",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "A **webhook** is a core mechanism for integrating tools in a DevOps pipeline. What is its basic function?",
+    "options": [
+      {"option_id": "A", "option_text": "It is a scheduled script that runs daily to check for updates."},
+      {"option_id": "B", "option_text": "It is a mechanism for one application to send real-time information to another application via an HTTP POST request in response to an event."},
+      {"option_id": "C", "option_text": "It is a secure protocol for transferring large log files between servers."},
+      {"option_id": "D", "option_text": "It is a type of automated security vulnerability scanner."}
+    ],
+    "correct_answer": "B",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "The 'L' in the **CALMS** DevOps framework stands for 'Lean'. Which aspect of Lean Manufacturing is most relevant to DevOps?",
+    "options": [
+      {"option_id": "A", "option_text": "Maximizing batch sizes to reduce overhead."},
+      {"option_id": "B", "option_text": "Minimizing waste, prioritizing flow, and continuous improvement."},
+      {"option_id": "C", "option_text": "Strict adherence to the original project plan without changes."},
+      {"option_id": "D", "option_text": "Focusing exclusively on the final product, not the process."}
+    ],
+    "correct_answer": "B",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the primary benefit of microservices architecture in a DevOps context?",
+    "options": [
+      {"option_id": "A", "option_text": "It reduces the overall complexity of the application."},
+      {"option_id": "B", "option_text": "It allows teams to independently develop, deploy, and scale services using different technologies."},
+      {"option_id": "C", "option_text": "It eliminates the need for containerization and orchestration tools."},
+      {"option_id": "D", "option_text": "It ensures all services use the same database technology."}
+    ],
+    "correct_answer": "B",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which of the following metrics is a key indicator of a successful DevOps implementation focused on service recovery?",
+    "options": [
+      {"option_id": "A", "option_text": "Code Cyclomatic Complexity (CCC)"},
+      {"option_id": "B", "option_text": "Mean Time To Recover (MTTR)"},
+      {"option_id": "C", "option_text": "Total Lines of Code (TLoC)"},
+      {"option_id": "D", "option_text": "Number of Commits per day (NOC)"}
+    ],
+    "correct_answer": "B",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "In the context of observability, what is the role of **Traces**?",
+    "options": [
+      {"option_id": "A", "option_text": "To record all unstructured text output from the application for debugging."},
+      {"option_id": "B", "option_text": "To provide quantitative data on system performance (e.g., CPU, Memory)."},
+      {"option_id": "C", "option_text": "To follow the path of a single request as it propagates through various services and components."},
+      {"option_id": "D", "option_text": "To automatically deploy the next version of the application."}
+    ],
+    "correct_answer": "C",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which common anti-pattern in CI/CD is known as 'integration hell'?",
+    "options": [
+      {"option_id": "A", "option_text": "Automating too many test cases."},
+      {"option_id": "B", "option_text": "Committing code too frequently to the main branch."},
+      {"option_id": "C", "option_text": "Developers working in long-lived, isolated feature branches before attempting a massive, late merge."},
+      {"option_id": "D", "option_text": "Running performance tests on every commit."}
+    ],
+    "correct_answer": "C",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the primary function of **SonarQube** in a CI/CD pipeline?",
+    "options": [
+      {"option_id": "A", "option_text": "To manage and orchestrate Kubernetes clusters."},
+      {"option_id": "B", "option_text": "To perform static code analysis and calculate code quality metrics."},
+      {"option_id": "C", "option_text": "To automate the provisioning of cloud infrastructure."},
+      {"option_id": "D", "option_text": "To provide a highly available key-value store for application data."}
+    ],
+    "correct_answer": "B",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "When comparing traditional VMs with containers, which offers the fastest startup and smallest footprint?",
+    "options": [
+      {"option_id": "A", "option_text": "Virtual Machines (VMs) because they include a full guest OS."},
+      {"option_id": "B", "option_text": "Containers because they share the host operating system's kernel."},
+      {"option_id": "C", "option_text": "VMs because they provide better hardware utilization."},
+      {"option_id": "D", "option_text": "Both are identical in terms of startup time and size."}
+    ],
+    "correct_answer": "B",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "In a cloud environment, what is the best practice for managing sensitive information like API keys and database credentials in a CI/CD pipeline?",
+    "options": [
+      {"option_id": "A", "option_text": "Hardcoding them directly into the application code."},
+      {"option_id": "B", "option_text": "Storing them in plain text files within the source code repository."},
+      {"option_id": "C", "option_text": "Using a dedicated Secrets Management tool (e.g., HashiCorp Vault, Kubernetes Secrets, AWS Secrets Manager)."},
+      {"option_id": "D", "option_text": "Sharing them via an encrypted email to the deployment manager."}
+    ],
+    "correct_answer": "C",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the primary advantage of using a **Rolling Update** deployment strategy in Kubernetes?",
+    "options": [
+      {"option_id": "A", "option_text": "It eliminates the need for service discovery."},
+      {"option_id": "B", "option_text": "It replaces all old instances simultaneously, minimizing the total deployment time."},
+      {"option_id": "C", "option_text": "It deploys new pods one after the other, gradually replacing old ones, which allows for zero-downtime and easy rollback if health checks fail."},
+      {"option_id": "D", "option_text": "It uses two identical clusters to swap traffic instantly."}
+    ],
+    "correct_answer": "C",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which of the following is a key characteristic of the **Twelve-Factor App** methodology that is highly emphasized in DevOps and microservices?",
+    "options": [
+      {"option_id": "A", "option_text": "Treating logs as write-only event streams."},
+      {"option_id": "B", "option_text": "Storing configuration in the code repository."},
+      {"option_id": "C", "option_text": "Running multiple backing services on a single host."},
+      {"option_id": "D", "option_text": "Manually managing dependencies."}
+    ],
+    "correct_answer": "A",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which component of the **ELK Stack** (Elasticsearch, Logstash, Kibana) is responsible for processing, collecting, and transforming logs from various sources?",
+    "options": [
+      {"option_id": "A", "option_text": "Elasticsearch"},
+      {"option_id": "B", "option_text": "Kibana"},
+      {"option_id": "C", "option_text": "Logstash"},
+      {"option_id": "D", "option_text": "Prometheus"}
+    ],
+    "correct_answer": "C",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "The practice of 'Infrastructure as Code' typically relies on which type of language for defining the desired state of infrastructure?",
+    "options": [
+      {"option_id": "A", "option_text": "Imperative (focused on 'how' to change the state)"},
+      {"option_id": "B", "option_text": "Procedural (focused on the sequence of steps)"},
+      {"option_id": "C", "option_text": "Declarative (focused on the 'what' the final state should be)"},
+      {"option_id": "D", "option_text": "Object-Oriented (focused on classes and objects)"}
+    ],
+    "correct_answer": "C",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the primary purpose of a **Feature Toggle** (or Feature Flag) in a Continuous Delivery pipeline?",
+    "options": [
+      {"option_id": "A", "option_text": "To automate the rollback process after a failed deployment."},
+      {"option_id": "B", "option_text": "To allow code to be deployed to production but keep new features hidden until they are ready to be activated for specific users or groups."},
+      {"option_id": "C", "option_text": "To dynamically adjust the number of running server instances."},
+      {"option_id": "D", "option_text": "To perform A/B testing exclusively for marketing purposes."}
+    ],
+    "correct_answer": "B",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which of the following is a key **non-functional requirement** that DevOps practices aim to improve?",
+    "options": [
+      {"option_id": "A", "option_text": "The color scheme of the user interface."},
+      {"option_id": "B", "option_text": "Application business logic."},
+      {"option_id": "C", "option_text": "System Reliability and Scalability."},
+      {"option_id": "D", "option_text": "The initial project budget."}
+    ],
+    "correct_answer": "C",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is a **Git hook** and where is it typically used in a CI/CD process?",
+    "options": [
+      {"option_id": "A", "option_text": "A command that cleans up old branches; used for repository maintenance."},
+      {"option_id": "B", "option_text": "A custom script that is automatically executed when a specific event (like a 'commit' or 'push') occurs in a Git repository."},
+      {"option_id": "C", "option_text": "A graphical user interface for merging complex branches; used by developers."},
+      {"option_id": "D", "option_text": "A tool for visualizing the history of the Git repository; used for code review."}
+    ],
+    "correct_answer": "B",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "In a pipeline that deploys to AWS, what would be the best tool for provisioning a new VPC, Subnets, and EC2 instances in a declarative manner?",
+    "options": [
+      {"option_id": "A", "option_text": "Docker"},
+      {"option_id": "B", "option_text": "Ansible"},
+      {"option_id": "C", "option_text": "Terraform or CloudFormation"},
+      {"option_id": "D", "option_text": "Nginx"}
+    ],
+    "correct_answer": "C",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which DevOps tool is best suited for automating the installation of application middleware (like a Java Runtime Environment) and creating users on pre-provisioned servers?",
+    "options": [
+      {"option_id": "A", "option_text": "Git"},
+      {"option_id": "B", "option_text": "Prometheus"},
+      {"option_id": "C", "option_text": "Ansible or Chef (Configuration Management Tools)"},
+      {"option_id": "D", "option_text": "HashiCorp Vault"}
+    ],
+    "correct_answer": "C",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "What is the core principle of **GitOps**, and which tool embodies its Pull Request (PR) based deployment model (e.g., ArgoCD or Flux)?",
+    "options": [
+      {"option_id": "A", "option_text": "Infrastructure is managed by direct SSH commands, and the tool only monitors the state."},
+      {"option_id": "B", "option_text": "The entire application and infrastructure state is defined in Git, and an automated agent continuously reconciles the live state with the desired state in the repository."},
+      {"option_id": "C", "option_text": "All code must be manually reviewed by the operations team before being pushed to Git."},
+      {"option_id": "D", "option_text": "It is a methodology for managing Git repositories using a distributed ledger."}
+    ],
+    "correct_answer": "B",
+    "points": 5,
+    "time_limit_seconds": 120
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "A team adopts a **blameless culture**. What is the most critical change in their post-incident review process?",
+    "options": [
+      {"option_id": "A", "option_text": "Focusing solely on identifying the person who made the mistake to ensure accountability."},
+      {"option_id": "B", "option_text": "Analyzing the systemic and process failures that led to the incident, not the individual's error."},
+      {"option_id": "C", "option_text": "Only reviewing incidents that resulted in significant financial loss."},
+      {"option_id": "D", "option_text": "Disclosing the incident details only to executive management."}
+    ],
+    "correct_answer": "B",
+    "points": 5,
+    "time_limit_seconds": 120
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "What is **Chaos Engineering**, and what is its primary goal in a production environment?",
+    "options": [
+      {"option_id": "A", "option_text": "Randomly deploying unvetted code to production to see what happens."},
+      {"option_id": "B", "option_text": "The discipline of experimenting on a system in production to build confidence in the system's capability to withstand turbulent conditions."},
+      {"option_id": "C", "option_text": "A process of ensuring infrastructure-as-code is always randomly generated."},
+      {"option_id": "D", "option_text": "A method for securely storing random cryptographic keys."}
+    ],
+    "correct_answer": "B",
+    "points": 5,
+    "time_limit_seconds": 120
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "In Kubernetes, what is the key functional difference between a **ReplicaSet** and a **Deployment** object?",
+    "options": [
+      {"option_id": "A", "option_text": "ReplicaSets manage network traffic, while Deployments manage storage."},
+      {"option_id": "B", "option_text": "Deployments own and manage ReplicaSets, providing declarative updates and sophisticated rollout/rollback capabilities."},
+      {"option_id": "C", "option_text": "Deployments are used for stateful applications, and ReplicaSets are for stateless applications."},
+      {"option_id": "D", "option_text": "ReplicaSets are a cloud-agnostic abstraction, while Deployments are AWS-specific."}
+    ],
+    "correct_answer": "B",
+    "points": 5,
+    "time_limit_seconds": 120
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "What is the primary architectural benefit provided by a **Service Mesh** (e.g., Istio, Linkerd) in a microservices environment?",
+    "options": [
+      {"option_id": "A", "option_text": "It replaces the need for a container orchestrator like Kubernetes."},
+      {"option_id": "B", "option_text": "It offloads service-to-service communication concerns (like mTLS security, traffic management, and observability) to a sidecar proxy without changing application code."},
+      {"option_id": "C", "option_text": "It provides a centralized, shared database for all microservices."},
+      {"option_id": "D", "option_text": "It completely automates the writing of application code."}
+    ],
+    "correct_answer": "B",
+    "points": 5,
+    "time_limit_seconds": 120
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "Which of the following would be the best DevOps KPI to measure the *stability and quality* of the software delivery process?",
+    "options": [
+      {"option_id": "A", "option_text": "Number of lines of code written per day."},
+      {"option_id": "B", "option_text": "Deployment Frequency (DF)."},
+      {"option_id": "C", "option_text": "Change Failure Rate (CFR)."},
+      {"option_id": "D", "option_text": "Total number of Git commits."}
+    ],
+    "correct_answer": "C",
+    "points": 5,
+    "time_limit_seconds": 120
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "How does the adoption of **Serverless computing** (e.g., AWS Lambda, Azure Functions) change the traditional CI/CD pipeline focus?",
+    "options": [
+      {"option_id": "A", "option_text": "It places a greater emphasis on Configuration Management of the underlying servers."},
+      {"option_id": "B", "option_text": "It removes the need for Continuous Integration, focusing only on Deployment."},
+      {"option_id": "C", "option_text": "It shifts the focus from managing the OS and runtime environment to managing function code, packaging, and IAM/security policies."},
+      {"option_id": "D", "option_text": "It makes Blue-Green and Canary deployments impossible to execute."}
+    ],
+    "correct_answer": "C",
+    "points": 5,
+    "time_limit_seconds": 120
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "The **Phoenix Project** highlights The Three Ways of DevOps. Which concept is NOT one of the Three Ways?",
+    "options": [
+      {"option_id": "A", "option_text": "The First Way: Flow (System thinking)"},
+      {"option_id": "B", "option_text": "The Second Way: Feedback (Amplify feedback loops)"},
+      {"option_id": "C", "option_text": "The Third Way: Continuous Experimentation and Learning"},
+      {"option_id": "D", "option_text": "The Fourth Way: Siloed Team Structure"}
+    ],
+    "correct_answer": "D",
+    "points": 5,
+    "time_limit_seconds": 120
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "A team must manage a complex application with multiple internal and external dependencies. Which component is crucial for effective observability and troubleshooting across these services?",
+    "options": [
+      {"option_id": "A", "option_text": "Only simple CPU utilization metrics."},
+      {"option_id": "B", "option_text": "A monolithic database for all service logs."},
+      {"option_id": "C", "option_text": "Distributed Tracing to map the journey and latency of a request through the entire system."},
+      {"option_id": "D", "option_text": "Manual log analysis via SSH only."}
+    ],
+    "correct_answer": "C",
+    "points": 5,
+    "time_limit_seconds": 120
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "In a scenario where a high-volume public API needs to be secured, what is the best practice in DevSecOps for API Secret Management and Authorization?",
+    "options": [
+      {"option_id": "A", "option_text": "Storing API keys in a clear-text file on the application server."},
+      {"option_id": "B", "option_text": "Using hardcoded credentials in environment variables for all environments."},
+      {"option_id": "C", "option_text": "Implementing a centralized, vault-like service (e.g., HashiCorp Vault) for dynamic secret generation and automated credential rotation."},
+      {"option_id": "D", "option_text": "Allowing all developers read/write access to the production key store."}
+    ],
+    "correct_answer": "C",
+    "points": 5,
+    "time_limit_seconds": 120
+  }
+]

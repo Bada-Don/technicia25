@@ -1,5 +1,6 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import api from '../../services/api';
+import { Camera, Upload } from 'lucide-react';
 
 function ProfileInfo({ profileData, onUpdate }){
     const [formData, setFormData] = useState({
@@ -11,6 +12,8 @@ function ProfileInfo({ profileData, onUpdate }){
     });
     const [saving, setSaving] = useState(false);
     const [message, setMessage] = useState(null);
+    const [uploadingPicture, setUploadingPicture] = useState(false);
+    const fileInputRef = useRef(null);
 
     useEffect(() => {
         if (profileData?.profile) {
@@ -47,6 +50,52 @@ function ProfileInfo({ profileData, onUpdate }){
         }
     };
 
+    const handlePictureUpload = async (e) => {
+        const file = e.target.files[0];
+        if (!file) return;
+
+        // Validate file type
+        const allowedTypes = ['image/jpeg', 'image/jpg', 'image/png', 'image/webp'];
+        if (!allowedTypes.includes(file.type)) {
+            setMessage({ type: 'error', text: 'Please upload a valid image file (JPG, PNG, or WEBP)' });
+            return;
+        }
+
+        // Validate file size (5MB max)
+        const maxSize = 5 * 1024 * 1024; // 5MB
+        if (file.size > maxSize) {
+            setMessage({ type: 'error', text: 'File size must be less than 5MB' });
+            return;
+        }
+
+        setUploadingPicture(true);
+        setMessage(null);
+
+        try {
+            const formData = new FormData();
+            formData.append('file', file);
+
+            await api.post('/profile/upload-picture', formData, {
+                headers: {
+                    'Content-Type': 'multipart/form-data',
+                },
+            });
+
+            setMessage({ 
+                type: 'success', 
+                text: 'Profile picture uploaded successfully! Face detected and validated.' 
+            });
+            if (onUpdate) onUpdate();
+        } catch (error) {
+            console.error('Error uploading picture:', error);
+            const errorMessage = error.response?.data?.detail || 'Failed to upload picture. Please try again.';
+            setMessage({ type: 'error', text: errorMessage });
+        } finally {
+            setUploadingPicture(false);
+            setTimeout(() => setMessage(null), 5000);
+        }
+    };
+
     const profilePicUrl = profileData?.profile?.profile_picture_url || 'https://via.placeholder.com/150';
 
     return(
@@ -61,12 +110,48 @@ function ProfileInfo({ profileData, onUpdate }){
             )}
 
             <div>
-                <h4 className="font-semibold mb-2">Profile Photo</h4>
-                <input type="file" name="profilePic" id="profilePic" className='hidden' />
-                <label htmlFor="profilePic" className='w-fit cursor-pointer'>
-                    <img className='rounded-full w-[7rem] h-[7rem] object-cover border-2 border-purple-500' src={profilePicUrl} alt="Profile" />
-                </label>
-                <p className="text-sm text-gray-400 mt-2">Click to upload new photo (coming soon)</p>
+                <h4 className="font-semibold mb-4">Profile Photo</h4>
+                <div className="flex items-center gap-6">
+                    <div className="relative group">
+                        <img 
+                            className='rounded-full w-32 h-32 object-cover border-4 border-purple-500 shadow-lg' 
+                            src={profilePicUrl} 
+                            alt="Profile" 
+                        />
+                        {uploadingPicture && (
+                            <div className="absolute inset-0 bg-black bg-opacity-50 rounded-full flex items-center justify-center">
+                                <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-white"></div>
+                            </div>
+                        )}
+                    </div>
+                    <div className="flex flex-col gap-3">
+                        <input 
+                            type="file" 
+                            ref={fileInputRef}
+                            onChange={handlePictureUpload}
+                            accept="image/jpeg,image/jpg,image/png,image/webp"
+                            className='hidden' 
+                        />
+                        <button
+                            onClick={() => fileInputRef.current?.click()}
+                            disabled={uploadingPicture}
+                            className={`flex items-center gap-2 px-4 py-2 rounded-lg font-semibold transition-all ${
+                                uploadingPicture 
+                                    ? 'bg-gray-600 cursor-not-allowed' 
+                                    : 'bg-purple-600 hover:bg-purple-700 hover:scale-105'
+                            }`}
+                        >
+                            <Upload size={18} />
+                            {uploadingPicture ? 'Uploading...' : 'Upload Photo'}
+                        </button>
+                        <p className="text-xs text-gray-400">
+                            • Required for proctored tests<br/>
+                            • Only JPG, PNG, WEBP (Max 5MB)<br/>
+                            • Must contain exactly one face<br/>
+                            • Clear, well-lit photo recommended
+                        </p>
+                    </div>
+                </div>
                 
                 <br />
                 

@@ -23,6 +23,9 @@ import LeaderBoardPage from "./pages/LeaderBoard";
 import UnifiedAuthPage from "./pages/auth/UnifiedAuthPage";
 import Dashboard from "./pages/Dashboard";
 import StudentOnboarding from "./pages/StudentOnboarding";
+import SkillVerificationTest from "./pages/SkillVerificationTest";
+import TestResult from "./pages/TestResult";
+
 function App() {
   return (
     <Router>
@@ -90,6 +93,22 @@ function App() {
           element={
             <ProtectedRoute>
               <TestPage />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/test/skill-verification"
+          element={
+            <ProtectedRoute>
+              <SkillVerificationTest />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/test-result"
+          element={
+            <ProtectedRoute>
+              <TestResult />
             </ProtectedRoute>
           }
         />

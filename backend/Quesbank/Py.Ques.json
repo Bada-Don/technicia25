@@ -1,0 +1,814 @@
+[
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "How is a code block or body of a function indicated in Python?",
+    "options": [
+      {"option_id": "A", "option_text": "Brackets `{}`"},
+      {"option_id": "B", "option_text": "Indentation"},
+      {"option_id": "C", "option_text": "Parentheses `()`"},
+      {"option_id": "D", "option_text": "Semicolons `;`"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 30
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which of the following is a mutable data type in Python?",
+    "options": [
+      {"option_id": "A", "option_text": "Tuple"},
+      {"option_id": "B", "option_text": "String"},
+      {"option_id": "C", "option_text": "List"},
+      {"option_id": "D", "option_text": "Integer"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 30
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the output of `print(type(10 / 2))`?",
+    "options": [
+      {"option_id": "A", "option_text": "<class 'int'>"},
+      {"option_id": "B", "option_text": "<class 'float'>"},
+      {"option_id": "C", "option_text": "<class 'str'>"},
+      {"option_id": "D", "option_text": "Error"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which built-in function is used to read input from the console in Python 3?",
+    "options": [
+      {"option_id": "A", "option_text": "get_input()"},
+      {"option_id": "B", "option_text": "input()"},
+      {"option_id": "C", "option_text": "read()"},
+      {"option_id": "D", "option_text": "scan()"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 30
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What does the operator `//` perform in Python?",
+    "options": [
+      {"option_id": "A", "option_text": "Exponentiation"},
+      {"option_id": "B", "option_text": "Division"},
+      {"option_id": "C", "option_text": "Floor Division"},
+      {"option_id": "D", "option_text": "Modulo Division"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 30
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the correct way to assign the value 5 to a variable named `count`?",
+    "options": [
+      {"option_id": "A", "option_text": "count = 5"},
+      {"option_id": "B", "option_text": "count := 5"},
+      {"option_id": "C", "option_text": "variable count = 5"},
+      {"option_id": "D", "option_text": "5 = count"}
+    ],
+    "correct_answer": "A",
+    "points": 1,
+    "time_limit_seconds": 30
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which keyword is used to start an indefinite loop in Python?",
+    "options": [
+      {"option_id": "A", "option_text": "for"},
+      {"option_id": "B", "option_text": "loop"},
+      {"option_id": "C", "option_text": "while"},
+      {"option_id": "D", "option_text": "repeat"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 30
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the result of the expression `10 % 3`?",
+    "options": [
+      {"option_id": "A", "option_text": "3"},
+      {"option_id": "B", "option_text": "1"},
+      {"option_id": "C", "option_text": "3.333"},
+      {"option_id": "D", "option_text": "0"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which character is used for single-line comments in Python?",
+    "options": [
+      {"option_id": "A", "option_text": "//"},
+      {"option_id": "B", "option_text": "/*"},
+      {"option_id": "C", "option_text": "#"},
+      {"option_id": "D", "option_text": "--"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 30
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What will be the value of `x` after the code: `x = 5; x += 3`?",
+    "options": [
+      {"option_id": "A", "option_text": "5"},
+      {"option_id": "B", "option_text": "3"},
+      {"option_id": "C", "option_text": "8"},
+      {"option_id": "D", "option_text": "15"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 30
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which function is used to get the length of a list, tuple, or string?",
+    "options": [
+      {"option_id": "A", "option_text": "size()"},
+      {"option_id": "B", "option_text": "count()"},
+      {"option_id": "C", "option_text": "len()"},
+      {"option_id": "D", "option_text": "length()"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 30
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "In Python, which statement is used to test a condition?",
+    "options": [
+      {"option_id": "A", "option_text": "for"},
+      {"option_id": "B", "option_text": "def"},
+      {"option_id": "C", "option_text": "if"},
+      {"option_id": "D", "option_text": "try"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 30
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the result of the boolean expression `True and False`?",
+    "options": [
+      {"option_id": "A", "option_text": "True"},
+      {"option_id": "B", "option_text": "False"},
+      {"option_id": "C", "option_text": "Error"},
+      {"option_id": "D", "option_text": "None"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 30
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which of these is NOT a valid Python identifier (variable name)?",
+    "options": [
+      {"option_id": "A", "option_text": "my_variable"},
+      {"option_id": "B", "option_text": "_internal_var"},
+      {"option_id": "C", "option_text": "2nd_variable"},
+      {"option_id": "D", "option_text": "Variable_1"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the output of `print('Python' + ' ' + 'Programming')`?",
+    "options": [
+      {"option_id": "A", "option_text": "PythonProgramming"},
+      {"option_id": "B", "option_text": "Python Programming"},
+      {"option_id": "C", "option_text": "Python + Programming"},
+      {"option_id": "D", "option_text": "Error: Cannot concatenate strings"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 30
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What will `list(range(3))` return?",
+    "options": [
+      {"option_id": "A", "option_text": "[1, 2, 3]"},
+      {"option_id": "B", "option_text": "[0, 1, 2]"},
+      {"option_id": "C", "option_text": "[0, 1, 2, 3]"},
+      {"option_id": "D", "option_text": "[3]"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "The `break` statement is used for what purpose in loops?",
+    "options": [
+      {"option_id": "A", "option_text": "To skip the current iteration and proceed to the next."},
+      {"option_id": "B", "option_text": "To terminate the loop entirely."},
+      {"option_id": "C", "option_text": "To define the loop's condition."},
+      {"option_id": "D", "option_text": "To start the loop from the beginning."}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 30
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which data type is ordered, mutable, and allows duplicate members?",
+    "options": [
+      {"option_id": "A", "option_text": "Set"},
+      {"option_id": "B", "option_text": "Dictionary"},
+      {"option_id": "C", "option_text": "Tuple"},
+      {"option_id": "D", "option_text": "List"}
+    ],
+    "correct_answer": "D",
+    "points": 1,
+    "time_limit_seconds": 30
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the result of the expression `2 ** 3`?",
+    "options": [
+      {"option_id": "A", "option_text": "6"},
+      {"option_id": "B", "option_text": "8"},
+      {"option_id": "C", "option_text": "9"},
+      {"option_id": "D", "option_text": "5"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 30
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the correct way to check if two variables, `a` and `b`, have the same value?",
+    "options": [
+      {"option_id": "A", "option_text": "if a == b:"},
+      {"option_id": "B", "option_text": "if a = b:"},
+      {"option_id": "C", "option_text": "if a equals b:"},
+      {"option_id": "D", "option_text": "if a === b:"}
+    ],
+    "correct_answer": "A",
+    "points": 1,
+    "time_limit_seconds": 30
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the output of the following code snippet?\n\n`data = [1, 2, 3]\nnew_data = data.copy()\nnew_data.append(4)\nprint(data)`",
+    "options": [
+      {"option_id": "A", "option_text": "[1, 2, 3, 4]"},
+      {"option_id": "B", "option_text": "[1, 2, 3]"},
+      {"option_id": "C", "option_text": "Error"},
+      {"option_id": "D", "option_text": "[4, 1, 2, 3]"}
+    ],
+    "correct_answer": "B",
+    "points": 2,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which Python method is used to add an element to a set?",
+    "options": [
+      {"option_id": "A", "option_text": "insert()"},
+      {"option_id": "B", "option_text": "add()"},
+      {"option_id": "C", "option_text": "append()"},
+      {"option_id": "D", "option_text": "update()"}
+    ],
+    "correct_answer": "B",
+    "points": 2,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is a disadvantage of using recursion in a function?",
+    "options": [
+      {"option_id": "A", "option_text": "It can only handle mathematical problems."},
+      {"option_id": "B", "option_text": "It is generally slower than iteration for all tasks."},
+      {"option_id": "C", "option_text": "It can lead to a 'Stack Overflow' error with deep calls."},
+      {"option_id": "D", "option_text": "It cannot return a value."}
+    ],
+    "correct_answer": "C",
+    "points": 2,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the purpose of the `__init__` method in a Python class?",
+    "options": [
+      {"option_id": "A", "option_text": "To destroy an object when it is no longer needed."},
+      {"option_id": "B", "option_text": "To define the behavior of the class methods."},
+      {"option_id": "C", "option_text": "To initialize the object's attributes when it is created."},
+      {"option_id": "D", "option_text": "To perform arithmetic operations within the class."}
+    ],
+    "correct_answer": "C",
+    "points": 2,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What will be the output of the following dictionary operation?\n\n`d = {'a': 1, 'b': 2}; d.update({'a': 5, 'c': 3}); print(d['a'])`",
+    "options": [
+      {"option_id": "A", "option_text": "1"},
+      {"option_id": "B", "option_text": "5"},
+      {"option_id": "C", "option_text": "3"},
+      {"option_id": "D", "option_text": "Error"}
+    ],
+    "correct_answer": "B",
+    "points": 2,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which concept allows a child class to inherit properties and methods from a parent class?",
+    "options": [
+      {"option_id": "A", "option_text": "Polymorphism"},
+      {"option_id": "B", "option_text": "Abstraction"},
+      {"option_id": "C", "option_text": "Inheritance"},
+      {"option_id": "D", "option_text": "Encapsulation"}
+    ],
+    "correct_answer": "C",
+    "points": 2,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the result of `print([i * 2 for i in range(3)])`?",
+    "options": [
+      {"option_id": "A", "option_text": "[0, 1, 2]"},
+      {"option_id": "B", "option_text": "[0, 2, 4]"},
+      {"option_id": "C", "option_text": "[1, 2, 4]"},
+      {"option_id": "D", "option_text": "Error"}
+    ],
+    "correct_answer": "B",
+    "points": 2,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "In Python, what is the scope known as where names defined within a function reside?",
+    "options": [
+      {"option_id": "A", "option_text": "Global Scope"},
+      {"option_id": "B", "option_text": "Built-in Scope"},
+      {"option_id": "C", "option_text": "Local Scope"},
+      {"option_id": "D", "option_text": "Enclosing Scope"}
+    ],
+    "correct_answer": "C",
+    "points": 2,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which statement is used to handle potential errors in a block of code?",
+    "options": [
+      {"option_id": "A", "option_text": "raise"},
+      {"option_id": "B", "option_text": "assert"},
+      {"option_id": "C", "option_text": "except"},
+      {"option_id": "D", "option_text": "try"}
+    ],
+    "correct_answer": "D",
+    "points": 2,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is a major characteristic of a Python Tuple?",
+    "options": [
+      {"option_id": "A", "option_text": "They are mutable and ordered."},
+      {"option_id": "B", "option_text": "They are unordered and mutable."},
+      {"option_id": "C", "option_text": "They are immutable and ordered."},
+      {"option_id": "D", "option_text": "They use curly braces for definition."}
+    ],
+    "correct_answer": "C",
+    "points": 2,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "When defining a function, how do you specify that an argument is optional and has a default value?",
+    "options": [
+      {"option_id": "A", "option_text": "def func(a, b=0):"},
+      {"option_id": "B", "option_text": "def func(a, optional b):"},
+      {"option_id": "C", "option_text": "def func(a, b: int=0):"},
+      {"option_id": "D", "option_text": "def func(a, *b):"}
+    ],
+    "correct_answer": "A",
+    "points": 2,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the purpose of the `nonlocal` keyword?",
+    "options": [
+      {"option_id": "A", "option_text": "To modify a variable in the global scope."},
+      {"option_id": "B", "option_text": "To modify a variable in the nearest enclosing but not global scope."},
+      {"option_id": "C", "option_text": "To prevent a variable from being modified."},
+      {"option_id": "D", "option_text": "To define a variable that is visible everywhere."}
+    ],
+    "correct_answer": "B",
+    "points": 2,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which of the following is NOT a fundamental principle of Object-Oriented Programming (OOP)?",
+    "options": [
+      {"option_id": "A", "option_text": "Polymorphism"},
+      {"option_id": "B", "option_text": "Inheritance"},
+      {"option_id": "C", "option_text": "Type Casting"},
+      {"option_id": "D", "option_text": "Encapsulation"}
+    ],
+    "correct_answer": "C",
+    "points": 2,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the result of applying the `join()` method to a list of strings?\n\n`' '.join(['Hello', 'World'])`",
+    "options": [
+      {"option_id": "A", "option_text": "['H', 'e', 'l', 'l', 'o', 'W', 'o', 'r', 'l', 'd']"},
+      {"option_id": "B", "option_text": "('Hello', 'World')"},
+      {"option_id": "C", "option_text": "Hello World"},
+      {"option_id": "D", "option_text": "Error: join is a list method."}
+    ],
+    "correct_answer": "C",
+    "points": 2,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What keyword is used to return a value from a function and also immediately end its execution?",
+    "options": [
+      {"option_id": "A", "option_text": "print"},
+      {"option_id": "B", "option_text": "yield"},
+      {"option_id": "C", "option_text": "pass"},
+      {"option_id": "D", "option_text": "return"}
+    ],
+    "correct_answer": "D",
+    "points": 2,
+    "time_limit_seconds": 30
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "How do you access the value `20` from the following dictionary?\n\n`d = {'data': [10, {'id': 20, 'name': 'item'}]}`",
+    "options": [
+      {"option_id": "A", "option_text": "d[1]['id']"},
+      {"option_id": "B", "option_text": "d['data'][1]['id']"},
+      {"option_id": "C", "option_text": "d['data'][0][1]"},
+      {"option_id": "D", "option_text": "d.data.id"}
+    ],
+    "correct_answer": "B",
+    "points": 2,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which comparison operator checks if two variables refer to the *same object* in memory?",
+    "options": [
+      {"option_id": "A", "option_text": "=="},
+      {"option_id": "B", "option_text": "is"},
+      {"option_id": "C", "option_text": "equal()"},
+      {"option_id": "D", "option_text": "==="}
+    ],
+    "correct_answer": "B",
+    "points": 2,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the purpose of the `finally` block in exception handling?",
+    "options": [
+      {"option_id": "A", "option_text": "It executes only if an exception occurs."},
+      {"option_id": "B", "option_text": "It executes only if no exception occurs."},
+      {"option_id": "C", "option_text": "It always executes, regardless of whether an exception occurred."},
+      {"option_id": "D", "option_text": "It defines a new exception type."}
+    ],
+    "correct_answer": "C",
+    "points": 2,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the output of `print(sorted([5, 1, 4])[1])`?",
+    "options": [
+      {"option_id": "A", "option_text": "1"},
+      {"option_id": "B", "option_text": "5"},
+      {"option_id": "C", "option_text": "4"},
+      {"option_id": "D", "option_text": "Error"}
+    ],
+    "correct_answer": "C",
+    "points": 2,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "In a Python function definition, what does `*args` primarily allow?",
+    "options": [
+      {"option_id": "A", "option_text": "To pass a dictionary of keyword arguments."},
+      {"option_id": "B", "option_text": "To pass a variable number of positional arguments as a tuple."},
+      {"option_id": "C", "option_text": "To define arguments with default values."},
+      {"option_id": "D", "option_text": "To force arguments to be passed by keyword only."}
+    ],
+    "correct_answer": "B",
+    "points": 2,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What will the following code output?\n\n`s = \"hello\"; print(s[1:4])`",
+    "options": [
+      {"option_id": "A", "option_text": "hel"},
+      {"option_id": "B", "option_text": "ell"},
+      {"option_id": "C", "option_text": "ello"},
+      {"option_id": "D", "option_text": "h"}
+    ],
+    "correct_answer": "B",
+    "points": 2,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which method is typically used to remove and return the last item from a List in Python?",
+    "options": [
+      {"option_id": "A", "option_text": "remove()"},
+      {"option_id": "B", "option_text": "del"},
+      {"option_id": "C", "option_text": "pop()"},
+      {"option_id": "D", "option_text": "discard()"}
+    ],
+    "correct_answer": "C",
+    "points": 2,
+    "time_limit_seconds": 30
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the purpose of the `lambda` keyword?",
+    "options": [
+      {"option_id": "A", "option_text": "To define a block of code with indentation."},
+      {"option_id": "B", "option_text": "To create anonymous, single-expression functions."},
+      {"option_id": "C", "option_text": "To declare a variable as constant."},
+      {"option_id": "D", "option_text": "To handle asynchronous operations."}
+    ],
+    "correct_answer": "B",
+    "points": 2,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What does a Python dictionary key need to be?",
+    "options": [
+      {"option_id": "A", "option_text": "An integer"},
+      {"option_id": "B", "option_text": "A mutable data type"},
+      {"option_id": "C", "option_text": "An immutable data type"},
+      {"option_id": "D", "option_text": "A string or integer only"}
+    ],
+    "correct_answer": "C",
+    "points": 2,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which standard library module is used for working with regular expressions?",
+    "options": [
+      {"option_id": "A", "option_text": "system"},
+      {"option_id": "B", "option_text": "string"},
+      {"option_id": "C", "option_text": "regex"},
+      {"option_id": "D", "option_text": "re"}
+    ],
+    "correct_answer": "D",
+    "points": 2,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "How can you check if an object `obj` is an instance of a class `MyClass`?",
+    "options": [
+      {"option_id": "A", "option_text": "obj.is_type(MyClass)"},
+      {"option_id": "B", "option_text": "type(obj) == MyClass"},
+      {"option_id": "C", "option_text": "isinstance(obj, MyClass)"},
+      {"option_id": "D", "option_text": "obj == MyClass"}
+    ],
+    "correct_answer": "C",
+    "points": 2,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "If a function does not have a `return` statement, what value does it implicitly return?",
+    "options": [
+      {"option_id": "A", "option_text": "0"},
+      {"option_id": "B", "option_text": "An empty string \"\""},
+      {"option_id": "C", "option_text": "None"},
+      {"option_id": "D", "option_text": "False"}
+    ],
+    "correct_answer": "C",
+    "points": 2,
+    "time_limit_seconds": 30
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What will be the output of the code: `x = 10; y = 5; print(f'Result: {x - y}')`?",
+    "options": [
+      {"option_id": "A", "option_text": "Result: 10 - 5"},
+      {"option_id": "B", "option_text": "Result: 5"},
+      {"option_id": "C", "option_text": "Result: 105"},
+      {"option_id": "D", "option_text": "Result: x - y"}
+    ],
+    "correct_answer": "B",
+    "points": 2,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "What is the primary effect of the Global Interpreter Lock (GIL) on Python threads in CPython?",
+    "options": [
+      {"option_id": "A", "option_text": "It enables true parallel execution of CPU-bound tasks across multiple cores."},
+      {"option_id": "B", "option_text": "It prevents I/O-bound tasks from becoming blocking operations."},
+      {"option_id": "C", "option_text": "It restricts the execution of Python bytecode to one thread at a time."},
+      {"option_id": "D", "option_text": "It is a mechanism for shared memory management between processes."}
+    ],
+    "correct_answer": "C",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "Which of the following is true about a Python **generator** function?",
+    "options": [
+      {"option_id": "A", "option_text": "It must contain a `return` statement."},
+      {"option_id": "B", "option_text": "It loads the entire sequence into memory at once."},
+      {"option_id": "C", "option_text": "It uses the `yield` keyword to pause execution and produce a value."},
+      {"option_id": "D", "option_text": "It is defined using the `gen` keyword."}
+    ],
+    "correct_answer": "C",
+    "points": 3,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "What is the key purpose of using a context manager with the `with` statement?",
+    "options": [
+      {"option_id": "A", "option_text": "To declare a variable in a local scope."},
+      {"option_id": "B", "option_text": "To automatically and reliably manage resource setup and teardown."},
+      {"option_id": "C", "option_text": "To execute asynchronous code using `async/await`."},
+      {"option_id": "D", "option_text": "To handle network socket connections only."}
+    ],
+    "correct_answer": "B",
+    "points": 3,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "What does the `@classmethod` decorator do when applied to a method in a class?",
+    "options": [
+      {"option_id": "A", "option_text": "It makes the method a property of the instance, accessed without parentheses."},
+      {"option_id": "B", "option_text": "It creates a static method that takes no reference to the class or instance."},
+      {"option_id": "C", "option_text": "It binds the method to the class, receiving the class itself (`cls`) as the first argument."},
+      {"option_id": "D", "option_text": "It is used to define the class constructor."}
+    ],
+    "correct_answer": "C",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "If you want to use the `async/await` syntax for non-blocking I/O operations, which concurrency model are you primarily using in Python?",
+    "options": [
+      {"option_id": "A", "option_text": "Multiprocessing"},
+      {"option_id": "B", "option_text": "Multithreading"},
+      {"option_id": "C", "option_text": "Asyncio (Cooperative Multitasking)"},
+      {"option_id": "D", "option_text": "Parallel Programming with NumPy"}
+    ],
+    "correct_answer": "C",
+    "points": 3,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "The `__slots__` attribute in a class definition is primarily used for:",
+    "options": [
+      {"option_id": "A", "option_text": "Defining which methods must be implemented by subclasses."},
+      {"option_id": "B", "option_text": "Preventing inheritance from the class."},
+      {"option_id": "C", "option_text": "Optimizing memory usage by preventing the creation of a `__dict__` for each instance."},
+      {"option_id": "D", "option_text": "Automatically generating getter and setter methods."}
+    ],
+    "correct_answer": "C",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "What is the `__enter__` method expected to do in a custom context manager class?",
+    "options": [
+      {"option_id": "A", "option_text": "Handle any exceptions that occur within the `with` block."},
+      {"option_id": "B", "option_text": "Release the acquired resource."},
+      {"option_id": "C", "option_text": "Acquire the resource and return the resource object to be bound to the `as` target."},
+      {"option_id": "D", "option_text": "Initialize the class instance's attributes."}
+    ],
+    "correct_answer": "C",
+    "points": 3,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "What is method resolution order (MRO) primarily used for in Python OOP?",
+    "options": [
+      {"option_id": "A", "option_text": "To resolve which method to call in single inheritance only."},
+      {"option_id": "B", "option_text": "To determine the search path for inherited methods in a class hierarchy, especially with multiple inheritance."},
+      {"option_id": "C", "option_text": "To prioritize instance methods over class methods."},
+      {"option_id": "D", "option_text": "To automatically generate abstract methods."}
+    ],
+    "correct_answer": "B",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "Which module allows a function decorated with `@contextmanager` to be used as a context manager?",
+    "options": [
+      {"option_id": "A", "option_text": "os"},
+      {"option_id": "B", "option_text": "threading"},
+      {"option_id": "C", "option_text": "contextlib"},
+      {"option_id": "D", "option_text": "decorators"}
+    ],
+    "correct_answer": "C",
+    "points": 3,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "What is the key difference in how `list comprehension` and a corresponding `generator expression` are evaluated?",
+    "options": [
+      {"option_id": "A", "option_text": "List comprehension uses less memory and is lazy; generator expression is eager and creates the full list."},
+      {"option_id": "B", "option_text": "List comprehension is eager and creates the full list; generator expression is lazy and yields values one at a time."},
+      {"option_id": "C", "option_text": "They are functionally identical and only differ in syntax."},
+      {"option_id": "D", "option_text": "Generator expressions can be used with `append()` while list comprehensions cannot."}
+    ],
+    "correct_answer": "B",
+    "points": 3,
+    "time_limit_seconds": 90
+  }
+]

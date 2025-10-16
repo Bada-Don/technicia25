@@ -1,0 +1,744 @@
+[
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which fundamental data structure stores elements in contiguous memory locations and allows for O(1) access time?",
+    "options": [
+      {"option_id": "A", "option_text": "Linked List"},
+      {"option_id": "B", "option_text": "Stack"},
+      {"option_id": "C", "option_text": "Array"},
+      {"option_id": "D", "option_text": "Queue"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which principle does a Stack data structure follow for adding and removing elements?",
+    "options": [
+      {"option_id": "A", "option_text": "FIFO (First-In, First-Out)"},
+      {"option_id": "B", "option_text": "LIFO (Last-In, First-Out)"},
+      {"option_id": "C", "option_text": "LILO (Last-In, Last-Out)"},
+      {"option_id": "D", "option_text": "FILO (First-In, Last-Out)"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the operation called to add an element to the rear of a Queue?",
+    "options": [
+      {"option_id": "A", "option_text": "Push"},
+      {"option_id": "B", "option_text": "Pop"},
+      {"option_id": "C", "option_text": "Dequeue"},
+      {"option_id": "D", "option_text": "Enqueue"}
+    ],
+    "correct_answer": "D",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "In a Singly Linked List, what does the pointer field of the last node contain?",
+    "options": [
+      {"option_id": "A", "option_text": "The address of the first node"},
+      {"option_id": "B", "option_text": "The data of the first node"},
+      {"option_id": "C", "option_text": "NULL"},
+      {"option_id": "D", "option_text": "The address of the previous node"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the time complexity for accessing an element at a known index 'i' in a standard array?",
+    "options": [
+      {"option_id": "A", "option_text": "O(n)"},
+      {"option_id": "B", "option_text": "O(log n)"},
+      {"option_id": "C", "option_text": "O(n^2)"},
+      {"option_id": "D", "option_text": "O(1)"}
+    ],
+    "correct_answer": "D",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the special name given to a node in a Tree that has no children?",
+    "options": [
+      {"option_id": "A", "option_text": "Root"},
+      {"option_id": "B", "option_text": "Internal Node"},
+      {"option_id": "C", "option_text": "Leaf Node"},
+      {"option_id": "D", "option_text": "Parent Node"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which graph traversal algorithm uses a Queue to keep track of vertices to be visited?",
+    "options": [
+      {"option_id": "A", "option_text": "Depth-First Search (DFS)"},
+      {"option_id": "B", "option_text": "Breadth-First Search (BFS)"},
+      {"option_id": "C", "option_text": "Dijkstra's Algorithm"},
+      {"option_id": "D", "option_text": "Prim's Algorithm"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What does Big O notation primarily represent in the context of algorithms?",
+    "options": [
+      {"option_id": "A", "option_text": "Best-case complexity"},
+      {"option_id": "B", "option_text": "Average-case complexity"},
+      {"option_id": "C", "option_text": "Upper bound (Worst-case) complexity"},
+      {"option_id": "D", "option_text": "Exact running time"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which data structure is typically used by the operating system to manage function calls and local variables during recursion?",
+    "options": [
+      {"option_id": "A", "option_text": "Queue"},
+      {"option_id": "B", "option_text": "Heap"},
+      {"option_id": "C", "option_text": "Stack"},
+      {"option_id": "D", "option_text": "Linked List"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "In the context of Hashing, what is a 'collision'?",
+    "options": [
+      {"option_id": "A", "option_text": "A key not found in the table."},
+      {"option_id": "B", "option_text": "Two different keys map to the same index."},
+      {"option_id": "C", "option_text": "The hash table is full."},
+      {"option_id": "D", "option_text": "The hash function is perfect."}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which traversal method visits the root of a Binary Tree *after* visiting both the left and right subtrees?",
+    "options": [
+      {"option_id": "A", "option_text": "In-order"},
+      {"option_id": "B", "option_text": "Pre-order"},
+      {"option_id": "C", "option_text": "Post-order"},
+      {"option_id": "D", "option_text": "Level-order"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "A complete binary tree where the value of a node is greater than or equal to the value of its children is called a:",
+    "options": [
+      {"option_id": "A", "option_text": "Binary Search Tree (BST)"},
+      {"option_id": "B", "option_text": "Min Heap"},
+      {"option_id": "C", "option_text": "Max Heap"},
+      {"option_id": "D", "option_text": "AVL Tree"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the primary drawback of using a Singly Linked List over an Array for data storage?",
+    "options": [
+      {"option_id": "A", "option_text": "Cannot store dynamic size data"},
+      {"option_id": "B", "option_text": "Slower sequential access"},
+      {"option_id": "C", "option_text": "Slower random access (O(n))"},
+      {"option_id": "D", "option_text": "Requires more memory per element due to data overhead"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "A graph that has no cycles is known as a:",
+    "options": [
+      {"option_id": "A", "option_text": "Directed Acyclic Graph (DAG)"},
+      {"option_id": "B", "option_text": "Complete Graph"},
+      {"option_id": "C", "option_text": "Weighted Graph"},
+      {"option_id": "D", "option_text": "Subgraph"}
+    ],
+    "correct_answer": "A",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "In a queue, which end is used for the 'front' operation (retrieving the element to be deleted)?",
+    "options": [
+      {"option_id": "A", "option_text": "The end where elements are enqueued"},
+      {"option_id": "B", "option_text": "The middle of the queue"},
+      {"option_id": "C", "option_text": "The end where elements are dequeued"},
+      {"option_id": "D", "option_text": "Both ends alternately"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the time complexity for inserting a node at the head of a Singly Linked List?",
+    "options": [
+      {"option_id": "A", "option_text": "O(n)"},
+      {"option_id": "B", "option_text": "O(log n)"},
+      {"option_id": "C", "option_text": "O(1)"},
+      {"option_id": "D", "option_text": "O(n log n)"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which representation of a Graph is generally preferred for a 'sparse' graph (fewer edges)?",
+    "options": [
+      {"option_id": "A", "option_text": "Adjacency Matrix"},
+      {"option_id": "B", "option_text": "Incidence Matrix"},
+      {"option_id": "C", "option_text": "Adjacency List"},
+      {"option_id": "D", "option_text": "Edge List"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which of the following data structures is suitable for implementing an Undo/Redo mechanism?",
+    "options": [
+      {"option_id": "A", "option_text": "Queue"},
+      {"option_id": "B", "option_text": "Binary Search Tree"},
+      {"option_id": "C", "option_text": "Stack"},
+      {"option_id": "D", "option_text": "Hash Table"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "The property that a Binary Search Tree (BST) must satisfy is:",
+    "options": [
+      {"option_id": "A", "option_text": "It must be a complete binary tree."},
+      {"option_id": "B", "option_text": "All nodes must have two children."},
+      {"option_id": "C", "option_text": "Left child key < Root key < Right child key."},
+      {"option_id": "D", "option_text": "The height of the left and right subtrees must differ by at most 1."}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "A Deque (Double-Ended Queue) allows insertions and deletions at:",
+    "options": [
+      {"option_id": "A", "option_text": "The front end only"},
+      {"option_id": "B", "option_text": "The rear end only"},
+      {"option_id": "C", "option_text": "Both the front and rear ends"},
+      {"option_id": "D", "option_text": "Any position in the middle"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the worst-case time complexity for searching for a specific element in an unsorted array of 'n' elements?",
+    "options": [
+      {"option_id": "A", "option_text": "O(1)"},
+      {"option_id": "B", "option_text": "O(log n)"},
+      {"option_id": "C", "option_text": "O(n)"},
+      {"option_id": "D", "option_text": "O(n^2)"}
+    ],
+    "correct_answer": "C",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "In a Doubly Linked List, how many pointer fields does each node typically contain (excluding the data field)?",
+    "options": [
+      {"option_id": "A", "option_text": "One"},
+      {"option_id": "B", "option_text": "Two"},
+      {"option_id": "C", "option_text": "Three"},
+      {"option_id": "D", "option_text": "Zero"}
+    ],
+    "correct_answer": "B",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the worst-case time complexity for insertion in a standard Binary Search Tree (BST) containing 'n' elements?",
+    "options": [
+      {"option_id": "A", "option_text": "O(1)"},
+      {"option_id": "B", "option_text": "O(log n)"},
+      {"option_id": "C", "option_text": "O(n)"},
+      {"option_id": "D", "option_text": "O(n log n)"}
+    ],
+    "correct_answer": "C",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which collision resolution technique in Hashing involves calculating a secondary hash function if the first probe is occupied?",
+    "options": [
+      {"option_id": "A", "option_text": "Linear Probing"},
+      {"option_id": "B", "option_text": "Quadratic Probing"},
+      {"option_id": "C", "option_text": "Separate Chaining"},
+      {"option_id": "D", "option_text": "Double Hashing"}
+    ],
+    "correct_answer": "D",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which property must be maintained for a tree to be considered an AVL Tree?",
+    "options": [
+      {"option_id": "A", "option_text": "It must be a complete binary tree."},
+      {"option_id": "B", "option_text": "The height difference between left and right subtrees must be at most 1."},
+      {"option_id": "C", "option_text": "Every internal node must have exactly two children."},
+      {"option_id": "D", "option_text": "All leaves must be at the same level."}
+    ],
+    "correct_answer": "B",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "When a dynamic array (like ArrayList or Vector) becomes full, what is the most common method to handle a new insertion?",
+    "options": [
+      {"option_id": "A", "option_text": "Discard the new element."},
+      {"option_id": "B", "option_text": "Increase the array size by one and shift elements."},
+      {"option_id": "C", "option_text": "Allocate a new, larger array (e.g., double the size) and copy all elements."},
+      {"option_id": "D", "option_text": "Convert the array to a Linked List."}
+    ],
+    "correct_answer": "C",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which sorting algorithm typically uses a Max-Heap internally to efficiently sort 'n' elements?",
+    "options": [
+      {"option_id": "A", "option_text": "Merge Sort"},
+      {"option_id": "B", "option_text": "Quick Sort"},
+      {"option_id": "C", "option_text": "Insertion Sort"},
+      {"option_id": "D", "option_text": "Heap Sort"}
+    ],
+    "correct_answer": "D",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the time complexity of the Heapify operation on a binary heap with 'n' elements?",
+    "options": [
+      {"option_id": "A", "option_text": "O(1)"},
+      {"option_id": "B", "option_text": "O(n log n)"},
+      {"option_id": "C", "option_text": "O(n)"},
+      {"option_id": "D", "option_text": "O(log n)"}
+    ],
+    "correct_answer": "D",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "If a Binary Search Tree (BST) is created by inserting elements in *strictly sorted* order (ascending or descending), what is the resulting shape?",
+    "options": [
+      {"option_id": "A", "option_text": "A perfectly balanced tree"},
+      {"option_id": "B", "option_text": "A full binary tree"},
+      {"option_id": "C", "option_text": "A degenerate tree (Skewed tree)"},
+      {"option_id": "D", "option_text": "An AVL tree"}
+    ],
+    "correct_answer": "C",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which traversal algorithm is typically implemented using recursion and a Stack to visit all vertices of a Graph?",
+    "options": [
+      {"option_id": "A", "option_text": "Breadth-First Search (BFS)"},
+      {"option_id": "B", "option_text": "Depth-First Search (DFS)"},
+      {"option_id": "C", "option_text": "Prim's Algorithm"},
+      {"option_id": "D", "option_text": "Kruskal's Algorithm"}
+    ],
+    "correct_answer": "B",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the space complexity to represent a graph with 'V' vertices and 'E' edges using an Adjacency List?",
+    "options": [
+      {"option_id": "A", "option_text": "O(V^2)"},
+      {"option_id": "B", "option_text": "O(V)"},
+      {"option_id": "C", "option_text": "O(E)"},
+      {"option_id": "D", "option_text": "O(V + E)"}
+    ],
+    "correct_answer": "D",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "The primary purpose of a Priority Queue is to:",
+    "options": [
+      {"option_id": "A", "option_text": "Store data with O(1) random access."},
+      {"option_id": "B", "option_text": "Process elements strictly based on FIFO order."},
+      {"option_id": "C", "option_text": "Retrieve the highest (or lowest) priority element efficiently."},
+      {"option_id": "D", "option_text": "Allow insertion and deletion from both ends."}
+    ],
+    "correct_answer": "C",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which operation is asymptotically faster in a Singly Linked List than in a Dynamic Array (assuming the insertion point is known)?",
+    "options": [
+      {"option_id": "A", "option_text": "Random Access"},
+      {"option_id": "B", "option_text": "Insertion at the end (without tail pointer)"},
+      {"option_id": "C", "option_text": "Insertion at the beginning"},
+      {"option_id": "D", "option_text": "Searching an element"}
+    ],
+    "correct_answer": "C",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the main problem with using Linear Probing for collision resolution in a Hash Table?",
+    "options": [
+      {"option_id": "A", "option_text": "Requires complex hash functions."},
+      {"option_id": "B", "option_text": "Leads to primary clustering."},
+      {"option_id": "C", "option_text": "Requires external memory for chaining."},
+      {"option_id": "D", "option_text": "Cannot resolve all collisions."}
+    ],
+    "correct_answer": "B",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "If you have a Circular Linked List and a pointer to a random node, what is the worst-case time complexity to find the *head* of the list?",
+    "options": [
+      {"option_id": "A", "option_text": "O(1)"},
+      {"option_id": "B", "option_text": "O(n)"},
+      {"option_id": "C", "option_text": "O(log n)"},
+      {"option_id": "D", "option_text": "O(n^2)"}
+    ],
+    "correct_answer": "B",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "For an undirected graph with 'V' vertices and 'E' edges, what is the sum of the degrees of all vertices?",
+    "options": [
+      {"option_id": "A", "option_text": "V - 1"},
+      {"option_id": "B", "option_text": "E"},
+      {"option_id": "C", "option_text": "2E"},
+      {"option_id": "D", "option_text": "V * E"}
+    ],
+    "correct_answer": "C",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which operation in a Min-Heap (excluding the initial build) has a time complexity of O(log n)?",
+    "options": [
+      {"option_id": "A", "option_text": "Finding the minimum element"},
+      {"option_id": "B", "option_text": "Checking if the heap is empty"},
+      {"option_id": "C", "option_text": "Insertion of a new element"},
+      {"option_id": "D", "option_text": "Traversing all elements"}
+    ],
+    "correct_answer": "C",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "How is a general tree (with any number of children per node) typically represented using only Binary Tree structures?",
+    "options": [
+      {"option_id": "A", "option_text": "Array representation"},
+      {"option_id": "B", "option_text": "Parent pointer representation"},
+      {"option_id": "C", "option_text": "Left-child, Right-sibling representation"},
+      {"option_id": "D", "option_text": "Adjacency matrix"}
+    ],
+    "correct_answer": "C",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which data structure is most efficient for evaluating an expression that has been converted into Postfix (Reverse Polish) notation?",
+    "options": [
+      {"option_id": "A", "option_text": "Queue"},
+      {"option_id": "B", "option_text": "Hash Table"},
+      {"option_id": "C", "option_text": "Stack"},
+      {"option_id": "D", "option_text": "Binary Search Tree"}
+    ],
+    "correct_answer": "C",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "The time complexity for a sequential search in a Hash Table using Separate Chaining (assuming a uniform hash function and load factor $\\lambda$) is:",
+    "options": [
+      {"option_id": "A", "option_text": "O(1) in all cases"},
+      {"option_id": "B", "option_text": "O(n) in the worst case"},
+      {"option_id": "C", "option_text": "O(1 + $\\lambda$) expected case"},
+      {"option_id": "D", "option_text": "O($\\lambda^2$)"}
+    ],
+    "correct_answer": "C",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "What is the maximum possible height of a Red-Black Tree with 'n' internal nodes?",
+    "options": [
+      {"option_id": "A", "option_text": "O(log n)"},
+      {"option_id": "B", "option_text": "O($n$)"},
+      {"option_id": "C", "option_text": "At most $2 \\log_2(n+1)$"},
+      {"option_id": "D", "option_text": "Exactly $\\log_2 n$"}
+    ],
+    "correct_answer": "C",
+    "points": 5,
+    "time_limit_seconds": 120
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "The time complexity for a sequence of 'n' Push operations on a Dynamic Array that doubles its size when full is best described by what type of analysis?",
+    "options": [
+      {"option_id": "A", "option_text": "Worst-case O(n)"},
+      {"option_id": "B", "option_text": "Average-case O(log n)"},
+      {"option_id": "C", "option_text": "Amortized O(1)"},
+      {"option_id": "D", "option_text": "Best-case O(1)"}
+    ],
+    "correct_answer": "C",
+    "points": 5,
+    "time_limit_seconds": 120
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "If Dijkstra's Single-Source Shortest Path algorithm is implemented using a Binary Min-Heap to manage the priority queue, what is the overall time complexity for a graph with 'V' vertices and 'E' edges?",
+    "options": [
+      {"option_id": "A", "option_text": "O(V^2)"},
+      {"option_id": "B", "option_text": "O(E log V)"},
+      {"option_id": "C", "option_text": "O((V + E) log V)"},
+      {"option_id": "D", "option_text": "O(V log E)"}
+    ],
+    "correct_answer": "C",
+    "points": 5,
+    "time_limit_seconds": 120
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "In a Hash Table using Separate Chaining with a load factor $\\lambda$, what is the expected number of probes (list accesses) for an *unsuccessful* search?",
+    "options": [
+      {"option_id": "A", "option_text": "1"},
+      {"option_id": "B", "option_text": "$\\lambda$"},
+      {"option_id": "C", "option_text": "1 + $\\lambda$"},
+      {"option_id": "D", "option_text": "$1 + e^{-\\lambda}$"}
+    ],
+    "correct_answer": "C",
+    "points": 5,
+    "time_limit_seconds": 120
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "Which data structure is typically utilized to optimize the performance of the Union-Find (Disjoint Set) ADT to achieve near-constant time complexity for its operations?",
+    "options": [
+      {"option_id": "A", "option_text": "Balanced BSTs"},
+      {"option_id": "B", "option_text": "A simple array with path compression and union by rank/size"},
+      {"option_id": "C", "option_text": "Hash Tables"},
+      {"option_id": "D", "option_text": "Adjacency Lists"}
+    ],
+    "correct_answer": "B",
+    "points": 5,
+    "time_limit_seconds": 120
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "The worst-case time complexity of Prim's Minimum Spanning Tree (MST) algorithm when implemented with a Fibonacci Heap is:",
+    "options": [
+      {"option_id": "A", "option_text": "O(V^2)"},
+      {"option_id": "B", "option_text": "O(E log V)"},
+      {"option_id": "C", "option_text": "O(E + V log V)"},
+      {"option_id": "D", "option_text": "O(V^2 log V)"}
+    ],
+    "correct_answer": "C",
+    "points": 5,
+    "time_limit_seconds": 120
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "What is the primary mechanism that allows a Splay Tree to achieve good amortized time complexity for its operations (search, insert, delete)?",
+    "options": [
+      {"option_id": "A", "option_text": "Coloring nodes (Red/Black)"},
+      {"option_id": "B", "option_text": "Maintaining a balance factor (AVL)"},
+      {"option_id": "C", "option_text": "The Splay operation (sequence of rotations) on access"},
+      {"option_id": "D", "option_text": "Using B-Tree blocks and disks"}
+    ],
+    "correct_answer": "C",
+    "points": 5,
+    "time_limit_seconds": 120
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "What is the tightest asymptotic bound for the time complexity of a recursive algorithm defined by the recurrence relation $T(n) = 3T(n/2) + n^2$?",
+    "options": [
+      {"option_id": "A", "option_text": "O(n log n)"},
+      {"option_id": "B", "option_text": "O($n^{\\log_2 3}$)"},
+      {"option_id": "C", "option_text": "O($n^2$)"},
+      {"option_id": "D", "option_text": "O($n^3$)"}
+    ],
+    "correct_answer": "C",
+    "points": 5,
+    "time_limit_seconds": 120
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "Which of the following data structures is specifically designed to be optimized for storage and retrieval from *disk* (external memory)?",
+    "options": [
+      {"option_id": "A", "option_text": "AVL Tree"},
+      {"option_id": "B", "option_text": "Singly Linked List"},
+      {"option_id": "C", "option_text": "B-Tree"},
+      {"option_id": "D", "option_text": "Hash Table (in-memory)"}
+    ],
+    "correct_answer": "C",
+    "points": 5,
+    "time_limit_seconds": 120
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "A Skip List with 'k' levels has an expected search time complexity of:",
+    "options": [
+      {"option_id": "A", "option_text": "O(1)"},
+      {"option_id": "B", "option_text": "O(n)"},
+      {"option_id": "C", "option_text": "O($n^2$)"},
+      {"option_id": "D", "option_text": "O(log n)"}
+    ],
+    "correct_answer": "D",
+    "points": 5,
+    "time_limit_seconds": 120
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "Consider a Min-Heap implemented in an array. If an element at index 'i' (1-indexed) is decreased, what is the sequence of operations required to restore the heap property?",
+    "options": [
+      {"option_id": "A", "option_text": "Only Min-Heapify Down starting at 'i'."},
+      {"option_id": "B", "option_text": "Min-Heapify Down first, then Min-Heapify Up."},
+      {"option_id": "C", "option_text": "Only Min-Heapify Up starting at 'i'."},
+      {"option_id": "D", "option_text": "Only swapping with the smallest child."}
+    ],
+    "correct_answer": "C",
+    "points": 5,
+    "time_limit_seconds": 120
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "In a 2-3 Tree (a B-Tree of order 3), what is the maximum number of keys that a node can hold?",
+    "options": [
+      {"option_id": "A", "option_text": "1"},
+      {"option_id": "B", "option_text": "2"},
+      {"option_id": "C", "option_text": "3"},
+      {"option_id": "D", "option_text": "4"}
+    ],
+    "correct_answer": "B",
+    "points": 5,
+    "time_limit_seconds": 120
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "Which condition is necessary for a graph to have an Eulerian path but not an Eulerian circuit?",
+    "options": [
+      {"option_id": "A", "option_text": "All vertices have an even degree."},
+      {"option_id": "B", "option_text": "Exactly two vertices have an odd degree."},
+      {"option_id": "C", "option_text": "Exactly one vertex has an odd degree."},
+      {"option_id": "D", "option_text": "The graph must be a tree."}
+    ],
+    "correct_answer": "B",
+    "points": 5,
+    "time_limit_seconds": 120
+  }
+]

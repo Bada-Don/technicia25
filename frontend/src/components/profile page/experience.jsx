@@ -54,7 +54,15 @@ const ExperienceForm = ({ onSave, initialData = null, onCancel, saving }) => {
     const newErrors = validateForm();
     
     if (Object.keys(newErrors).length === 0) {
-      onSave(experience);
+      // Clean up the data before sending
+      const cleanedExperience = {
+        ...experience,
+        end_date: experience.end_date || null,  // Convert empty string to null
+        location: experience.location || null,
+        key_achievements: experience.key_achievements || null,
+      };
+      
+      onSave(cleanedExperience);
       if (!initialData) {
         setExperience({
           company_name: '',

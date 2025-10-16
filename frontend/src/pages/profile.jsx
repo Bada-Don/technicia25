@@ -77,7 +77,7 @@ function Profile() {
             case 'personal-info':
                 return <ProfileInfo profileData={profileData} onUpdate={fetchProfileData} />;
             case 'technical-skills':
-                return <SkillsTable />;
+                return <SkillsTable profileData={profileData} onUpdate={fetchProfileData} />;
             case 'profile-overview':
                 return <ProfileOverview />;
             case 'experience':

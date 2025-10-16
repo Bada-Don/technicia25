@@ -1,0 +1,772 @@
+[
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which SQL command is used to retrieve data from a database?",
+    "options": [
+      {"option_id": "A", "option_text": "UPDATE"},
+      {"option_id": "B", "option_text": "SELECT"},
+      {"option_id": "C", "option_text": "GET"},
+      {"option_id": "D", "option_text": "EXTRACT"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which clause is used to filter records based on a specified condition?",
+    "options": [
+      {"option_id": "A", "option_text": "FROM"},
+      {"option_id": "B", "option_text": "FILTER"},
+      {"option_id": "C", "option_text": "WHERE"},
+      {"option_id": "D", "option_text": "CONDITION"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What does the SQL command `INSERT INTO` do?",
+    "options": [
+      {"option_id": "A", "option_text": "Changes the structure of a table"},
+      {"option_id": "B", "option_text": "Adds a new table to the database"},
+      {"option_id": "C", "option_text": "Adds a new row of data to a table"},
+      {"option_id": "D", "option_text": "Modifies existing rows in a table"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which SQL keyword is used to sort the result-set of a query?",
+    "options": [
+      {"option_id": "A", "option_text": "SORT BY"},
+      {"option_id": "B", "option_text": "ORDER BY"},
+      {"option_id": "C", "option_text": "ARRANGE BY"},
+      {"option_id": "D", "option_text": "GROUP BY"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the primary purpose of a PRIMARY KEY in a table?",
+    "options": [
+      {"option_id": "A", "option_text": "To link tables together (Foreign Key purpose)"},
+      {"option_id": "B", "option_text": "To ensure that all data is in uppercase"},
+      {"option_id": "C", "option_text": "To uniquely identify each record in the table"},
+      {"option_id": "D", "option_text": "To prevent unauthorized access"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which SQL command is used to delete an entire table and all its data from the database?",
+    "options": [
+      {"option_id": "A", "option_text": "DELETE TABLE"},
+      {"option_id": "B", "option_text": "REMOVE TABLE"},
+      {"option_id": "C", "option_text": "TRUNCATE TABLE"},
+      {"option_id": "D", "option_text": "DROP TABLE"}
+    ],
+    "correct_answer": "D",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which operator is used for pattern matching in the WHERE clause?",
+    "options": [
+      {"option_id": "A", "option_text": "="},
+      {"option_id": "B", "option_text": "MATCH"},
+      {"option_id": "C", "option_text": "LIKE"},
+      {"option_id": "D", "option_text": "CONTAINS"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What does DDL stand for in the context of SQL?",
+    "options": [
+      {"option_id": "A", "option_text": "Data Definition Language"},
+      {"option_id": "B", "option_text": "Database Description Logic"},
+      {"option_id": "C", "option_text": "Data Duplication Link"},
+      {"option_id": "D", "option_text": "Digital Data Layout"}
+    ],
+    "correct_answer": "A",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which aggregate function calculates the average value of a numeric column?",
+    "options": [
+      {"option_id": "A", "option_text": "TOTAL()"},
+      {"option_id": "B", "option_text": "SUM()"},
+      {"option_id": "C", "option_text": "AVG()"},
+      {"option_id": "D", "option_text": "MEAN()"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "In a `SELECT` statement, which keyword is used to eliminate duplicate rows from the result?",
+    "options": [
+      {"option_id": "A", "option_text": "UNIQUE"},
+      {"option_id": "B", "option_text": "DISTINCT"},
+      {"option_id": "C", "option_text": "SINGLE"},
+      {"option_id": "D", "option_text": "NO_DUPLICATE"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the correct syntax to modify data in an existing record in a table?",
+    "options": [
+      {"option_id": "A", "option_text": "MODIFY table_name SET column1 = value1"},
+      {"option_id": "B", "option_text": "CHANGE table_name SET column1 = value1"},
+      {"option_id": "C", "option_text": "UPDATE table_name SET column1 = value1"},
+      {"option_id": "D", "option_text": "ALTER table_name SET column1 = value1"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which operator is used to check if a value falls within a given range (inclusive)?",
+    "options": [
+      {"option_id": "A", "option_text": "IN"},
+      {"option_id": "B", "option_text": "RANGE"},
+      {"option_id": "C", "option_text": "BETWEEN"},
+      {"option_id": "D", "option_text": "THROUGH"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which SQL command is part of DML (Data Manipulation Language)?",
+    "options": [
+      {"option_id": "A", "option_text": "CREATE TABLE"},
+      {"option_id": "B", "option_text": "GRANT"},
+      {"option_id": "C", "option_text": "ALTER TABLE"},
+      {"option_id": "D", "option_text": "DELETE"}
+    ],
+    "correct_answer": "D",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which constraint ensures that a column cannot have NULL values?",
+    "options": [
+      {"option_id": "A", "option_text": "NULL_FORBIDDEN"},
+      {"option_id": "B", "option_text": "NOT NULL"},
+      {"option_id": "C", "option_text": "UNIQUE"},
+      {"option_id": "D", "option_text": "REQUIRED"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the function of the `FROM` clause in a `SELECT` statement?",
+    "options": [
+      {"option_id": "A", "option_text": "To specify the columns to retrieve"},
+      {"option_id": "B", "option_text": "To specify the table(s) from which to retrieve data"},
+      {"option_id": "C", "option_text": "To filter the rows"},
+      {"option_id": "D", "option_text": "To group the result set"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "In SQL, what is the standard comment syntax for a single line?",
+    "options": [
+      {"option_id": "A", "option_text": "##"},
+      {"option_id": "B", "option_text": "//"},
+      {"option_id": "C", "option_text": "<!-- -->"},
+      {"option_id": "D", "option_text": "--"}
+    ],
+    "correct_answer": "D",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which function is used to count the number of rows in a table, including NULL values?",
+    "options": [
+      {"option_id": "A", "option_text": "SUM(column_name)"},
+      {"option_id": "B", "option_text": "COUNT(column_name)"},
+      {"option_id": "C", "option_text": "COUNT(*)"},
+      {"option_id": "D", "option_text": "TALLY"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "The `ALTER TABLE` command is used to:",
+    "options": [
+      {"option_id": "A", "option_text": "Change data within the table's rows"},
+      {"option_id": "B", "option_text": "Change the structure of a table (e.g., add/drop a column)"},
+      {"option_id": "C", "option_text": "Change the name of the database"},
+      {"option_id": "D", "option_text": "Change user permissions"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which data type is best suited for storing monetary values with high precision?",
+    "options": [
+      {"option_id": "A", "option_text": "FLOAT"},
+      {"option_id": "B", "option_text": "INTEGER"},
+      {"option_id": "C", "option_text": "VARCHAR"},
+      {"option_id": "D", "option_text": "DECIMAL / NUMERIC"}
+    ],
+    "correct_answer": "D",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which operator is used to check if a value is absent from a list of values?",
+    "options": [
+      {"option_id": "A", "option_text": "EXCEPT"},
+      {"option_id": "B", "option_text": "NOT LIKE"},
+      {"option_id": "C", "option_text": "NOT IN"},
+      {"option_id": "D", "option_text": "OUT OF"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the main difference between `UNION` and `UNION ALL`?",
+    "options": [
+      {"option_id": "A", "option_text": "`UNION` requires columns to have the same name; `UNION ALL` does not."},
+      {"option_id": "B", "option_text": "`UNION` includes duplicate rows; `UNION ALL` removes them."},
+      {"option_id": "C", "option_text": "`UNION` removes duplicate rows; `UNION ALL` includes them."},
+      {"option_id": "D", "option_text": "`UNION` is faster for large datasets; `UNION ALL` is slower."}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which SQL clause is used to filter results *after* they have been grouped by `GROUP BY`?",
+    "options": [
+      {"option_id": "A", "option_text": "WHERE"},
+      {"option_id": "B", "option_text": "HAVING"},
+      {"option_id": "C", "option_text": "FILTER"},
+      {"option_id": "D", "option_text": "GROUP_FILTER"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "An `INNER JOIN` returns:",
+    "options": [
+      {"option_id": "A", "option_text": "All rows from the left table, and the matched rows from the right table."},
+      {"option_id": "B", "option_text": "All rows when there is at least one match in both tables."},
+      {"option_id": "C", "option_text": "All rows from both tables, filling NULLs where there is no match."},
+      {"option_id": "D", "option_text": "Only the rows that have a NULL value in the join column."}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is a Foreign Key?",
+    "options": [
+      {"option_id": "A", "option_text": "A key that references a Primary Key in another table."},
+      {"option_id": "B", "option_text": "A key that uniquely identifies every row in the current table."},
+      {"option_id": "C", "option_text": "A secret key used for data encryption."},
+      {"option_id": "D", "option_text": "A key that can hold NULL values and duplicates without restriction."}
+    ],
+    "correct_answer": "A",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "In a subquery used in a `WHERE` clause, which of the following keywords is typically used if the subquery returns multiple rows?",
+    "options": [
+      {"option_id": "A", "option_text": "FIRST"},
+      {"option_id": "B", "option_text": "IN"},
+      {"option_id": "C", "option_text": "ONLY"},
+      {"option_id": "D", "option_text": "EQUALS"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the purpose of aliasing a table (e.g., `SELECT * FROM Employees AS E`)?",
+    "options": [
+      {"option_id": "A", "option_text": "To hide the original table name from unauthorized users."},
+      {"option_id": "B", "option_text": "To change the table's permanent name in the database."},
+      {"option_id": "C", "option_text": "To provide a temporary, shorter name for the table within the query."},
+      {"option_id": "D", "option_text": "To create a duplicate table with the new name."}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which SQL statement is generally faster and non-logged, making it unsuitable for rollbacks?",
+    "options": [
+      {"option_id": "A", "option_text": "DELETE FROM TableName"},
+      {"option_id": "B", "option_text": "DROP TABLE TableName"},
+      {"option_id": "C", "option_text": "TRUNCATE TABLE TableName"},
+      {"option_id": "D", "option_text": "SELECT * FROM TableName"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What does a `FULL OUTER JOIN` return?",
+    "options": [
+      {"option_id": "A", "option_text": "Only rows matching in both tables."},
+      {"option_id": "B", "option_text": "Only rows from the left table that have no match in the right table."},
+      {"option_id": "C", "option_text": "All rows from the left table and all rows from the right table, filling NULLs for non-matches."},
+      {"option_id": "D", "option_text": "All rows that match in either the left or the right table, but not both."}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What does the `COALESCE` function do?",
+    "options": [
+      {"option_id": "A", "option_text": "Checks if two expressions are equal."},
+      {"option_id": "B", "option_text": "Combines two strings together."},
+      {"option_id": "C", "option_text": "Returns the first non-NULL expression in a list of arguments."},
+      {"option_id": "D", "option_text": "Converts an expression from one data type to another."}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which join type returns all records from the right table, and the matching records from the left table?",
+    "options": [
+      {"option_id": "A", "option_text": "INNER JOIN"},
+      {"option_id": "B", "option_text": "LEFT JOIN"},
+      {"option_id": "C", "option_text": "RIGHT JOIN"},
+      {"option_id": "D", "option_text": "FULL JOIN"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "A `VIEW` in SQL is primarily used for:",
+    "options": [
+      {"option_id": "A", "option_text": "Storing persistent data like a regular table."},
+      {"option_id": "B", "option_text": "A physical copy of table data for backups."},
+      {"option_id": "C", "option_text": "A virtual table based on the result-set of an SQL query."},
+      {"option_id": "D", "option_text": "Defining constraints for table columns."}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the primary goal of Database Normalization (e.g., reaching 3NF)?",
+    "options": [
+      {"option_id": "A", "option_text": "To increase query execution speed."},
+      {"option_id": "B", "option_text": "To minimize data redundancy and dependency issues."},
+      {"option_id": "C", "option_text": "To improve data security by using encryption."},
+      {"option_id": "D", "option_text": "To create physical indexes on the tables."}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "The `CASE` expression in SQL is most similar to which programming construct?",
+    "options": [
+      {"option_id": "A", "option_text": "A `for` loop"},
+      {"option_id": "B", "option_text": "An `if-then-else` structure"},
+      {"option_id": "C", "option_text": "A function call"},
+      {"option_id": "D", "option_text": "A try-catch block"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which clause is necessary when using an aggregate function (like SUM or COUNT) with non-aggregated columns in the SELECT list?",
+    "options": [
+      {"option_id": "A", "option_text": "ORDER BY"},
+      {"option_id": "B", "option_text": "WHERE"},
+      {"option_id": "C", "option_text": "HAVING"},
+      {"option_id": "D", "option_text": "GROUP BY"}
+    ],
+    "correct_answer": "D",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "How do you select only the top 10 most expensive products (assuming `Price` column exists, common RDBMS syntax)?",
+    "options": [
+      {"option_id": "A", "option_text": "SELECT * FROM Products WHERE ROWNUM <= 10"},
+      {"option_id": "B", "option_text": "SELECT TOP 10 * FROM Products ORDER BY Price DESC"},
+      {"option_id": "C", "option_text": "SELECT * FROM Products MAX_ROWS 10"},
+      {"option_id": "D", "option_text": "SELECT * FROM Products LIMIT 10 OFFSET 0"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which statement best describes a **Correlated Subquery**?",
+    "options": [
+      {"option_id": "A", "option_text": "A subquery that executes independently and passes its result to the outer query."},
+      {"option_id": "B", "option_text": "A subquery that is run once and stored as a view."},
+      {"option_id": "C", "option_text": "A subquery that depends on the outer query for its values and executes once per row of the outer query."},
+      {"option_id": "D", "option_text": "A subquery that is faster than a standard join."}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which constraint enforces that all values in a column must be different, but allows NULL values?",
+    "options": [
+      {"option_id": "A", "option_text": "PRIMARY KEY"},
+      {"option_id": "B", "option_text": "NOT NULL"},
+      {"option_id": "C", "option_text": "UNIQUE"},
+      {"option_id": "D", "option_text": "FOREIGN KEY"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "The `IS NULL` operator is used to check for:",
+    "options": [
+      {"option_id": "A", "option_text": "Empty strings ('')."},
+      {"option_id": "B", "option_text": "Zero (0) values."},
+      {"option_id": "C", "option_text": "The absence of any data value."},
+      {"option_id": "D", "option_text": "Undefined columns."}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the result of using `CROSS JOIN` on TableA (3 rows) and TableB (4 rows)?",
+    "options": [
+      {"option_id": "A", "option_text": "7 rows"},
+      {"option_id": "B", "option_text": "1 row (the intersection)"},
+      {"option_id": "C", "option_text": "12 rows (the Cartesian product)"},
+      {"option_id": "D", "option_text": "0 rows"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which statement about `COMMIT` and `ROLLBACK` is true?",
+    "options": [
+      {"option_id": "A", "option_text": "`COMMIT` starts a transaction, and `ROLLBACK` ends it."},
+      {"option_id": "B", "option_text": "Both are DDL commands."},
+      {"option_id": "C", "option_text": "`COMMIT` makes changes permanent, and `ROLLBACK` undoes changes since the last `COMMIT`."},
+      {"option_id": "D", "option_text": "They only work with `SELECT` statements."}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which clause allows you to assign temporary names to columns or tables within a query?",
+    "options": [
+      {"option_id": "A", "option_text": "ALIAS"},
+      {"option_id": "B", "option_text": "RENAME"},
+      {"option_id": "C", "option_text": "AS"},
+      {"option_id": "D", "option_text": "NAME_AS"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "If you perform a `LEFT JOIN` and the `ON` condition fails for a row in the left table, what values will the columns from the right table have in the result set?",
+    "options": [
+      {"option_id": "A", "option_text": "The default values for the columns."},
+      {"option_id": "B", "option_text": "Empty strings ('')."},
+      {"option_id": "C", "option_text": "Zero (0) or equivalent based on data type."},
+      {"option_id": "D", "option_text": "NULL values."}
+    ],
+    "correct_answer": "D",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is a major characteristic of a SQL **Stored Procedure**?",
+    "options": [
+      {"option_id": "A", "option_text": "It can only contain DDL statements."},
+      {"option_id": "B", "option_text": "It is a precompiled set of SQL statements that can be executed repeatedly."},
+      {"option_id": "C", "option_text": "It automatically runs whenever data in a table is modified (like a Trigger)."},
+      {"option_id": "D", "option_text": "It can only be written in Java or C#."}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which type of SQL command manages permissions and user access to the database?",
+    "options": [
+      {"option_id": "A", "option_text": "DCL (Data Control Language)"},
+      {"option_id": "B", "option_text": "DDL (Data Definition Language)"},
+      {"option_id": "C", "option_text": "DML (Data Manipulation Language)"},
+      {"option_id": "D", "option_text": "TCL (Transaction Control Language)"}
+    ],
+    "correct_answer": "A",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "To find the rows that exist in the result set of Query A but not in Query B, you would use:",
+    "options": [
+      {"option_id": "A", "option_text": "INTERSECT"},
+      {"option_id": "B", "option_text": "EXCEPT (or MINUS)"},
+      {"option_id": "C", "option_text": "UNION ALL"},
+      {"option_id": "D", "option_text": "LEFT JOIN with IS NULL"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "In SQL Window Functions, what is the key difference between `RANK()` and `DENSE_RANK()`?",
+    "options": [
+      {"option_id": "A", "option_text": "`RANK()` assigns a unique number to every row; `DENSE_RANK()` does not."},
+      {"option_id": "B", "option_text": "When there are ties, `RANK()` skips the next rank number, while `DENSE_RANK()` does not."},
+      {"option_id": "C", "option_text": "They are identical functions with different names in different RDBMS."},
+      {"option_id": "D", "option_text": "`RANK()` requires an `ORDER BY` clause; `DENSE_RANK()` does not."}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "A **Clustered Index** on a table defines:",
+    "options": [
+      {"option_id": "A", "option_text": "An index that is always created automatically for every table."},
+      {"option_id": "B", "option_text": "The physical order in which the data rows are stored on the disk."},
+      {"option_id": "C", "option_text": "An index that is stored separate from the data, using pointers."},
+      {"option_id": "D", "option_text": "An index that can span multiple tables."}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "Which of the following is an example of a **Correlated Subquery** usage that returns employees earning more than the average salary in their respective departments?",
+    "options": [
+      {"option_id": "A", "option_text": "SELECT E.Name FROM Employees E WHERE E.Salary > (SELECT AVG(Salary) FROM Employees)"},
+      {"option_id": "B", "option_text": "SELECT E.Name FROM Employees E WHERE E.Salary > (SELECT AVG(E2.Salary) FROM Employees E2 WHERE E2.DeptID = E.DeptID)"},
+      {"option_id": "C", "option_text": "SELECT E.Name FROM Employees E JOIN (SELECT DeptID, AVG(Salary) AS AvgSal FROM Employees GROUP BY DeptID) AS Avg ON E.DeptID = Avg.DeptID WHERE E.Salary > Avg.AvgSal"},
+      {"option_id": "D", "option_text": "SELECT E.Name FROM Employees E WHERE E.Salary > E.AvgSalary"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "The `LAG(column, offset, default)` window function is used to retrieve the value of a column from:",
+    "options": [
+      {"option_id": "A", "option_text": "The last row in the entire partition."},
+      {"option_id": "B", "option_text": "The first row in the entire result set."},
+      {"option_id": "C", "option_text": "A row preceding the current row within its partition, at a specified offset."},
+      {"option_id": "D", "option_text": "The row succeeding the current row within its partition, at a specified offset."}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "In Transaction Control, which concurrency control issue occurs when one transaction retrieves a row, a second transaction updates the row and commits, and the first transaction retrieves the same row again with different data?",
+    "options": [
+      {"option_id": "A", "option_text": "Phantom Read"},
+      {"option_id": "B", "option_text": "Lost Update"},
+      {"option_id": "C", "option_text": "Dirty Read"},
+      {"option_id": "D", "option_text": "Non-Repeatable Read"}
+    ],
+    "correct_answer": "D",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "What does a database query execution plan typically indicate when it shows a 'Full Table Scan' operation?",
+    "options": [
+      {"option_id": "A", "option_text": "The query is highly optimized and uses the primary key effectively."},
+      {"option_id": "B", "option_text": "The database had to read every row in the table to satisfy the query condition, usually indicating a missing or unused index."},
+      {"option_id": "C", "option_text": "The query is performing a `FULL OUTER JOIN`."},
+      {"option_id": "D", "option_text": "The table data is stored entirely in memory (RAM)."}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "Which SQL construct is best suited for traversing hierarchical or graph-like data structures (e.g., organizational charts or bill of materials)?",
+    "options": [
+      {"option_id": "A", "option_text": "Simple `INNER JOIN` statements"},
+      {"option_id": "B", "option_text": "Temp Tables combined with a `WHILE` loop"},
+      {"option_id": "C", "option_text": "Recursive Common Table Expressions (CTEs)"},
+      {"option_id": "D", "option_text": "Self-referencing Foreign Key constraints"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "Which of the following is a primary method to retrieve the Nth highest value (e.g., the 5th highest salary) without relying on vendor-specific `LIMIT` or `TOP` syntax?",
+    "options": [
+      {"option_id": "A", "option_text": "Using a simple subquery with `MAX()` and `NOT IN`."},
+      {"option_id": "B", "option_text": "Using the `ROW_NUMBER()` or `RANK()` window function partitioned by the target column."},
+      {"option_id": "C", "option_text": "Using a recursive CTE with an `ANCHOR` member."},
+      {"option_id": "D", "option_text": "Using `GROUP BY` and `HAVING`."}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "A **Deadlock** condition in a relational database occurs when:",
+    "options": [
+      {"option_id": "A", "option_text": "A single user transaction is blocked waiting for an external resource."},
+      {"option_id": "B", "option_text": "One transaction tries to read data that another transaction has deleted."},
+      {"option_id": "C", "option_text": "Two or more transactions are each waiting for the other to release a lock on a resource they need."},
+      {"option_id": "D", "option_text": "The database server runs out of physical memory (RAM)."}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "When performing a `PIVOT` operation (or cross-tabulation) in SQL, the values in one column are transformed into:",
+    "options": [
+      {"option_id": "A", "option_text": "Aggregate values in a single row."},
+      {"option_id": "B", "option_text": "The values in an entirely new table."},
+      {"option_id": "C", "option_text": "Column headers (names) in the result set."},
+      {"option_id": "D", "option_text": "Foreign Key references."}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  }
+]

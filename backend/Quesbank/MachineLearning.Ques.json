@@ -1,0 +1,1510 @@
+[
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which type of Machine Learning involves training a model on a dataset that includes the correct answers (labels)?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "Unsupervised Learning"
+      },
+      {
+        "option_id": "B",
+        "option_text": "Reinforcement Learning"
+      },
+      {
+        "option_id": "C",
+        "option_text": "Supervised Learning"
+      },
+      {
+        "option_id": "D",
+        "option_text": "Semi-supervised Learning"
+      }
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the term for a model that performs very well on the training data but poorly on unseen test data?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "Underfitting"
+      },
+      {
+        "option_id": "B",
+        "option_text": "Overfitting"
+      },
+      {
+        "option_id": "C",
+        "option_text": "Generalization"
+      },
+      {
+        "option_id": "D",
+        "option_text": "Dimensionality"
+      }
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which of the following is a common task in Unsupervised Learning?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "Classification"
+      },
+      {
+        "option_id": "B",
+        "option_text": "Regression"
+      },
+      {
+        "option_id": "C",
+        "option_text": "Clustering"
+      },
+      {
+        "option_id": "D",
+        "option_text": "Time Series Forecasting"
+      }
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "In a classification problem, what does the 'Accuracy' metric primarily measure?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "The model's complexity"
+      },
+      {
+        "option_id": "B",
+        "option_text": "The proportion of total predictions that were correct"
+      },
+      {
+        "option_id": "C",
+        "option_text": "The distance between predicted and actual values"
+      },
+      {
+        "option_id": "D",
+        "option_text": "The ability to generalize to new data"
+      }
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the primary function of a 'Loss Function' (or Cost Function) in Machine Learning?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "To define the algorithm's structure"
+      },
+      {
+        "option_id": "B",
+        "option_text": "To measure the error between predicted and actual values"
+      },
+      {
+        "option_id": "C",
+        "option_text": "To preprocess the input data"
+      },
+      {
+        "option_id": "D",
+        "option_text": "To prevent overfitting"
+      }
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which algorithm is a popular choice for linear Supervised Classification problems?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "K-Means"
+      },
+      {
+        "option_id": "B",
+        "option_text": "Principal Component Analysis (PCA)"
+      },
+      {
+        "option_id": "C",
+        "option_text": "Logistic Regression"
+      },
+      {
+        "option_id": "D",
+        "option_text": "DBSCAN"
+      }
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What does a high 'Bias' in a model typically lead to?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "Overfitting"
+      },
+      {
+        "option_id": "B",
+        "option_text": "Underfitting"
+      },
+      {
+        "option_id": "C",
+        "option_text": "High variance"
+      },
+      {
+        "option_id": "D",
+        "option_text": "Perfect generalization"
+      }
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "In the context of Neural Networks, what is an 'Epoch'?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "A single pass of the data through the network"
+      },
+      {
+        "option_id": "B",
+        "option_text": "The total number of layers"
+      },
+      {
+        "option_id": "C",
+        "option_text": "One complete pass of the entire training dataset through the network"
+      },
+      {
+        "option_id": "D",
+        "option_text": "The size of the input layer"
+      }
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the term for the process of converting raw data into a clean, usable feature set for model training?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "Model Deployment"
+      },
+      {
+        "option_id": "B",
+        "option_text": "Data Normalization"
+      },
+      {
+        "option_id": "C",
+        "option_text": "Data Preprocessing"
+      },
+      {
+        "option_id": "D",
+        "option_text": "Backpropagation"
+      }
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Reinforcement Learning (RL) is characterized by an agent learning through which mechanism?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "Labeled data prediction"
+      },
+      {
+        "option_id": "B",
+        "option_text": "Trial and error with a reward system"
+      },
+      {
+        "option_id": "C",
+        "option_text": "Finding hidden data structures"
+      },
+      {
+        "option_id": "D",
+        "option_text": "Using transfer learning"
+      }
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which data split is primarily used for the initial training of the machine learning model?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "Test Set"
+      },
+      {
+        "option_id": "B",
+        "option_text": "Validation Set"
+      },
+      {
+        "option_id": "C",
+        "option_text": "Training Set"
+      },
+      {
+        "option_id": "D",
+        "option_text": "Deployment Set"
+      }
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What does 'Regression' aim to predict in Supervised Learning?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "A categorical label (e.g., Dog or Cat)"
+      },
+      {
+        "option_id": "B",
+        "option_text": "A continuous numerical value (e.g., House Price)"
+      },
+      {
+        "option_id": "C",
+        "option_text": "A group or cluster ID"
+      },
+      {
+        "option_id": "D",
+        "option_text": "The likelihood of a pattern"
+      }
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which technique is most commonly used for reducing the number of features in a dataset while retaining most of the variance?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "Gradient Descent"
+      },
+      {
+        "option_id": "B",
+        "option_text": "Principal Component Analysis (PCA)"
+      },
+      {
+        "option_id": "C",
+        "option_text": "K-Nearest Neighbors (KNN)"
+      },
+      {
+        "option_id": "D",
+        "option_text": "Backpropagation"
+      }
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "The 'Learning Rate' in Gradient Descent controls what aspect of the optimization process?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "The complexity of the model"
+      },
+      {
+        "option_id": "B",
+        "option_text": "The size of the steps taken toward the minimum of the loss function"
+      },
+      {
+        "option_id": "C",
+        "option_text": "The amount of regularization"
+      },
+      {
+        "option_id": "D",
+        "option_text": "The number of epochs"
+      }
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the fundamental building block of a Neural Network?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "Decision Tree"
+      },
+      {
+        "option_id": "B",
+        "option_text": "Centroid"
+      },
+      {
+        "option_id": "C",
+        "option_text": "Neuron (or Node)"
+      },
+      {
+        "option_id": "D",
+        "option_text": "Support Vector"
+      }
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which of the following is an example of a classification problem?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "Predicting the stock price tomorrow"
+      },
+      {
+        "option_id": "B",
+        "option_text": "Predicting if an email is 'Spam' or 'Not Spam'"
+      },
+      {
+        "option_id": "C",
+        "option_text": "Grouping customer purchase histories"
+      },
+      {
+        "option_id": "D",
+        "option_text": "Estimating the total sales for next quarter"
+      }
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "The process of tuning a model's complexity to find a balance between bias and variance is generally referred to as what?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "Feature Scaling"
+      },
+      {
+        "option_id": "B",
+        "option_text": "Hyperparameter Tuning"
+      },
+      {
+        "option_id": "C",
+        "option_text": "Data Augmentation"
+      },
+      {
+        "option_id": "D",
+        "option_text": "One-Hot Encoding"
+      }
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What does 'k' represent in the K-Nearest Neighbors (KNN) algorithm?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "The number of features"
+      },
+      {
+        "option_id": "B",
+        "option_text": "The number of clusters"
+      },
+      {
+        "option_id": "C",
+        "option_text": "The number of closest data points to consider"
+      },
+      {
+        "option_id": "D",
+        "option_text": "The learning rate"
+      }
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which term describes a model that is too simple to capture the underlying patterns in the data?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "Overfitting"
+      },
+      {
+        "option_id": "B",
+        "option_text": "High Variance"
+      },
+      {
+        "option_id": "C",
+        "option_text": "Underfitting"
+      },
+      {
+        "option_id": "D",
+        "option_text": "Curse of Dimensionality"
+      }
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "In a Confusion Matrix for binary classification, what do 'True Positives' (TP) represent?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "Negative samples correctly predicted as Negative"
+      },
+      {
+        "option_id": "B",
+        "option_text": "Positive samples incorrectly predicted as Negative"
+      },
+      {
+        "option_id": "C",
+        "option_text": "Positive samples correctly predicted as Positive"
+      },
+      {
+        "option_id": "D",
+        "option_text": "Negative samples incorrectly predicted as Positive"
+      }
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "You are building a spam filter where incorrectly classifying a legitimate email as spam (False Positive) is much worse than incorrectly classifying a spam email as legitimate (False Negative). Which metric should you prioritize to minimize this costly error?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "Recall"
+      },
+      {
+        "option_id": "B",
+        "option_text": "Precision"
+      },
+      {
+        "option_id": "C",
+        "option_text": "F1-Score"
+      },
+      {
+        "option_id": "D",
+        "option_text": "Accuracy"
+      }
+    ],
+    "correct_answer": "B",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which of the following is the main difference between Bagging (e.g., Random Forest) and Boosting (e.g., AdaBoost, XGBoost)?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "Bagging uses Decision Trees, while Boosting uses Linear Models."
+      },
+      {
+        "option_id": "B",
+        "option_text": "Bagging builds models sequentially, while Boosting builds them in parallel."
+      },
+      {
+        "option_id": "C",
+        "option_text": "Bagging combines strong learners, while Boosting combines weak learners."
+      },
+      {
+        "option_id": "D",
+        "option_text": "Bagging trains models in parallel, while Boosting trains them sequentially to correct previous model errors."
+      }
+    ],
+    "correct_answer": "D",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "In K-Means clustering, what is the 'Elbow Method' used to determine?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "The optimal learning rate."
+      },
+      {
+        "option_id": "B",
+        "option_text": "The optimal number of features."
+      },
+      {
+        "option_id": "C",
+        "option_text": "The optimal number of clusters (K)."
+      },
+      {
+        "option_id": "D",
+        "option_text": "The initial centroid positions."
+      }
+    ],
+    "correct_answer": "C",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the primary purpose of 'Cross-Validation' in model training?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "To increase the size of the training set."
+      },
+      {
+        "option_id": "B",
+        "option_text": "To ensure that the model is simple enough to avoid high bias."
+      },
+      {
+        "option_id": "C",
+        "option_text": "To obtain a more robust estimate of the model's performance on unseen data by rotating training and validation sets."
+      },
+      {
+        "option_id": "D",
+        "option_text": "To select the most important features."
+      }
+    ],
+    "correct_answer": "C",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which technique is a non-parametric, lazy learning algorithm used for both classification and regression?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "Linear Regression"
+      },
+      {
+        "option_id": "B",
+        "option_text": "K-Nearest Neighbors (KNN)"
+      },
+      {
+        "option_id": "C",
+        "option_text": "Naïve Bayes"
+      },
+      {
+        "option_id": "D",
+        "option_text": "Support Vector Machine (SVM)"
+      }
+    ],
+    "correct_answer": "B",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Why is 'Feature Scaling' (Normalization or Standardization) generally required for algorithms like K-Nearest Neighbors (KNN) and Support Vector Machines (SVM)?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "To handle categorical features."
+      },
+      {
+        "option_id": "B",
+        "option_text": "To reduce the computational cost of training."
+      },
+      {
+        "option_id": "C",
+        "option_text": "Because they rely on distance calculations, and unscaled features with larger ranges could unfairly dominate the distance metric."
+      },
+      {
+        "option_id": "D",
+        "option_text": "To prevent the model from underfitting."
+      }
+    ],
+    "correct_answer": "C",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "If a machine learning model exhibits both low training error and low validation error, what is the most likely scenario?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "The model is underfitting."
+      },
+      {
+        "option_id": "B",
+        "option_text": "The model is overfitting."
+      },
+      {
+        "option_id": "C",
+        "option_text": "The model has achieved a good balance of bias and variance and is generalizing well."
+      },
+      {
+        "option_id": "D",
+        "option_text": "The dataset is too small."
+      }
+    ],
+    "correct_answer": "C",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the key advantage of using a Random Forest over a single Decision Tree?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "Random Forest is always faster to train."
+      },
+      {
+        "option_id": "B",
+        "option_text": "Random Forest has higher interpretability."
+      },
+      {
+        "option_id": "C",
+        "option_text": "Random Forest significantly reduces variance, mitigating the single Decision Tree's tendency to overfit."
+      },
+      {
+        "option_id": "D",
+        "option_text": "Random Forest can handle continuous target variables, but a single Decision Tree cannot."
+      }
+    ],
+    "correct_answer": "C",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which regularization technique adds a penalty term proportional to the absolute value of the magnitude of coefficients, which can lead to feature selection (setting some coefficients to exactly zero)?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "L2 Regularization (Ridge)"
+      },
+      {
+        "option_id": "B",
+        "option_text": "L1 Regularization (Lasso)"
+      },
+      {
+        "option_id": "C",
+        "option_text": "Dropout"
+      },
+      {
+        "option_id": "D",
+        "option_text": "Early Stopping"
+      }
+    ],
+    "correct_answer": "B",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "In the context of supervised learning, which term refers to a change in the statistical properties of the target variable that the model is trying to predict, *given* the input variables?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "Concept Drift"
+      },
+      {
+        "option_id": "B",
+        "option_text": "Feature Drift"
+      },
+      {
+        "option_id": "C",
+        "option_text": "Model Drift"
+      },
+      {
+        "option_id": "D",
+        "option_text": "Covariate Shift"
+      }
+    ],
+    "correct_answer": "A",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "When comparing the training of a Naïve Bayes classifier with a Logistic Regression classifier, what is the key fundamental assumption of Naïve Bayes that makes it 'Naïve'?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "It assumes the data is linearly separable."
+      },
+      {
+        "option_id": "B",
+        "option_text": "It assumes all features are independent of each other given the class."
+      },
+      {
+        "option_id": "C",
+        "option_text": "It assumes a Gaussian distribution for all features."
+      },
+      {
+        "option_id": "D",
+        "option_text": "It assumes the model will always overfit."
+      }
+    ],
+    "correct_answer": "B",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which evaluation metric is the harmonic mean of Precision and Recall, and is particularly useful for imbalanced classification problems?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "Root Mean Squared Error (RMSE)"
+      },
+      {
+        "option_id": "B",
+        "option_text": "R-squared"
+      },
+      {
+        "option_id": "C",
+        "option_text": "F1-Score"
+      },
+      {
+        "option_id": "D",
+        "option_text": "Area Under the ROC Curve (AUC)"
+      }
+    ],
+    "correct_answer": "C",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "In Principal Component Analysis (PCA), what do the 'eigenvectors' of the covariance matrix represent?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "The centroids of the clusters."
+      },
+      {
+        "option_id": "B",
+        "option_text": "The weight updates during backpropagation."
+      },
+      {
+        "option_id": "C",
+        "option_text": "The principal components (directions of maximum variance in the data)."
+      },
+      {
+        "option_id": "D",
+        "option_text": "The bias terms of the model."
+      }
+    ],
+    "correct_answer": "C",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the term for the problem where, as the number of features (dimensions) in the dataset increases, the data becomes increasingly sparse, making distance and density calculations unreliable?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "The Sparsity Dilemma"
+      },
+      {
+        "option_id": "B",
+        "option_text": "The Law of Large Numbers"
+      },
+      {
+        "option_id": "C",
+        "option_text": "The Curse of Dimensionality"
+      },
+      {
+        "option_id": "D",
+        "option_text": "Multicollinearity"
+      }
+    ],
+    "correct_answer": "C",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which activation function is non-linear and widely used in hidden layers of deep neural networks because it helps alleviate the vanishing gradient problem?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "Sigmoid"
+      },
+      {
+        "option_id": "B",
+        "option_text": "Softmax"
+      },
+      {
+        "option_id": "C",
+        "option_text": "Hyperbolic Tangent (Tanh)"
+      },
+      {
+        "option_id": "D",
+        "option_text": "Rectified Linear Unit (ReLU)"
+      }
+    ],
+    "correct_answer": "D",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "In a Decision Tree, what criterion is often used to decide which feature to split on at each node?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "Mean Squared Error (MSE)"
+      },
+      {
+        "option_id": "B",
+        "option_text": "Learning Rate"
+      },
+      {
+        "option_id": "C",
+        "option_text": "Information Gain or Gini Impurity"
+      },
+      {
+        "option_id": "D",
+        "option_text": "Weight Initialization"
+      }
+    ],
+    "correct_answer": "C",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the primary motivation for using a 'Validation Set' separate from the training and test sets?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "To calculate the final, unbiased model performance score."
+      },
+      {
+        "option_id": "B",
+        "option_text": "To tune hyperparameters without biasing the final test set performance."
+      },
+      {
+        "option_id": "C",
+        "option_text": "To perform initial feature engineering."
+      },
+      {
+        "option_id": "D",
+        "option_text": "To check for missing values in the data."
+      }
+    ],
+    "correct_answer": "B",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which method is an example of an online learning algorithm, where the model updates its weights as it receives new data instances sequentially, one by one or in small mini-batches?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "Batch Gradient Descent"
+      },
+      {
+        "option_id": "B",
+        "option_text": "K-Means Clustering"
+      },
+      {
+        "option_id": "C",
+        "option_text": "Stochastic Gradient Descent (SGD)"
+      },
+      {
+        "option_id": "D",
+        "option_text": "Principal Component Analysis (PCA)"
+      }
+    ],
+    "correct_answer": "C",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "For a classification task with highly imbalanced classes (e.g., 98% negative, 2% positive), why is 'Accuracy' a misleading metric?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "It only works for regression problems."
+      },
+      {
+        "option_id": "B",
+        "option_text": "A model that predicts all negative will still have high accuracy (98%), masking poor performance on the minority class."
+      },
+      {
+        "option_id": "C",
+        "option_text": "It is too sensitive to outliers."
+      },
+      {
+        "option_id": "D",
+        "option_text": "It requires the use of one-hot encoding."
+      }
+    ],
+    "correct_answer": "B",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What does a high 'Variance' in a model indicate about its performance?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "The model is too simple (underfitting)."
+      },
+      {
+        "option_id": "B",
+        "option_text": "The model is too complex and highly sensitive to small fluctuations in the training data (overfitting)."
+      },
+      {
+        "option_id": "C",
+        "option_text": "The model has high precision but low recall."
+      },
+      {
+        "option_id": "D",
+        "option_text": "The model's predictions are always zero."
+      }
+    ],
+    "correct_answer": "B",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "In the context of Natural Language Processing (NLP), what is 'Stemming'?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "The process of converting words into their dictionary base form (lemma)."
+      },
+      {
+        "option_id": "B",
+        "option_text": "The process of reducing words to their root form, which may not be a valid word."
+      },
+      {
+        "option_id": "C",
+        "option_text": "Assigning a numerical index to each unique word."
+      },
+      {
+        "option_id": "D",
+        "option_text": "Removing common words like 'the' and 'a'."
+      }
+    ],
+    "correct_answer": "B",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "How does the 'kernel trick' enable Support Vector Machines (SVM) to classify non-linearly separable data?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "By adding L2 regularization to the cost function."
+      },
+      {
+        "option_id": "B",
+        "option_text": "By iteratively moving the decision boundary closer to the support vectors."
+      },
+      {
+        "option_id": "C",
+        "option_text": "By implicitly mapping the input features into a higher-dimensional feature space where they become linearly separable."
+      },
+      {
+        "option_id": "D",
+        "option_text": "By employing the Naïve Bayes assumption."
+      }
+    ],
+    "correct_answer": "C",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the primary role of the 'Softmax' activation function, typically used in the output layer of a neural network?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "To introduce non-linearity into the network."
+      },
+      {
+        "option_id": "B",
+        "option_text": "To prevent overfitting through zeroing out neurons."
+      },
+      {
+        "option_id": "C",
+        "option_text": "To normalize the output into a probability distribution over multiple classes."
+      },
+      {
+        "option_id": "D",
+        "option_text": "To speed up the convergence of gradient descent."
+      }
+    ],
+    "correct_answer": "C",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "In the context of time series forecasting, what type of cross-validation is generally recommended?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "Stratified K-Fold"
+      },
+      {
+        "option_id": "B",
+        "option_text": "Leave-One-Out Cross-Validation (LOOCV)"
+      },
+      {
+        "option_id": "C",
+        "option_text": "Shuffle-Split Cross-Validation"
+      },
+      {
+        "option_id": "D",
+        "option_text": "Forward Chaining/Rolling Origin Cross-Validation, to respect the temporal order of the data."
+      }
+    ],
+    "correct_answer": "D",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the critical step in preparing categorical features for most ML algorithms, where each unique category is converted into a new binary feature?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "Label Encoding"
+      },
+      {
+        "option_id": "B",
+        "option_text": "Standardization"
+      },
+      {
+        "option_id": "C",
+        "option_text": "One-Hot Encoding"
+      },
+      {
+        "option_id": "D",
+        "option_text": "Binning"
+      }
+    ],
+    "correct_answer": "C",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "In Reinforcement Learning, what is the fundamental trade-off that the agent must constantly manage?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "Bias vs. Variance"
+      },
+      {
+        "option_id": "B",
+        "option_text": "Precision vs. Recall"
+      },
+      {
+        "option_id": "C",
+        "option_text": "Overfitting vs. Underfitting"
+      },
+      {
+        "option_id": "D",
+        "option_text": "Exploration vs. Exploitation"
+      }
+    ],
+    "correct_answer": "D",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "The Gaussian Naive Bayes classifier is suitable for which type of input feature distribution?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "Binomial distributed features"
+      },
+      {
+        "option_id": "B",
+        "option_text": "Normally (Gaussian) distributed continuous features"
+      },
+      {
+        "option_id": "C",
+        "option_text": "Categorical features only"
+      },
+      {
+        "option_id": "D",
+        "option_text": "Poisson distributed features"
+      }
+    ],
+    "correct_answer": "B",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "The ROC (Receiver Operating Characteristic) curve plots which two metrics against each other for different classification thresholds?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "Precision vs. Recall"
+      },
+      {
+        "option_id": "B",
+        "option_text": "True Positive Rate (Sensitivity) vs. False Positive Rate (1 - Specificity)"
+      },
+      {
+        "option_id": "C",
+        "option_text": "Accuracy vs. F1-Score"
+      },
+      {
+        "option_id": "D",
+        "option_text": "Training Loss vs. Validation Loss"
+      }
+    ],
+    "correct_answer": "B",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "What is the primary difference in how Batch Normalization (BN) and Layer Normalization (LN) compute their statistics in a neural network, especially in the context of sequence models like RNNs/Transformers?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "BN normalizes across the feature dimension; LN normalizes across the time step/sequence dimension."
+      },
+      {
+        "option_id": "B",
+        "option_text": "BN normalizes across the batch dimension (for a single feature); LN normalizes across the feature dimension (for a single sample)."
+      },
+      {
+        "option_id": "C",
+        "option_text": "BN uses the Sigmoid activation; LN uses the ReLU activation."
+      },
+      {
+        "option_id": "D",
+        "option_text": "BN is used for regularization; LN is used for optimization."
+      }
+    ],
+    "correct_answer": "B",
+    "points": 5,
+    "time_limit_seconds": 120
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "In advanced optimization, what is the role of the Hessian matrix in Newton's Method, and why is it often avoided in deep learning?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "It contains first-order derivatives to find the gradient; avoided because it requires a small learning rate."
+      },
+      {
+        "option_id": "B",
+        "option_text": "It contains second-order partial derivatives to determine the curvature; avoided because its computation and inversion are computationally too expensive (O(n^3)) for high-dimensional weight vectors."
+      },
+      {
+        "option_id": "C",
+        "option_text": "It's used to calculate the L1 regularization term; avoided because it leads to sparse models."
+      },
+      {
+        "option_id": "D",
+        "option_text": "It helps determine the learning rate schedule; avoided because it is only applicable to convex loss functions."
+      }
+    ],
+    "correct_answer": "B",
+    "points": 5,
+    "time_limit_seconds": 120
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "Which technique in Deep Learning temporarily sets a fraction of neurons to zero during the forward pass, serving as a powerful regularization method by preventing co-adaptation of features?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "Batch Normalization"
+      },
+      {
+        "option_id": "B",
+        "option_text": "Gradient Clipping"
+      },
+      {
+        "option_id": "C",
+        "option_text": "Dropout"
+      },
+      {
+        "option_id": "D",
+        "option_text": "Weight Decay (L2 Regularization)"
+      }
+    ],
+    "correct_answer": "C",
+    "points": 5,
+    "time_limit_seconds": 120
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "The Kullback-Leibler (KL) Divergence is a non-symmetric measure used in Variational Autoencoders (VAEs) and other probabilistic models. What does it quantify?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "The linear separability of data points."
+      },
+      {
+        "option_id": "B",
+        "option_text": "The Euclidean distance between two vectors."
+      },
+      {
+        "option_id": "C",
+        "option_text": "How one probability distribution diverges from a second, expected probability distribution."
+      },
+      {
+        "option_id": "D",
+        "option_text": "The maximum margin between two classes."
+      }
+    ],
+    "correct_answer": "C",
+    "points": 5,
+    "time_limit_seconds": 120
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "In the MLOps lifecycle, 'Data Drift' is a critical issue. What specifically does 'Data Drift' refer to?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "The model's performance degrading over time."
+      },
+      {
+        "option_id": "B",
+        "option_text": "The change in the relationship between input variables and the target variable."
+      },
+      {
+        "option_id": "C",
+        "option_text": "The change in the distribution of the input data over time in the production environment compared to the training data."
+      },
+      {
+        "option_id": "D",
+        "option_text": "The difference between the batch size and the epoch size."
+      }
+    ],
+    "correct_answer": "C",
+    "points": 5,
+    "time_limit_seconds": 120
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "Why is the use of the ReLU (Rectified Linear Unit) activation function in a neural network susceptible to the 'dying ReLU' problem?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "Because the gradient is non-zero for all negative inputs."
+      },
+      {
+        "option_id": "B",
+        "option_text": "Because it always outputs a probability distribution."
+      },
+      {
+        "option_id": "C",
+        "option_text": "If a large gradient flows through a ReLU neuron and it updates the weights such that the input is always negative, the neuron will output 0 and its gradient will be 0 forever (it 'dies')."
+      },
+      {
+        "option_id": "D",
+        "option_text": "Because its output range is too small (0 to 1)."
+      }
+    ],
+    "correct_answer": "C",
+    "points": 5,
+    "time_limit_seconds": 120
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "What is the primary advantage of using a deep residual network (ResNet) structure with skip connections over a plain deep convolutional neural network (CNN)?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "It eliminates the need for any activation functions."
+      },
+      {
+        "option_id": "B",
+        "option_text": "It ensures the model will never overfit the training data."
+      },
+      {
+        "option_id": "C",
+        "option_text": "It helps alleviate the vanishing gradient problem and allows for training much deeper networks by letting the network learn identity mappings."
+      },
+      {
+        "option_id": "D",
+        "option_text": "It converts a classification problem into a regression problem."
+      }
+    ],
+    "correct_answer": "C",
+    "points": 5,
+    "time_limit_seconds": 120
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "How does the 'Attention Mechanism' fundamentally change the way Recurrent Neural Networks (RNNs) or Transformers process sequences?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "It enforces a strict sequential processing order for all inputs."
+      },
+      {
+        "option_id": "B",
+        "option_text": "It calculates a fixed-size context vector for the entire input sequence."
+      },
+      {
+        "option_id": "C",
+        "option_text": "It allows the model to dynamically weight the importance of different parts of the input sequence when producing an output, overcoming the bottleneck of fixed-length context vectors."
+      },
+      {
+        "option_id": "D",
+        "option_text": "It limits the model to only process sequences of a very short length."
+      }
+    ],
+    "correct_answer": "C",
+    "points": 5,
+    "time_limit_seconds": 120
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "In the context of the L1 (Lasso) and L2 (Ridge) regularization methods for linear models, which statement accurately describes their effect on model coefficients?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "L2 encourages sparsity (setting coefficients to zero), while L1 only shrinks them."
+      },
+      {
+        "option_id": "B",
+        "option_text": "Both L1 and L2 set irrelevant coefficients to zero, resulting in feature selection."
+      },
+      {
+        "option_id": "C",
+        "option_text": "L1 encourages sparsity (setting coefficients to zero), while L2 shrinks coefficients uniformly but rarely sets them exactly to zero."
+      },
+      {
+        "option_id": "D",
+        "option_text": "L1 only applies to classification, and L2 only applies to regression."
+      }
+    ],
+    "correct_answer": "C",
+    "points": 5,
+    "time_limit_seconds": 120
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "Transfer learning often involves freezing the weights of the initial layers of a pre-trained model (e.g., on ImageNet) when fine-tuning for a new task. What is the main theoretical reason for this practice?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "The initial layers of a deep network typically learn low-level, generic features (like edges, textures) that are useful across many domains."
+      },
+      {
+        "option_id": "B",
+        "option_text": "It makes the model an unsupervised learner."
+      },
+      {
+        "option_id": "C",
+        "option_text": "It completely prevents the new task's data from causing any overfitting."
+      },
+      {
+        "option_id": "D",
+        "option_text": "It is necessary to use L1 regularization instead of L2 regularization."
+      }
+    ],
+    "correct_answer": "A",
+    "points": 5,
+    "time_limit_seconds": 120
+  }
+]

@@ -46,7 +46,17 @@ const EducationForm = ({ onSave, initialData = null, onCancel, saving }) => {
     e.preventDefault();
     const errors = validateForm();
     if (Object.keys(errors).length === 0) {
-      onSave(education);
+      // Clean up the data before sending
+      const cleanedEducation = {
+        ...education,
+        field_of_study: education.field_of_study || null,
+        gpa_percentage: education.gpa_percentage || null,
+        end_date: education.end_date || null,  // Convert empty string to null
+        achievements: education.achievements || null,
+        location: education.location || null,
+      };
+      
+      onSave(cleanedEducation);
       if (!initialData) {
         setEducation({
           institution_name: '',

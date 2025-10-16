@@ -182,6 +182,9 @@ async def add_education_history(
             # This handles cases where future graduation dates are provided
             if record.get("currently_enrolled") is True:
                 record["end_date"] = None
+            # Also handle empty string case - convert to None
+            elif record.get("end_date") == "" or record.get("end_date") is None:
+                record["end_date"] = None
             
             education_records.append(record)
         
@@ -231,6 +234,15 @@ async def add_work_experience(
         for item in experience_items:
             record = item.model_dump()
             record["user_id"] = user_id
+            
+            # If currently working, set end_date to NULL regardless of what was provided
+            # This handles cases where end_date might be empty string or future date
+            if record.get("currently_working") is True:
+                record["end_date"] = None
+            # Also handle empty string case - convert to None
+            elif record.get("end_date") == "" or record.get("end_date") is None:
+                record["end_date"] = None
+            
             experience_records.append(record)
         
         # Insert work experience

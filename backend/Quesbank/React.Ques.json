@@ -1,0 +1,702 @@
+[
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the primary purpose of React?",
+    "options": [
+      {"option_id": "A", "option_text": "To handle server-side logic."},
+      {"option_id": "B", "option_text": "To build user interfaces (UIs) with a component-based approach."},
+      {"option_id": "C", "option_text": "To manage database transactions."},
+      {"option_id": "D", "option_text": "To style web pages using CSS preprocessors."}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 30
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What does JSX stand for?",
+    "options": [
+      {"option_id": "A", "option_text": "JavaScript XML"},
+      {"option_id": "B", "option_text": "JavaScript Extension"},
+      {"option_id": "C", "option_text": "JSON XML"},
+      {"option_id": "D", "option_text": "JQuery Syntax Extension"}
+    ],
+    "correct_answer": "A",
+    "points": 1,
+    "time_limit_seconds": 30
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "In a functional component, which Hook is used to manage component state?",
+    "options": [
+      {"option_id": "A", "option_text": "useContext"},
+      {"option_id": "B", "option_text": "useEffect"},
+      {"option_id": "C", "option_text": "useState"},
+      {"option_id": "D", "option_text": "useReducer"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 30
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What must be done to embed a JavaScript expression within JSX?",
+    "options": [
+      {"option_id": "A", "option_text": "Wrap it in single quotes."},
+      {"option_id": "B", "option_text": "Wrap it in curly braces `{}`."},
+      {"option_id": "C", "option_text": "Wrap it in parentheses `()`."},
+      {"option_id": "D", "option_text": "Prefix it with a dollar sign `$`."}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 30
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which method is used to render a React element to the DOM in a React 18 application?",
+    "options": [
+      {"option_id": "A", "option_text": "ReactDOM.render()"},
+      {"option_id": "B", "option_text": "ReactDOM.hydrate()"},
+      {"option_id": "C", "option_text": "ReactDOM.createRoot().render()"},
+      {"option_id": "D", "option_text": "React.render()"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "In React, how do you pass data from a parent component to a child component?",
+    "options": [
+      {"option_id": "A", "option_text": "By using State"},
+      {"option_id": "B", "option_text": "By using Props"},
+      {"option_id": "C", "option_text": "By using Context"},
+      {"option_id": "D", "option_text": "By using Redux"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 30
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which attribute in JSX is used to specify a CSS class?",
+    "options": [
+      {"option_id": "A", "option_text": "class"},
+      {"option_id": "B", "option_text": "className"},
+      {"option_id": "C", "option_text": "cssClass"},
+      {"option_id": "D", "option_text": "htmlClass"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 30
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "React is primarily a library for which part of the web application?",
+    "options": [
+      {"option_id": "A", "option_text": "Backend"},
+      {"option_id": "B", "option_text": "Database"},
+      {"option_id": "C", "option_text": "Frontend"},
+      {"option_id": "D", "option_text": "Deployment"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 30
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the correct way to initialize state in a functional component?",
+    "options": [
+      {"option_id": "A", "option_text": "`const [count, setCount] = useState(0);`"},
+      {"option_id": "B", "option_text": "`this.state = { count: 0 };`"},
+      {"option_id": "C", "option_text": "`var count = 0;`"},
+      {"option_id": "D", "option_text": "`function useState(0);`"}
+    ],
+    "correct_answer": "A",
+    "points": 1,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the term for components that don't manage any state, relying entirely on props?",
+    "options": [
+      {"option_id": "A", "option_text": "Stateful Components"},
+      {"option_id": "B", "option_text": "Container Components"},
+      {"option_id": "C", "option_text": "Pure Components"},
+      {"option_id": "D", "option_text": "Stateless/Presentational Components"}
+    ],
+    "correct_answer": "D",
+    "points": 1,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the name of the tool used to compile JSX into regular JavaScript?",
+    "options": [
+      {"option_id": "A", "option_text": "Webpack"},
+      {"option_id": "B", "option_text": "Babel"},
+      {"option_id": "C", "option_text": "ESLint"},
+      {"option_id": "D", "option_text": "npm"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 30
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which of these is used to define a custom element and its initial structure?",
+    "options": [
+      {"option_id": "A", "option_text": "HTML tag"},
+      {"option_id": "B", "option_text": "React Fragment"},
+      {"option_id": "C", "option_text": "Component"},
+      {"option_id": "D", "option_text": "Virtual DOM"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 30
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "When defining a function component, what is the convention for the function's name?",
+    "options": [
+      {"option_id": "A", "option_text": "Starts with a lowercase letter."},
+      {"option_id": "B", "option_text": "Starts with an uppercase letter."},
+      {"option_id": "C", "option_text": "Must be all lowercase."},
+      {"option_id": "D", "option_text": "Can be anything, convention doesn't matter."}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 30
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the key mechanism React uses to efficiently update the DOM?",
+    "options": [
+      {"option_id": "A", "option_text": "Direct DOM manipulation"},
+      {"option_id": "B", "option_text": "Shadow DOM"},
+      {"option_id": "C", "option_text": "Real DOM (Full Reload)"},
+      {"option_id": "D", "option_text": "Virtual DOM"}
+    ],
+    "correct_answer": "D",
+    "points": 1,
+    "time_limit_seconds": 30
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What must the outermost element of a JSX fragment be?",
+    "options": [
+      {"option_id": "A", "option_text": "A standard HTML tag (e.g., `<div>`)."},
+      {"option_id": "B", "option_text": "It must be wrapped in a single parent tag or a Fragment (`<></>`)."},
+      {"option_id": "C", "option_text": "A custom component."},
+      {"option_id": "D", "option_text": "A conditional expression."}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the name of the function called when a component is about to be added to the DOM (Class component method equivalent to the initial render)?",
+    "options": [
+      {"option_id": "A", "option_text": "componentDidMount"},
+      {"option_id": "B", "option_text": "componentWillUnmount"},
+      {"option_id": "C", "option_text": "render"},
+      {"option_id": "D", "option_text": "getInitialState"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which utility is typically used to create a new React project from scratch with a structured setup?",
+    "options": [
+      {"option_id": "A", "option_text": "Node Package Manager (npm)"},
+      {"option_id": "B", "option_text": "Create React App (CRA)"},
+      {"option_id": "C", "option_text": "Web Server Gateway Interface (WSGI)"},
+      {"option_id": "D", "option_text": "Babel CLI"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 30
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "When updating state in React, what is the best practice for handling previous state values?",
+    "options": [
+      {"option_id": "A", "option_text": "Update the state object directly."},
+      {"option_id": "B", "option_text": "Pass a value, ignoring the previous state."},
+      {"option_id": "C", "option_text": "Pass a function to the setter that receives the previous state."},
+      {"option_id": "D", "option_text": "Use an external library for all state updates."}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which hook is conceptually similar to `componentDidMount`, `componentDidUpdate`, and `componentWillUnmount` combined?",
+    "options": [
+      {"option_id": "A", "option_text": "useState"},
+      {"option_id": "B", "option_text": "useCallback"},
+      {"option_id": "C", "option_text": "useMemo"},
+      {"option_id": "D", "option_text": "useEffect"}
+    ],
+    "correct_answer": "D",
+    "points": 1,
+    "time_limit_seconds": 30
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the primary way for a child component to communicate data back to its parent component?",
+    "options": [
+      {"option_id": "A", "option_text": "By modifying the parent's state directly."},
+      {"option_id": "B", "option_text": "By passing a callback function from the parent as a prop to the child."},
+      {"option_id": "C", "option_text": "By using the `window` object."},
+      {"option_id": "D", "option_text": "It is impossible for a child to send data back to a parent."}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "When should you include a dependency array in the `useEffect` hook?",
+    "options": [
+      {"option_id": "A", "option_text": "Only when you want the effect to run on every render."},
+      {"option_id": "B", "option_text": "When the effect relies on values from the component scope (props or state) that shouldn't trigger the effect on every render."},
+      {"option_id": "C", "option_text": "Never, the effect will determine its dependencies automatically."},
+      {"option_id": "D", "option_text": "Only when using asynchronous operations like data fetching."}
+    ],
+    "correct_answer": "B",
+    "points": 2,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the recommended way to handle forms in React to keep the form data synchronized with component state?",
+    "options": [
+      {"option_id": "A", "option_text": "Uncontrolled Components"},
+      {"option_id": "B", "option_text": "Server-side Forms"},
+      {"option_id": "C", "option_text": "Controlled Components"},
+      {"option_id": "D", "option_text": "Using external libraries like jQuery for form management"}
+    ],
+    "correct_answer": "C",
+    "points": 2,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "In a list of rendered items, what is the significance of the `key` prop?",
+    "options": [
+      {"option_id": "A", "option_text": "It is a performance optimization, ensuring the order of items remains correct."},
+      {"option_id": "B", "option_text": "It is used by React to uniquely identify elements and track their identity across updates."},
+      {"option_id": "C", "option_text": "It is passed to the child component as a standard prop."},
+      {"option_id": "D", "option_text": "It is only required for the first item in the list."}
+    ],
+    "correct_answer": "B",
+    "points": 2,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the return value of an `useEffect` function that handles cleanup for subscriptions or event listeners?",
+    "options": [
+      {"option_id": "A", "option_text": "A Promise"},
+      {"option_id": "B", "option_text": "A cleanup function"},
+      {"option_id": "C", "option_text": "A JSX element"},
+      {"option_id": "D", "option_text": "The updated state object"}
+    ],
+    "correct_answer": "B",
+    "points": 2,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the purpose of the `useContext` hook?",
+    "options": [
+      {"option_id": "A", "option_text": "To create a component with internal state."},
+      {"option_id": "B", "option_text": "To subscribe to context changes from a Context Provider."},
+      {"option_id": "C", "option_text": "To perform side effects after rendering."},
+      {"option_id": "D", "option_text": "To memoize expensive calculations."}
+    ],
+    "correct_answer": "B",
+    "points": 2,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What does a React Fragment (`<></>`) allow you to do?",
+    "options": [
+      {"option_id": "A", "option_text": "Create a component that renders no HTML structure."},
+      {"option_id": "B", "option_text": "Render multiple adjacent JSX elements without adding an extra node to the DOM."},
+      {"option_id": "C", "option_text": "Define a separate style scope for the component."},
+      {"option_id": "D", "option_text": "Fetch data asynchronously."}
+    ],
+    "correct_answer": "B",
+    "points": 2,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is a Higher-Order Component (HOC)?",
+    "options": [
+      {"option_id": "A", "option_text": "A component that has state and props."},
+      {"option_id": "B", "option_text": "A function that takes a component and returns a new component."},
+      {"option_id": "C", "option_text": "A component that uses the Context API."},
+      {"option_id": "D", "option_text": "A built-in React component like `Fragment`."}
+    ],
+    "correct_answer": "B",
+    "points": 2,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the correct way to conditionally render the `<div>Loading...</div>` if `isLoading` is true, otherwise render the `<MyComponent />`?",
+    "options": [
+      {"option_id": "A", "option_text": "`{isLoading && <MyComponent />}`"},
+      {"option_id": "B", "option_text": "`{isLoading ? <div>Loading...</div> : <MyComponent />}`"},
+      {"option_id": "C", "option_text": "`if (isLoading) { return <div>Loading...</div> }`"},
+      {"option_id": "D", "option_text": "`{isLoading || <MyComponent />}`"}
+    ],
+    "correct_answer": "B",
+    "points": 2,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What does the second argument (the dependency array) being empty (`[]`) in `useEffect` signify?",
+    "options": [
+      {"option_id": "A", "option_text": "The effect will never run."},
+      {"option_id": "B", "option_text": "The effect will run only on every component update."},
+      {"option_id": "C", "option_text": "The effect will run only once after the initial render (mount)."},
+      {"option_id": "D", "option_text": "The effect should be ignored by React."}
+    ],
+    "correct_answer": "C",
+    "points": 2,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which utility is used to create references to DOM elements or React components in a functional component?",
+    "options": [
+      {"option_id": "A", "option_text": "useRef"},
+      {"option_id": "B", "option_text": "createRef"},
+      {"option_id": "C", "option_text": "useElement"},
+      {"option_id": "D", "option_text": "useHook"}
+    ],
+    "correct_answer": "A",
+    "points": 2,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the primary benefit of using React Router?",
+    "options": [
+      {"option_id": "A", "option_text": "To handle component state management globally."},
+      {"option_id": "B", "option_text": "To implement client-side, single-page application (SPA) navigation."},
+      {"option_id": "C", "option_text": "To manage asynchronous data fetching."},
+      {"option_id": "D", "option_text": "To provide a type-checking solution for JavaScript."}
+    ],
+    "correct_answer": "B",
+    "points": 2,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Why must the `key` prop be placed on the element *inside* the `map()` call?",
+    "options": [
+      {"option_id": "A", "option_text": "Because only the child element is rendered to the DOM."},
+      {"option_id": "B", "option_text": "Because the `key` is required by React to identify each iterated element and its stability."},
+      {"option_id": "C", "option_text": "Because the `map` function only returns the key, not the element."},
+      {"option_id": "D", "option_text": "It can be placed on the parent of the mapped elements as well."}
+    ],
+    "correct_answer": "B",
+    "points": 2,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the purpose of the `React.memo` function?",
+    "options": [
+      {"option_id": "A", "option_text": "To perform deep equality checks on an object."},
+      {"option_id": "B", "option_text": "To prevent a functional component from re-rendering if its props have not changed (shallow comparison)."},
+      {"option_id": "C", "option_text": "To automatically optimize image loading in a component."},
+      {"option_id": "D", "option_text": "To define the initial state of a component."}
+    ],
+    "correct_answer": "B",
+    "points": 2,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "In a controlled component, what causes the value of an input field to update?",
+    "options": [
+      {"option_id": "A", "option_text": "The browser automatically updates the value on input."},
+      {"option_id": "B", "option_text": "The input element is manually manipulated via the DOM."},
+      {"option_id": "C", "option_text": "The `onChange` handler calls the state setter with the new value, triggering a re-render."},
+      {"option_id": "D", "option_text": "The value only updates when the form is submitted."}
+    ],
+    "correct_answer": "C",
+    "points": 2,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "How do you correctly access the latest value of a prop or state inside an `useEffect` with an empty dependency array (or any stale closure)?",
+    "options": [
+      {"option_id": "A", "option_text": "It's impossible to access the latest value."},
+      {"option_id": "B", "option_text": "Use the `useRef` hook to store and access the mutable value."},
+      {"option_id": "C", "option_text": "Modify the prop/state directly within the effect."},
+      {"option_id": "D", "option_text": "Always add the prop/state to the dependency array."}
+    ],
+    "correct_answer": "B",
+    "points": 2,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is 'prop drilling' in React development?",
+    "options": [
+      {"option_id": "A", "option_text": "The process of passing props to a child component, one level deep."},
+      {"option_id": "B", "option_text": "The process of modifying a prop value inside a child component."},
+      {"option_id": "C", "option_text": "The practice of passing data through multiple layers of components that don't need the data themselves."},
+      {"option_id": "D", "option_text": "A performance optimization technique for prop updates."}
+    ],
+    "correct_answer": "C",
+    "points": 2,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which React hook is used for more complex state logic that involves multiple sub-values or when the next state depends on the previous one?",
+    "options": [
+      {"option_id": "A", "option_text": "useState"},
+      {"option_id": "B", "option_text": "useEffect"},
+      {"option_id": "C", "option_text": "useReducer"},
+      {"option_id": "D", "option_text": "useContext"}
+    ],
+    "correct_answer": "C",
+    "points": 2,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "When a component re-renders, what happens to the variables declared inside the component function but *outside* any hooks?",
+    "options": [
+      {"option_id": "A", "option_text": "They retain their previous values."},
+      {"option_id": "B", "option_text": "They are re-initialized with their declarations."},
+      {"option_id": "C", "option_text": "They are automatically converted into state variables."},
+      {"option_id": "D", "option_text": "They are automatically memoized by React."}
+    ],
+    "correct_answer": "B",
+    "points": 2,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the significance of the `target` property in a React synthetic event object (`event`)?",
+    "options": [
+      {"option_id": "A", "option_text": "It refers to the component where the event listener was attached."},
+      {"option_id": "B", "option_text": "It is a reference to the global `window` object."},
+      {"option_id": "C", "option_text": "It refers to the DOM element that the event was dispatched to."},
+      {"option_id": "D", "option_text": "It is always `null` in React events."}
+    ],
+    "correct_answer": "C",
+    "points": 2,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which of the following describes the behavior when calling a state setter function (e.g., `setCount(5)`) inside an event handler?",
+    "options": [
+      {"option_id": "A", "option_text": "The state is updated immediately, and the component re-renders synchronously."},
+      {"option_id": "B", "option_text": "The state update is batched by React and the component re-renders once after the handler finishes."},
+      {"option_id": "C", "option_text": "The state update is ignored until the next component lifecycle phase."},
+      {"option_id": "D", "option_text": "It causes an infinite loop and crashes the application."}
+    ],
+    "correct_answer": "B",
+    "points": 2,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "What is the correct and safest approach to ensure a functional component only re-renders when a specific prop object's *content* (deep comparison) changes, not just its reference?",
+    "options": [
+      {"option_id": "A", "option_text": "Use `React.memo` with a custom comparison function as the second argument."},
+      {"option_id": "B", "option_text": "Use `useCallback` on the prop object."},
+      {"option_id": "C", "option_text": "Use the `PureComponent` class equivalent."},
+      {"option_id": "D", "option_text": "Wrap the component in an HOC that manually performs a deep check."}
+    ],
+    "correct_answer": "A",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "The `useCallback` hook is primarily used for which of the following performance optimizations?",
+    "options": [
+      {"option_id": "A", "option_text": "Memoizing the result of an expensive function call."},
+      {"option_id": "B", "option_text": "Preventing unnecessary re-creation of function references between renders, often for passing to `React.memo` components."},
+      {"option_id": "C", "option_text": "Performing cleanup when a component unmounts."},
+      {"option_id": "D", "option_text": "Globally managing application state."}
+    ],
+    "correct_answer": "B",
+    "points": 3,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "In the context of the Virtual DOM, what is the 'Reconciliation' process?",
+    "options": [
+      {"option_id": "A", "option_text": "The process of converting JSX into a JavaScript object."},
+      {"option_id": "B", "option_text": "The algorithm React uses to efficiently diff the new Virtual DOM tree against the old one and determine necessary DOM updates."},
+      {"option_id": "C", "option_text": "The process of bundling and minifying application code."},
+      {"option_id": "D", "option_text": "The method of server-side rendering in a React application."}
+    ],
+    "correct_answer": "B",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "Which feature is designed to catch JavaScript errors, log them, and display a fallback UI in an application's component tree?",
+    "options": [
+      {"option_id": "A", "option_text": "Portals"},
+      {"option_id": "B", "option_text": "Strict Mode"},
+      {"option_id": "C", "option_text": "Error Boundaries"},
+      {"option_id": "D", "option_text": "Context API"}
+    ],
+    "correct_answer": "C",
+    "points": 3,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "What is the primary advantage of using `useReducer` over `useState` for state management in a component?",
+    "options": [
+      {"option_id": "A", "option_text": "It completely eliminates the need for `useEffect`."},
+      {"option_id": "B", "option_text": "It provides a predictable way to manage complex state transitions and can centralize state logic outside the component (in a reducer function)."},
+      {"option_id": "C", "option_text": "It is the only hook that supports asynchronous state updates."},
+      {"option_id": "D", "option_text": "It avoids all component re-renders."}
+    ],
+    "correct_answer": "B",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "A custom hook named `useLogger` needs to log the value of a prop `data` on every render. If you use `useEffect(() => { console.log(data) }, [])`, what common mistake have you made?",
+    "options": [
+      {"option_id": "A", "option_text": "The custom hook must be named `LoggerHook`."},
+      {"option_id": "B", "option_text": "The hook will log the initial value of `data` and then never log updates, due to a stale closure on `data`."},
+      {"option_id": "C", "option_text": "The `useEffect` must return a cleanup function."},
+      {"option_id": "D", "option_text": "Custom hooks cannot use `useEffect`."}
+    ],
+    "correct_answer": "B",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "What is the primary use case for `React.createPortal`?",
+    "options": [
+      {"option_id": "A", "option_text": "To render a component outside the DOM hierarchy of its parent component while maintaining React context and event propagation."},
+      {"option_id": "B", "option_text": "To create a global state store for the application."},
+      {"option_id": "C", "option_text": "To implement server-side rendering for a component."},
+      {"option_id": "D", "option_text": "To lazy load components and code split the bundle."}
+    ],
+    "correct_answer": "A",
+    "points": 3,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "When defining an asynchronous `useEffect` for data fetching, what is the best practice to avoid an 'Eagerly computed' state warning or memory leak?",
+    "options": [
+      {"option_id": "A", "option_text": "Do not define async functions inside `useEffect`."},
+      {"option_id": "B", "option_text": "Define an inner async function and call it, then use the `useEffect` cleanup return to set a boolean flag to prevent setting state if the component unmounts."},
+      {"option_id": "C", "option_text": "Add a `try-catch` block around the entire effect body."},
+      {"option_id": "D", "option_text": "Pass `null` as the dependency array."}
+    ],
+    "correct_answer": "B",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "How does the `useMemo` hook improve performance?",
+    "options": [
+      {"option_id": "A", "option_text": "By ensuring the component only re-renders when its props change."},
+      {"option_id": "B", "option_text": "By preventing side effects after render."},
+      {"option_id": "C", "option_text": "By memoizing a computed value, preventing its recalculation on every render unless its dependencies change."},
+      {"option_id": "D", "option_text": "By automatically batching multiple state updates into a single re-render."}
+    ],
+    "correct_answer": "C",
+    "points": 3,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "In React 18's **Concurrent Mode**, what is the key difference between a 'blocking' (legacy) update and a 'non-blocking' (concurrent) update?",
+    "options": [
+      {"option_id": "A", "option_text": "Non-blocking updates are always faster."},
+      {"option_id": "B", "option_text": "Non-blocking updates are high-priority and cannot be interrupted."},
+      {"option_id": "C", "option_text": "Blocking updates are always synchronous; Non-blocking updates can be interrupted and resumed to keep the UI responsive."},
+      {"option_id": "D", "option_text": "Blocking updates use the Virtual DOM, while non-blocking updates use the Real DOM."}
+    ],
+    "correct_answer": "C",
+    "points": 3,
+    "time_limit_seconds": 90
+  }
+]

@@ -1,0 +1,814 @@
+[
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the primary purpose of a Load Balancer in a distributed system?",
+    "options": [
+      {"option_id": "A", "option_text": "To serve static content to users."},
+      {"option_id": "B", "option_text": "To distribute incoming network traffic across multiple servers."},
+      {"option_id": "C", "option_text": "To temporarily store frequently accessed data."},
+      {"option_id": "D", "option_text": "To execute database queries efficiently."}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which component is used to temporarily store frequently accessed data in memory to reduce latency and database load?",
+    "options": [
+      {"option_id": "A", "option_text": "Database Replica"},
+      {"option_id": "B", "option_text": "Cache"},
+      {"option_id": "C", "option_text": "Message Queue"},
+      {"option_id": "D", "option_text": "API Gateway"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What does 'CAP' stand for in the context of distributed databases?",
+    "options": [
+      {"option_id": "A", "option_text": "Client, Application, Protocol"},
+      {"option_id": "B", "option_text": "Consistency, Availability, Partition Tolerance"},
+      {"option_id": "C", "option_text": "Commitment, Authorization, Performance"},
+      {"option_id": "D", "option_text": "Control, Administration, Processing"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which type of scaling involves adding more machines to your existing pool of resources?",
+    "options": [
+      {"option_id": "A", "option_text": "Vertical Scaling (Scale Up)"},
+      {"option_id": "B", "option_text": "Diagonal Scaling"},
+      {"option_id": "C", "option_text": "Horizontal Scaling (Scale Out)"},
+      {"option_id": "D", "option_text": "Monolithic Scaling"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "In a typical 3-tier architecture, where does the core business logic primarily reside?",
+    "options": [
+      {"option_id": "A", "option_text": "Presentation Tier"},
+      {"option_id": "B", "option_text": "Load Balancer Tier"},
+      {"option_id": "C", "option_text": "Data Tier"},
+      {"option_id": "D", "option_text": "Application Tier"}
+    ],
+    "correct_answer": "D",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the main characteristic of an 'Idempotent' operation in an API?",
+    "options": [
+      {"option_id": "A", "option_text": "It can only be executed once successfully."},
+      {"option_id": "B", "option_text": "It executes slowly due to security checks."},
+      {"option_id": "C", "option_text": "Executing it multiple times has the same effect as executing it once."},
+      {"option_id": "D", "option_text": "It requires two-factor authentication."}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the main benefit of using a Content Delivery Network (CDN)?",
+    "options": [
+      {"option_id": "A", "option_text": "To reduce the cost of the main application servers."},
+      {"option_id": "B", "option_text": "To manage database sharding keys."},
+      {"option_id": "C", "option_text": "To reduce latency for static assets by serving them from geographically closer locations."},
+      {"option_id": "D", "option_text": "To enforce strong consistency across all data centers."}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which metric describes the number of requests a system can handle in a given period?",
+    "options": [
+      {"option_id": "A", "option_text": "Latency"},
+      {"option_id": "B", "option_text": "Throughput"},
+      {"option_id": "C", "option_text": "P99"},
+      {"option_id": "D", "option_text": "Availability"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which of the following is a common example of a NoSQL database?",
+    "options": [
+      {"option_id": "A", "option_text": "MySQL"},
+      {"option_id": "B", "option_text": "PostgreSQL"},
+      {"option_id": "C", "option_text": "Oracle"},
+      {"option_id": "D", "option_text": "MongoDB"}
+    ],
+    "correct_answer": "D",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the role of a reverse proxy in a system architecture?",
+    "options": [
+      {"option_id": "A", "option_text": "It sits in front of the client and forwards requests to the user's browser."},
+      {"option_id": "B", "option_text": "It translates SQL queries to NoSQL queries."},
+      {"option_id": "C", "option_text": "It sits in front of one or more web servers and forwards client requests to them."},
+      {"option_id": "D", "option_text": "It is a server that only handles administrative tasks."}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which architectural pattern separates the system into distinct, independently deployable services?",
+    "options": [
+      {"option_id": "A", "option_text": "Monolithic"},
+      {"option_id": "B", "option_text": "Service-Oriented Architecture (SOA)"},
+      {"option_id": "C", "option_text": "Microservices"},
+      {"option_id": "D", "option_text": "Client-Server"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What does RDBMS stand for?",
+    "options": [
+      {"option_id": "A", "option_text": "Rapid Deployment and Management System"},
+      {"option_id": "B", "option_text": "Relational Database Management System"},
+      {"option_id": "C", "option_text": "Resource Distribution and Monitoring Service"},
+      {"option_id": "D", "option_text": "Realtime Data Backup Mechanism System"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which protocol is commonly used for communication between web-based microservices?",
+    "options": [
+      {"option_id": "A", "option_text": "FTP"},
+      {"option_id": "B", "option_text": "TCP"},
+      {"option_id": "C", "option_text": "HTTP/REST"},
+      {"option_id": "D", "option_text": "SMTP"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the concept of adding duplicate components or systems to eliminate a single point of failure called?",
+    "options": [
+      {"option_id": "A", "option_text": "Normalization"},
+      {"option_id": "B", "option_text": "Replication"},
+      {"option_id": "C", "option_text": "Redundancy"},
+      {"option_id": "D", "option_text": "Partitioning"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "When dealing with high concurrency and multiple writers, what is the primary concern for data integrity?",
+    "options": [
+      {"option_id": "A", "option_text": "Low latency"},
+      {"option_id": "B", "option_text": "Network bandwidth"},
+      {"option_id": "C", "option_text": "Data consistency"},
+      {"option_id": "D", "option_text": "Static file size"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the fundamental benefit of creating database indexes?",
+    "options": [
+      {"option_id": "A", "option_text": "Reducing the total size of the database."},
+      {"option_id": "B", "option_text": "Speeding up data retrieval operations (reads)."},
+      {"option_id": "C", "option_text": "Enforcing eventual consistency."},
+      {"option_id": "D", "option_text": "Preventing cross-site scripting (XSS) attacks."}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the basic unit of data in a message queue system like Kafka or RabbitMQ?",
+    "options": [
+      {"option_id": "A", "option_text": "A File"},
+      {"option_id": "B", "option_text": "A Schema"},
+      {"option_id": "C", "option_text": "A Transaction"},
+      {"option_id": "D", "option_text": "A Message/Record"}
+    ],
+    "correct_answer": "D",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which system design element is commonly used to protect backend services from being overwhelmed by too many requests from clients?",
+    "options": [
+      {"option_id": "A", "option_text": "Database Shard"},
+      {"option_id": "B", "option_text": "API Gateway (with Rate Limiting)"},
+      {"option_id": "C", "option_text": "SQL Injection Filter"},
+      {"option_id": "D", "option_text": "Geographic DNS"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "In ACID properties, which characteristic ensures that all operations within a transaction are completed successfully or none of them are?",
+    "options": [
+      {"option_id": "A", "option_text": "Atomicity"},
+      {"option_id": "B", "option_text": "Consistency"},
+      {"option_id": "C", "option_text": "Isolation"},
+      {"option_id": "D", "option_text": "Durability"}
+    ],
+    "correct_answer": "A",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the typical storage layer for managing user session data in a highly distributed web application?",
+    "options": [
+      {"option_id": "A", "option_text": "Local browser storage (e.g., localStorage)"},
+      {"option_id": "B", "option_text": "A fast, distributed cache (e.g., Redis or Memcached)"},
+      {"option_id": "C", "option_text": "The main relational database"},
+      {"option_id": "D", "option_text": "A Hadoop HDFS cluster"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "When designing a globally distributed service, which CAP theorem property is often traded off to achieve high availability and low latency?",
+    "options": [
+      {"option_id": "A", "option_text": "Partition Tolerance (P)"},
+      {"option_id": "B", "option_text": "Availability (A)"},
+      {"option_id": "C", "option_text": "Consistency (C)"},
+      {"option_id": "D", "option_text": "Durability (D)"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which technique is primarily used to distribute a database across multiple machines (nodes) based on a key range or hash value?",
+    "options": [
+      {"option_id": "A", "option_text": "Replication"},
+      {"option_id": "B", "option_text": "Denormalization"},
+      {"option_id": "C", "option_text": "Sharding (Horizontal Partitioning)"},
+      {"option_id": "D", "option_text": "Vertical Scaling"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "You are designing a service that needs to process a large volume of asynchronous, decoupled tasks. Which architectural pattern is most suitable for handling the communication?",
+    "options": [
+      {"option_id": "A", "option_text": "Synchronous REST API calls"},
+      {"option_id": "B", "option_text": "Client-Side Caching"},
+      {"option_id": "C", "option_text": "Message Queue/Broker"},
+      {"option_id": "D", "option_text": "Direct Database Connection"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the main architectural challenge that emerges when breaking a monolith into microservices, particularly concerning business operations?",
+    "options": [
+      {"option_id": "A", "option_text": "Server boot time"},
+      {"option_id": "B", "option_text": "Distributed transactions and data consistency"},
+      {"option_id": "C", "option_text": "Static asset compilation"},
+      {"option_id": "D", "option_text": "Load balancer configuration"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What does the 'S' in the SOLID principles of Object-Oriented Design stand for?",
+    "options": [
+      {"option_id": "A", "option_text": "Security First Principle"},
+      {"option_id": "B", "option_text": "Single Responsibility Principle"},
+      {"option_id": "C", "option_text": "State Management Principle"},
+      {"option_id": "D", "option_text": "Service Discovery Principle"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which cache invalidation strategy is generally most efficient for data that is rarely updated but frequently read?",
+    "options": [
+      {"option_id": "A", "option_text": "Write-Through"},
+      {"option_id": "B", "option_text": "Cache-Aside with explicit invalidation"},
+      {"option_id": "C", "option_text": "Time-to-Live (TTL)"},
+      {"option_id": "D", "option_text": "Write-Back"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "A client-side cache sends a request to the server to check if its stored data is still valid before downloading the full resource. Which HTTP header is typically used for this conditional request by the client?",
+    "options": [
+      {"option_id": "A", "option_text": "Authorization"},
+      {"option_id": "B", "option_text": "Accept-Encoding"},
+      {"option_id": "C", "option_text": "If-None-Match (using Etag)"},
+      {"option_id": "D", "option_text": "Content-Type"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the primary architectural purpose of setting up 'Database Read Replicas' in a system?",
+    "options": [
+      {"option_id": "A", "option_text": "To handle all write operations from the application."},
+      {"option_id": "B", "option_text": "To serve as a distributed cache for session data."},
+      {"option_id": "C", "option_text": "To scale out the system's ability to handle read operations."},
+      {"option_id": "D", "option_text": "To automatically partition data across multiple machines."}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "In the context of system design, implementing 'Idempotency' is primarily used to prevent:",
+    "options": [
+      {"option_id": "A", "option_text": "SQL injection attacks."},
+      {"option_id": "B", "option_text": "Network latency issues."},
+      {"option_id": "C", "option_text": "Duplicate side effects when an operation is retried."},
+      {"option_id": "D", "option_text": "Denial of service (DoS) attacks."}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which type of database model is best suited for efficiently querying complex relationships, such as user connections in a social network?",
+    "options": [
+      {"option_id": "A", "option_text": "Key-Value Store"},
+      {"option_id": "B", "option_text": "Document Database"},
+      {"option_id": "C", "option_text": "Time-Series Database"},
+      {"option_id": "D", "option_text": "Graph Database"}
+    ],
+    "correct_answer": "D",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the primary difference between a **push** and a **pull** model for a notification service?",
+    "options": [
+      {"option_id": "A", "option_text": "Push uses TCP; Pull uses UDP."},
+      {"option_id": "B", "option_text": "Push is initiated by the server; Pull is initiated by the client."},
+      {"option_id": "C", "option_text": "Push is only used for real-time; Pull is only for batch."},
+      {"option_id": "D", "option_text": "Push requires a relational database; Pull requires NoSQL."}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which concept ensures that a system can continue to operate and perform its required functions *despite* the presence of failures?",
+    "options": [
+      {"option_id": "A", "option_text": "Strict Consistency"},
+      {"option_id": "B", "option_text": "Vertical Scaling"},
+      {"option_id": "C", "option_text": "Fault Tolerance"},
+      {"option_id": "D", "option_text": "Normalization"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "When designing a URL Shortening service, which component is critical for generating unique, short IDs efficiently without global collisions?",
+    "options": [
+      {"option_id": "A", "option_text": "The main web server's IP address"},
+      {"option_id": "B", "option_text": "A distributed ID generation service (e.g., based on Snowflake algorithm)"},
+      {"option_id": "C", "option_text": "The client's browser cookies"},
+      {"option_id": "D", "option_text": "A standard FIFO message queue"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the 'Hot Spot' problem in database sharding?",
+    "options": [
+      {"option_id": "A", "option_text": "A server rack running at a high temperature."},
+      {"option_id": "B", "option_text": "A situation where network traffic spikes unexpectedly."},
+      {"option_id": "C", "option_text": "One shard receives disproportionately more read/write traffic than others."},
+      {"option_id": "D", "option_text": "The main database becoming read-only."}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which security best practice involves isolating services from each other to limit the impact of a security breach to only the compromised service?",
+    "options": [
+      {"option_id": "A", "option_text": "Serverless Computing"},
+      {"option_id": "B", "option_text": "Circuit Breaking"},
+      {"option_id": "C", "option_text": "Rate Limiting"},
+      {"option_id": "D", "option_text": "Network Segmentation (or principle of least privilege)"}
+    ],
+    "correct_answer": "D",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the main drawback of using a synchronous request-response model for long-running operations (>10 seconds)?",
+    "options": [
+      {"option_id": "A", "option_text": "It guarantees eventual consistency."},
+      {"option_id": "B", "option_text": "It requires complex authentication."},
+      {"option_id": "C", "option_text": "It blocks the client and ties up server resources, impacting scalability and user experience."},
+      {"option_id": "D", "option_text": "It is incompatible with HTTP/2."}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the purpose of the Two-Phase Commit (2PC) protocol in system design?",
+    "options": [
+      {"option_id": "A", "option_text": "To ensure eventual consistency across all database replicas."},
+      {"option_id": "B", "option_text": "To coordinate a transaction to be atomic across multiple independent services or databases."},
+      {"option_id": "C", "option_text": "To manage client session state across a load balancer."},
+      {"option_id": "D", "option_text": "To determine the best sharding key for a new database."}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which architectural pattern provides a single, unified API endpoint for multiple underlying microservices, often handling cross-cutting concerns like authentication?",
+    "options": [
+      {"option_id": "A", "option_text": "Data Lake"},
+      {"option_id": "B", "option_text": "Service Mesh"},
+      {"option_id": "C", "option_text": "API Gateway"},
+      {"option_id": "D", "option_text": "Content Delivery Network (CDN)"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is 'Replication Lag' in database systems?",
+    "options": [
+      {"option_id": "A", "option_text": "The time it takes for a system to restart after a failure."},
+      {"option_id": "B", "option_text": "The delay between a write operation being committed to the primary and its subsequent appearance on a read replica."},
+      {"option_id": "C", "option_text": "The time required to perform a full database backup."},
+      {"option_id": "D", "option_text": "The delay introduced by a firewall on network traffic."}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "The 'Circuit Breaker' pattern is used in microservices architecture primarily to:",
+    "options": [
+      {"option_id": "A", "option_text": "Authenticate incoming requests."},
+      {"option_id": "B", "option_text": "Prevent cascading failures by stopping calls to a failing service."},
+      {"option_id": "C", "option_text": "Balance the load across all available servers."},
+      {"option_id": "D", "option_text": "Ensure atomicity across distributed transactions."}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "In a distributed system relying on clock synchronization (like Google Spanner), what mechanism is used to bound the uncertainty of clock drift and ensure external consistency?",
+    "options": [
+      {"option_id": "A", "option_text": "NTP (Network Time Protocol)"},
+      {"option_id": "B", "option_text": "Vector Clocks"},
+      {"option_id": "C", "option_text": "TrueTime API with Atomic Clocks and GPS receivers"},
+      {"option_id": "D", "option_text": "Lamport Timestamps"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "To maintain Strong Consistency across a cluster of servers, which family of consensus algorithms is commonly employed to elect a leader and replicate state changes?",
+    "options": [
+      {"option_id": "A", "option_text": "Consistent Hashing"},
+      {"option_id": "B", "option_text": "Paxos / Raft"},
+      {"option_id": "C", "option_text": "Token Bucket"},
+      {"option_id": "D", "option_text": "Round Robin DNS"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "You are designing a social media feed system (like Twitter) where millions of writes occur, and the feed must be updated instantly for followers. Which design pattern addresses this heavy fan-out requirement?",
+    "options": [
+      {"option_id": "A", "option_text": "Fan-out on Read (Pull Model)"},
+      {"option_id": "B", "option_text": "MapReduce Batch Processing"},
+      {"option_id": "C", "option_text": "Fan-out on Write (Push Model)"},
+      {"option_id": "D", "option_text": "Saga Pattern"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "When designing a high-volume distributed counter (e.g., likes on a popular post), what is the most scalable approach to prevent a single counter bottleneck while maintaining eventual accuracy?",
+    "options": [
+      {"option_id": "A", "option_text": "Using a single counter in the main database with strong locking."},
+      {"option_id": "B", "option_text": "Using Sharded Counters with eventual aggregation."},
+      {"option_id": "C", "option_text": "Implementing the counter using a standard FIFO queue."},
+      {"option_id": "D", "option_text": "Storing the counter value on the client-side (browser)."}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "The 'Gossip Protocol' is a decentralized communication protocol. What is its primary role in distributed systems?",
+    "options": [
+      {"option_id": "A", "option_text": "To encrypt all inter-service communication."},
+      {"option_id": "B", "option_text": "Decentralized state propagation and failure detection among nodes."},
+      {"option_id": "C", "option_text": "To compress large data files before transmission."},
+      {"option_id": "D", "option_text": "To coordinate a two-phase commit across non-relational databases."}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "Why is consistent hashing preferred over standard modulo hashing for distributing data across a growing/shrinking cluster of cache nodes or database shards?",
+    "options": [
+      {"option_id": "A", "option_text": "It guarantees strong consistency across all nodes."},
+      {"option_id": "B", "option_text": "It eliminates the need for replication."},
+      {"option_id": "C", "option_text": "It minimizes the amount of data that needs to be re-mapped/moved when nodes are added or removed."},
+      {"option_id": "D", "option_text": "It allows for faster database query execution."}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "What is the *primary* reason for using a **Bloom Filter** in system design?",
+    "options": [
+      {"option_id": "A", "option_text": "To provide a 100% accurate check for element existence in a large set."},
+      {"option_id": "B", "option_text": "To compress data before storing it in a database."},
+      {"option_id": "C", "option_text": "To probabilistically check if an element is *not* present, thereby avoiding expensive lookups."},
+      {"option_id": "D", "option_text": "To distribute a request across multiple servers using a hash function."}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "In stream processing, what is the *key* difference between the Lambda Architecture and the Kappa Architecture?",
+    "options": [
+      {"option_id": "A", "option_text": "Lambda uses only a stream layer; Kappa uses only a batch layer."},
+      {"option_id": "B", "option_text": "Lambda uses a stream (speed) layer and a separate batch layer; Kappa unifies both into a single stream processing layer."},
+      {"option_id": "C", "option_text": "Lambda is fully synchronous; Kappa is fully asynchronous."},
+      {"option_id": "D", "option_text": "Kappa requires a relational database; Lambda requires a graph database."}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "Which concept describes a system's ability to operate at a reduced level of service rather than failing completely when a component malfunctions?",
+    "options": [
+      {"option_id": "A", "option_text": "Vertical Scaling"},
+      {"option_id": "B", "option_text": "Graceful Degradation (or Bulkhead Pattern)"},
+      {"option_id": "C", "option_text": "Strict Consistency"},
+      {"option_id": "D", "option_text": "Zero-Downtime Deployment"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "When designing a financial ledger where transactions are critical, which of the ACID properties of a database transaction is often prioritized over all others to ensure data survival even after system failure?",
+    "options": [
+      {"option_id": "A", "option_text": "Atomicity"},
+      {"option_id": "B", "option_text": "Consistency"},
+      {"option_id": "C", "option_text": "Isolation"},
+      {"option_id": "D", "option_text": "Durability"}
+    ],
+    "correct_answer": "D",
+    "points": 1,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the primary motivation for using the Backend for Frontend (BFF) pattern?",
+    "options": [
+      {"option_id": "A", "option_text": "To eliminate the need for an API Gateway."},
+      {"option_id": "B", "option_text": "To create a tailored API specifically for one type of user interface (e.g., mobile or web), optimizing data fetching and reducing client-side code complexity."},
+      {"option_id": "C", "option_text": "To ensure that all microservices use the same programming language."},
+      {"option_id": "D", "option_text": "To handle all asynchronous message processing."}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the goal of 'denormalization' in database design?",
+    "options": [
+      {"option_id": "A", "option_text": "To eliminate all redundant data."},
+      {"option_id": "B", "option_text": "To speed up complex read queries by introducing controlled redundancy."},
+      {"option_id": "C", "option_text": "To improve write performance at the expense of read speed."},
+      {"option_id": "D", "option_text": "To apply the five normal forms rigorously."}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which load balancing algorithm is typically recommended when servers have significantly different processing capabilities?",
+    "options": [
+      {"option_id": "A", "option_text": "Round Robin"},
+      {"option_id": "B", "option_text": "Least Connection"},
+      {"option_id": "C", "option_text": "IP Hash"},
+      {"option_id": "D", "option_text": "Weighted Round Robin"}
+    ],
+    "correct_answer": "D",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "The problem of 'Double Spending' in a payment system is an example of an issue related to the lack of:",
+    "options": [
+      {"option_id": "A", "option_text": "Load Balancing"},
+      {"option_id": "B", "option_text": "Strict Serializability"},
+      {"option_id": "C", "option_text": "Network Partitioning"},
+      {"option_id": "D", "option_text": "Service Discovery"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "When designing a logging system, which non-functional requirement is most often associated with the inability to lose any log message?",
+    "options": [
+      {"option_id": "A", "option_text": "High Availability"},
+      {"option_id": "B", "option_text": "Durability"},
+      {"option_id": "C", "option_text": "Low Latency"},
+      {"option_id": "D", "option_text": "Horizontal Scaling"}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the primary role of a 'Message Producer' in a Message Queue system?",
+    "options": [
+      {"option_id": "A", "option_text": "To pull messages from the queue."},
+      {"option_id": "B", "option_text": "To store messages permanently on disk."},
+      {"option_id": "C", "option_text": "To generate and send messages to the queue."},
+      {"option_id": "D", "option_text": "To balance the load on the queue server."}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which DNS record type is commonly used to distribute traffic across multiple servers using a simple, rotating mechanism?",
+    "options": [
+      {"option_id": "A", "option_text": "CNAME"},
+      {"option_id": "B", "option_text": "MX"},
+      {"option_id": "C", "option_text": "A (with Round Robin DNS)"},
+      {"option_id": "D", "option_text": "TXT"}
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "Which technique is used to prevent the 'Head-of-Line Blocking' problem in HTTP/1.1 and is a key feature of HTTP/2 and HTTP/3?",
+    "options": [
+      {"option_id": "A", "option_text": "Connection Pooling"},
+      {"option_id": "B", "option_text": "Resource Prioritization and Stream Multiplexing"},
+      {"option_id": "C", "option_text": "Using a smaller initial congestion window."},
+      {"option_id": "D", "option_text": "Client-side caching with TTL."}
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 90
+  }
+]

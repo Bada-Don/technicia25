@@ -1,0 +1,982 @@
+[
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which keyword is used to declare a variable that cannot be reassigned?",
+    "options": [
+      { "option_id": "A", "option_text": "`var`" },
+      { "option_id": "B", "option_text": "`let`" },
+      { "option_id": "C", "option_text": "`const`" },
+      { "option_id": "D", "option_text": "`static`" }
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 30
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the correct way to write an array in JavaScript?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "`var colors = (1:'red', 2:'green')`"
+      },
+      {
+        "option_id": "B",
+        "option_text": "`var colors = 'red', 'green', 'blue'`"
+      },
+      {
+        "option_id": "C",
+        "option_text": "`var colors = ['red', 'green', 'blue']`"
+      },
+      { "option_id": "D", "option_text": "`var colors = {red, green, blue}`" }
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 30
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which operator is used for strict equality comparison (checking both value and type)?",
+    "options": [
+      { "option_id": "A", "option_text": "`==`" },
+      { "option_id": "B", "option_text": "`===`" },
+      { "option_id": "C", "option_text": "`=`" },
+      { "option_id": "D", "option_text": "`!=`" }
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 30
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "How do you define a named function in JavaScript?",
+    "options": [
+      { "option_id": "A", "option_text": "`function myFunction()`" },
+      { "option_id": "B", "option_text": "`def myFunction()`" },
+      { "option_id": "C", "option_text": "`myFunction = function()`" },
+      { "option_id": "D", "option_text": "`func myFunction()`" }
+    ],
+    "correct_answer": "A",
+    "points": 1,
+    "time_limit_seconds": 30
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the method used to output data to the web console?",
+    "options": [
+      { "option_id": "A", "option_text": "`console.log()`" },
+      { "option_id": "B", "option_text": "`print()`" },
+      { "option_id": "C", "option_text": "`document.write()`" },
+      { "option_id": "D", "option_text": "`window.alert()`" }
+    ],
+    "correct_answer": "A",
+    "points": 1,
+    "time_limit_seconds": 30
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which built-in array method adds one or more elements to the end of an array and returns the new length?",
+    "options": [
+      { "option_id": "A", "option_text": "`shift()`" },
+      { "option_id": "B", "option_text": "`unshift()`" },
+      { "option_id": "C", "option_text": "`push()`" },
+      { "option_id": "D", "option_text": "`pop()`" }
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which statement is used to immediately exit a loop or switch statement?",
+    "options": [
+      { "option_id": "A", "option_text": "`continue`" },
+      { "option_id": "B", "option_text": "`break`" },
+      { "option_id": "C", "option_text": "`exit`" },
+      { "option_id": "D", "option_text": "`return`" }
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 30
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What will be the output of `typeof null` in JavaScript?",
+    "options": [
+      { "option_id": "A", "option_text": "`\"null\"`" },
+      { "option_id": "B", "option_text": "`\"undefined\"`" },
+      { "option_id": "C", "option_text": "`\"object\"`" },
+      { "option_id": "D", "option_text": "`\"number\"`" }
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 30
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which HTML element is used to include an external JavaScript file?",
+    "options": [
+      { "option_id": "A", "option_text": "`<js>`" },
+      { "option_id": "B", "option_text": "`<script>`" },
+      { "option_id": "C", "option_text": "`<link>`" },
+      { "option_id": "D", "option_text": "`<style>`" }
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 30
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the result of the expression `5 + \"5\"`?",
+    "options": [
+      { "option_id": "A", "option_text": "`10`" },
+      { "option_id": "B", "option_text": "`\"55\"`" },
+      { "option_id": "C", "option_text": "`\"10\"`" },
+      { "option_id": "D", "option_text": "`Error`" }
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "How do you write an `if` statement for checking if 'x' is greater than 'y'?",
+    "options": [
+      { "option_id": "A", "option_text": "`if x > y`" },
+      { "option_id": "B", "option_text": "`if (x > y)`" },
+      { "option_id": "C", "option_text": "`if x > y then`" },
+      { "option_id": "D", "option_text": "`if (x - y)`" }
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 30
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which property returns the number of characters in a string?",
+    "options": [
+      { "option_id": "A", "option_text": "`length()`" },
+      { "option_id": "B", "option_text": "`size`" },
+      { "option_id": "C", "option_text": "`length`" },
+      { "option_id": "D", "option_text": "`count()`" }
+    ],
+    "correct_answer": "C",
+    "points": 1,
+    "time_limit_seconds": 30
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the name of the process that raises an error and stops execution?",
+    "options": [
+      { "option_id": "A", "option_text": "Coercion" },
+      { "option_id": "B", "option_text": "Hoisting" },
+      { "option_id": "C", "option_text": "Exception Handling" },
+      { "option_id": "D", "option_text": "Throwing an Exception" }
+    ],
+    "correct_answer": "D",
+    "points": 1,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which function converts a JavaScript Object Notation (JSON) string into a JavaScript object?",
+    "options": [
+      { "option_id": "A", "option_text": "`JSON.stringify()`" },
+      { "option_id": "B", "option_text": "`JSON.parse()`" },
+      { "option_id": "C", "option_text": "`JSON.convert()`" },
+      { "option_id": "D", "option_text": "`JSON.objectify()`" }
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "How do you declare a variable with block scope in modern JavaScript?",
+    "options": [
+      { "option_id": "A", "option_text": "`var` or `const`" },
+      { "option_id": "B", "option_text": "`let` or `const`" },
+      { "option_id": "C", "option_text": "`var` only" },
+      { "option_id": "D", "option_text": "`global`" }
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 30
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the standard way to create an empty object literal in JavaScript?",
+    "options": [
+      { "option_id": "A", "option_text": "`var obj = {}`" },
+      { "option_id": "B", "option_text": "`var obj = new Object()`" },
+      { "option_id": "C", "option_text": "`var obj = create Object()`" },
+      { "option_id": "D", "option_text": "`var obj = ()`" }
+    ],
+    "correct_answer": "A",
+    "points": 1,
+    "time_limit_seconds": 30
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "Which of the following is a primitive data type in JavaScript?",
+    "options": [
+      { "option_id": "A", "option_text": "Object" },
+      { "option_id": "B", "option_text": "Array" },
+      { "option_id": "C", "option_text": "Function" },
+      { "option_id": "D", "option_text": "Boolean" }
+    ],
+    "correct_answer": "D",
+    "points": 1,
+    "time_limit_seconds": 30
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the output of `Boolean(\"\")`?",
+    "options": [
+      { "option_id": "A", "option_text": "`true`" },
+      { "option_id": "B", "option_text": "`false`" },
+      { "option_id": "C", "option_text": "`undefined`" },
+      { "option_id": "D", "option_text": "`null`" }
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 30
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "How can you change the content of an HTML element with the ID 'demo'?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "`document.getElementById('demo').innerHTML = 'New Content'`"
+      },
+      {
+        "option_id": "B",
+        "option_text": "`document.changeElement('demo') = 'New Content'`"
+      },
+      {
+        "option_id": "C",
+        "option_text": "`document.demo.content = 'New Content'`"
+      },
+      {
+        "option_id": "D",
+        "option_text": "`document.querySelector('#demo').text = 'New Content'`"
+      }
+    ],
+    "correct_answer": "A",
+    "points": 1,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Easy",
+    "question_text": "What is the correct syntax for a single-line comment in JavaScript?",
+    "options": [
+      { "option_id": "A", "option_text": "`<!-- Comment -->`" },
+      { "option_id": "B", "option_text": "`// Comment`" },
+      { "option_id": "C", "option_text": "`/* Comment */`" },
+      { "option_id": "D", "option_text": "`# Comment`" }
+    ],
+    "correct_answer": "B",
+    "points": 1,
+    "time_limit_seconds": 30
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the mechanism by which function and variable declarations (not initialization) are moved to the top of their scope before code execution?",
+    "options": [
+      { "option_id": "A", "option_text": "Event Bubbling" },
+      { "option_id": "B", "option_text": "Closure" },
+      { "option_id": "C", "option_text": "Hoisting" },
+      { "option_id": "D", "option_text": "Scope Chain" }
+    ],
+    "correct_answer": "C",
+    "points": 2,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the output of `console.log(10 == '10')`?",
+    "options": [
+      { "option_id": "A", "option_text": "`false`" },
+      { "option_id": "B", "option_text": "`true`" },
+      { "option_id": "C", "option_text": "`Error`" },
+      { "option_id": "D", "option_text": "`undefined`" }
+    ],
+    "correct_answer": "B",
+    "points": 2,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which array method creates a *new* array with the results of calling a provided function on every element in the calling array?",
+    "options": [
+      { "option_id": "A", "option_text": "`filter()`" },
+      { "option_id": "B", "option_text": "`reduce()`" },
+      { "option_id": "C", "option_text": "`map()`" },
+      { "option_id": "D", "option_text": "`forEach()`" }
+    ],
+    "correct_answer": "C",
+    "points": 2,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the output of the following: `var x = 1; function f(){ var x = 2; } f(); console.log(x);`?",
+    "options": [
+      { "option_id": "A", "option_text": "`2`" },
+      { "option_id": "B", "option_text": "`1`" },
+      { "option_id": "C", "option_text": "`undefined`" },
+      { "option_id": "D", "option_text": "`Error`" }
+    ],
+    "correct_answer": "B",
+    "points": 2,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is a JavaScript **Closure**?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "A function that has access to its own scope and the global scope only."
+      },
+      {
+        "option_id": "B",
+        "option_text": "A function that has access to the scope of its outer function even after the outer function has finished executing."
+      },
+      {
+        "option_id": "C",
+        "option_text": "A way to define private variables within a class."
+      },
+      {
+        "option_id": "D",
+        "option_text": "A specialized object for asynchronous operations."
+      }
+    ],
+    "correct_answer": "B",
+    "points": 2,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which built-in object is used to perform common mathematical tasks in JavaScript?",
+    "options": [
+      { "option_id": "A", "option_text": "`Number`" },
+      { "option_id": "B", "option_text": "`Math`" },
+      { "option_id": "C", "option_text": "`Calculate`" },
+      { "option_id": "D", "option_text": "`System`" }
+    ],
+    "correct_answer": "B",
+    "points": 2,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the purpose of the `bind()` method?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "To permanently attach an event handler to an element."
+      },
+      {
+        "option_id": "B",
+        "option_text": "To create a new function that, when called, has its `this` keyword set to a specific value."
+      },
+      {
+        "option_id": "C",
+        "option_text": "To combine two or more arrays into a single array."
+      },
+      {
+        "option_id": "D",
+        "option_text": "To serialize a JavaScript object for transmission."
+      }
+    ],
+    "correct_answer": "B",
+    "points": 2,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the output of `typeof NaN`?",
+    "options": [
+      { "option_id": "A", "option_text": "`\"number\"`" },
+      { "option_id": "B", "option_text": "`\"NaN\"`" },
+      { "option_id": "C", "option_text": "`\"string\"`" },
+      { "option_id": "D", "option_text": "`\"undefined\"`" }
+    ],
+    "correct_answer": "A",
+    "points": 2,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the default behavior of an event when an event handler is attached to a parent element and the event occurs on a child element?",
+    "options": [
+      { "option_id": "A", "option_text": "Event Capturing" },
+      { "option_id": "B", "option_text": "Event Propagation (Bubbling)" },
+      { "option_id": "C", "option_text": "Event Delegation" },
+      { "option_id": "D", "option_text": "Event Hijacking" }
+    ],
+    "correct_answer": "B",
+    "points": 2,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the correct way to instantiate an object using a constructor function `Person`?",
+    "options": [
+      { "option_id": "A", "option_text": "`var p = Person()`" },
+      { "option_id": "B", "option_text": "`var p = new Person()`" },
+      { "option_id": "C", "option_text": "`var p = Person.create()`" },
+      { "option_id": "D", "option_text": "`var p = Person.init()`" }
+    ],
+    "correct_answer": "B",
+    "points": 2,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which method is used to remove the *first* element from an array and return that removed element?",
+    "options": [
+      { "option_id": "A", "option_text": "`pop()`" },
+      { "option_id": "B", "option_text": "`shift()`" },
+      { "option_id": "C", "option_text": "`splice()`" },
+      { "option_id": "D", "option_text": "`filter()`" }
+    ],
+    "correct_answer": "B",
+    "points": 2,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the correct syntax to create a template literal (template string)?",
+    "options": [
+      { "option_id": "A", "option_text": "`var s = 'Text ${var}'`" },
+      { "option_id": "B", "option_text": "`var s = \"Text ${var}\"`" },
+      { "option_id": "C", "option_text": "`var s = \\`Text ${var}\\``" },
+      { "option_id": "D", "option_text": "`var s = (Text ${var})`" }
+    ],
+    "correct_answer": "C",
+    "points": 2,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "How do you stop the propagation (bubbling) of an event in a handler function?",
+    "options": [
+      { "option_id": "A", "option_text": "`event.stopImmediatePropagation()`" },
+      { "option_id": "B", "option_text": "`event.preventDefault()`" },
+      { "option_id": "C", "option_text": "`event.cancelBubble = true`" },
+      { "option_id": "D", "option_text": "`event.stopPropagation()`" }
+    ],
+    "correct_answer": "D",
+    "points": 2,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What does the `reduce()` array method return?",
+    "options": [
+      { "option_id": "A", "option_text": "A new array with filtered results." },
+      {
+        "option_id": "B",
+        "option_text": "A single value (the accumulator's final result)."
+      },
+      {
+        "option_id": "C",
+        "option_text": "An array with each element modified by the callback."
+      },
+      { "option_id": "D", "option_text": "The original array." }
+    ],
+    "correct_answer": "B",
+    "points": 2,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What will be the value of `a` after `let a = [1, 2, 3]; let b = a; b.push(4);`?",
+    "options": [
+      { "option_id": "A", "option_text": "`[1, 2, 3]`" },
+      { "option_id": "B", "option_text": "`[1, 2, 3, 4]`" },
+      { "option_id": "C", "option_text": "`[4, 1, 2, 3]`" },
+      {
+        "option_id": "D",
+        "option_text": "Error: `b` is a `const` and cannot be modified."
+      }
+    ],
+    "correct_answer": "B",
+    "points": 2,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the correct way to use a **destructuring assignment** to extract `name` and `age` from an object `user`?",
+    "options": [
+      { "option_id": "A", "option_text": "`let user.name, user.age = user;`" },
+      { "option_id": "B", "option_text": "`const { name, age } = user;`" },
+      {
+        "option_id": "C",
+        "option_text": "`let name, age = user.destructure;`"
+      },
+      { "option_id": "D", "option_text": "`const [name, age] = user;`" }
+    ],
+    "correct_answer": "B",
+    "points": 2,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which of the following is an asynchronous operation pattern in modern JavaScript?",
+    "options": [
+      { "option_id": "A", "option_text": "Loops" },
+      { "option_id": "B", "option_text": "Conditional Statements" },
+      { "option_id": "C", "option_text": "Promises" },
+      { "option_id": "D", "option_text": "Variables" }
+    ],
+    "correct_answer": "C",
+    "points": 2,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the difference between `let` and `var` in terms of scope?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "`var` is block-scoped, `let` is function-scoped."
+      },
+      {
+        "option_id": "B",
+        "option_text": "`let` is block-scoped, `var` is function-scoped (or global)."
+      },
+      {
+        "option_id": "C",
+        "option_text": "`var` can be reassigned, `let` cannot."
+      },
+      { "option_id": "D", "option_text": "There is no difference in scoping." }
+    ],
+    "correct_answer": "B",
+    "points": 2,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What does the `await` keyword do inside an `async` function?",
+    "options": [
+      { "option_id": "A", "option_text": "Immediately returns a Promise." },
+      {
+        "option_id": "B",
+        "option_text": "Pauses the execution of the async function until a Promise is resolved or rejected."
+      },
+      {
+        "option_id": "C",
+        "option_text": "Makes the entire function run synchronously."
+      },
+      {
+        "option_id": "D",
+        "option_text": "Converts the function into a generator."
+      }
+    ],
+    "correct_answer": "B",
+    "points": 2,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the purpose of `Object.keys(obj)`?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "Returns an array of the object's *values*."
+      },
+      {
+        "option_id": "B",
+        "option_text": "Returns an array of the object's *keys* (property names)."
+      },
+      { "option_id": "C", "option_text": "Returns the object itself." },
+      { "option_id": "D", "option_text": "Checks if the object has any keys." }
+    ],
+    "correct_answer": "B",
+    "points": 2,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which operator is used to merge the properties of two or more objects (or elements of arrays) into a new object (or array)?",
+    "options": [
+      { "option_id": "A", "option_text": "Ternary Operator (`? :`)" },
+      { "option_id": "B", "option_text": "Spread Operator (`...`)" },
+      { "option_id": "C", "option_text": "Nullish Coalescing Operator (`??`)" },
+      { "option_id": "D", "option_text": "Exponentiation Operator (`**`)" }
+    ],
+    "correct_answer": "B",
+    "points": 2,
+    "time_limit_seconds": 45
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the correct definition of an **Arrow Function**?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "It is a function that is used only for object methods."
+      },
+      {
+        "option_id": "B",
+        "option_text": "It is a syntactic sugar that always has its own `this` context."
+      },
+      {
+        "option_id": "C",
+        "option_text": "It is a concise way to write functions and does not have its own `this` context (it inherits `this` from the enclosing scope)."
+      },
+      {
+        "option_id": "D",
+        "option_text": "It can only be used for recursive function calls."
+      }
+    ],
+    "correct_answer": "C",
+    "points": 2,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "What is the result of `\"20\" > \"100\"`?",
+    "options": [
+      { "option_id": "A", "option_text": "`true`" },
+      { "option_id": "B", "option_text": "`false`" },
+      { "option_id": "C", "option_text": "`NaN`" },
+      { "option_id": "D", "option_text": "Error" }
+    ],
+    "correct_answer": "A",
+    "points": 2,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "In a Promise chain, what does the `catch()` method handle?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "Only synchronous errors in the preceding `then()`."
+      },
+      {
+        "option_id": "B",
+        "option_text": "The successful resolution value of the Promise."
+      },
+      {
+        "option_id": "C",
+        "option_text": "Rejections (errors) from the preceding promise or any subsequent synchronous errors in the chain."
+      },
+      {
+        "option_id": "D",
+        "option_text": "It is only a fallback for the `finally()` block."
+      }
+    ],
+    "correct_answer": "C",
+    "points": 2,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Medium",
+    "question_text": "Which of the following is true about JavaScript's automatic semicolon insertion (ASI)?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "ASI will insert semicolons everywhere, making them optional."
+      },
+      {
+        "option_id": "B",
+        "option_text": "ASI is a developer tool and not part of the language specification."
+      },
+      {
+        "option_id": "C",
+        "option_text": "ASI is a mechanism that attempts to insert semicolons to correct certain syntax errors, but can lead to unexpected behavior if not careful."
+      },
+      { "option_id": "D", "option_text": "ASI only runs in 'use strict' mode." }
+    ],
+    "correct_answer": "C",
+    "points": 2,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "What is the purpose of the `Proxy` object in ES6?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "To create a temporary copy of an object for iteration."
+      },
+      {
+        "option_id": "B",
+        "option_text": "To define custom behavior for fundamental operations like property lookup, assignment, enumeration, function invocation, etc."
+      },
+      {
+        "option_id": "C",
+        "option_text": "To establish an asynchronous connection to a server."
+      },
+      {
+        "option_id": "D",
+        "option_text": "To enable private class fields by convention."
+      }
+    ],
+    "correct_answer": "B",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "What will be the output of the following code snippet? `console.log(0.1 + 0.2 == 0.3)`",
+    "options": [
+      { "option_id": "A", "option_text": "`true`" },
+      { "option_id": "B", "option_text": "`false`" },
+      { "option_id": "C", "option_text": "`NaN`" },
+      { "option_id": "D", "option_text": "`undefined`" }
+    ],
+    "correct_answer": "B",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "Which symbol is used to create unique and non-string property keys in JavaScript objects?",
+    "options": [
+      { "option_id": "A", "option_text": "`Symbol()`" },
+      { "option_id": "B", "option_text": "`new Key()`" },
+      { "option_id": "C", "option_text": "`unique()`" },
+      { "option_id": "D", "option_text": "`Reflect()`" }
+    ],
+    "correct_answer": "A",
+    "points": 3,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "What is the primary function of the JavaScript **Event Loop**?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "To manage memory allocation and garbage collection."
+      },
+      {
+        "option_id": "B",
+        "option_text": "To execute the code in the global scope line by line."
+      },
+      {
+        "option_id": "C",
+        "option_text": "To handle the execution of the call stack, moving completed functions and asynchronous callbacks from the Message Queue."
+      },
+      {
+        "option_id": "D",
+        "option_text": "To ensure that only one thread is accessing the DOM at a time."
+      }
+    ],
+    "correct_answer": "C",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "Which statement describes the concept of **Prototypal Inheritance** in JavaScript?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "Classes inherit attributes and methods from a parent class using the `extends` keyword."
+      },
+      {
+        "option_id": "B",
+        "option_text": "Objects inherit methods and properties directly from a parent object's prototype."
+      },
+      {
+        "option_id": "C",
+        "option_text": "An object can only inherit from one other object."
+      },
+      {
+        "option_id": "D",
+        "option_text": "It's a syntactic sugar over the classical inheritance model of other languages."
+      }
+    ],
+    "correct_answer": "B",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "In the context of JavaScript modules, what does a **default export** allow?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "Only one default export is allowed per module, and it can be imported with any name."
+      },
+      {
+        "option_id": "B",
+        "option_text": "Multiple default exports can be used, provided they are given unique names."
+      },
+      {
+        "option_id": "C",
+        "option_text": "It requires curly braces for import, like named exports."
+      },
+      {
+        "option_id": "D",
+        "option_text": "It can only be used to export primitive values."
+      }
+    ],
+    "correct_answer": "A",
+    "points": 3,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "What is the consequence of *not* using `\"use strict\"` mode?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "It enables automatic garbage collection."
+      },
+      {
+        "option_id": "B",
+        "option_text": "It allows for silent failures, like assigning a value to an undeclared variable (creating an implicit global variable)."
+      },
+      {
+        "option_id": "C",
+        "option_text": "It prevents the use of asynchronous functions."
+      },
+      {
+        "option_id": "D",
+        "option_text": "It disables JavaScript's hoisting behavior."
+      }
+    ],
+    "correct_answer": "B",
+    "points": 3,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "How does the `finally` block in a `try...catch...finally` construct behave?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "It executes only if the `try` block succeeds without errors."
+      },
+      {
+        "option_id": "B",
+        "option_text": "It executes only if a `catch` block is executed."
+      },
+      {
+        "option_id": "C",
+        "option_text": "It executes last, regardless of whether an exception was thrown or caught."
+      },
+      {
+        "option_id": "D",
+        "option_text": "It executes only if a `return` statement is present in `try` or `catch`."
+      }
+    ],
+    "correct_answer": "C",
+    "points": 3,
+    "time_limit_seconds": 60
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "What is **currying** in functional JavaScript?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "A technique that merges two functions into one."
+      },
+      {
+        "option_id": "B",
+        "option_text": "The process of converting a function that takes multiple arguments into a sequence of functions, each taking a single argument."
+      },
+      {
+        "option_id": "C",
+        "option_text": "The act of returning a function from another function."
+      },
+      {
+        "option_id": "D",
+        "option_text": "A method to define private variables using closures."
+      }
+    ],
+    "correct_answer": "B",
+    "points": 3,
+    "time_limit_seconds": 90
+  },
+  {
+    "question_type": "MCQ",
+    "difficulty_level": "Hard",
+    "question_text": "What is the key difference between `slice()` and `splice()` array methods?",
+    "options": [
+      {
+        "option_id": "A",
+        "option_text": "`slice()` modifies the original array; `splice()` does not."
+      },
+      {
+        "option_id": "B",
+        "option_text": "`slice()` is used for objects; `splice()` is used for arrays."
+      },
+      {
+        "option_id": "C",
+        "option_text": "`slice()` returns a new array with a portion of the array (non-mutating); `splice()` modifies the original array (mutating)."
+      },
+      {
+        "option_id": "D",
+        "option_text": "`slice()` is for strings; `splice()` is for arrays."
+      }
+    ],
+    "correct_answer": "C",
+    "points": 3,
+    "time_limit_seconds": 60
+  }
+]
