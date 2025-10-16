@@ -79,7 +79,7 @@ const SkillsPerformance = () => {
           You haven't taken any skill tests yet. Take tests to see your performance here!
         </p>
         <button
-          onClick={() => window.location.href = '/dashboard'}
+          onClick={() => window.location.href = '/profile'}
           className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-lg transition-colors"
         >
           Take a Test

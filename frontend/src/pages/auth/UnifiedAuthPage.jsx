@@ -88,13 +88,20 @@ function UnifiedAuthPage() {
       setIsLoading(false);
 
       if (result.success) {
-        if (activeTab === "company") {
-          navigate("/company/profile");
-        } else if (activeTab === "student") {
-          navigate("/student/onboarding");
-        } else {
-          navigate("/profile");
-        }
+        console.log('Registration successful:', result.data);
+        console.log('User role:', result.data.user?.user_role);
+        
+        // Small delay to ensure state is updated
+        setTimeout(() => {
+          if (activeTab === "company") {
+            navigate("/company/profile");
+          } else if (activeTab === "student") {
+            console.log('Navigating to student onboarding');
+            navigate("/student/onboarding");
+          } else {
+            navigate("/profile");
+          }
+        }, 100);
       } else {
         setMessage(result.error);
       }

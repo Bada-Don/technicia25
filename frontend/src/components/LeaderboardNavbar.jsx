@@ -120,7 +120,7 @@ export default function LeaderboardNavbar({ searchQuery, onSearchChange }) {
               {/* Third div - Dashboard Button */}
               <div className="hidden lg:flex items-center flex-shrink-0">
                 <Link
-                  to="/dashboard"
+                  to="/profile"
                   className="inline-flex items-center justify-center rounded-xl px-6 py-2.5 text-sm font-medium transition-colors bg-purple-600 hover:bg-purple-700 text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 whitespace-nowrap shadow-sm"
                 >
                   <span>Dashboard</span>
@@ -145,7 +145,7 @@ export default function LeaderboardNavbar({ searchQuery, onSearchChange }) {
               {/* Mobile Dashboard Button */}
               <div className="w-full">
                 <Link
-                  to="/dashboard"
+                  to="/profile"
                   className="w-full inline-flex items-center justify-center rounded-xl px-4 py-3 text-sm font-medium transition-colors bg-purple-600 hover:bg-purple-700 text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 shadow-sm"
                 >
                   <span>Dashboard</span>

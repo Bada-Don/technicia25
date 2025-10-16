@@ -123,7 +123,7 @@ const ProfileCompletion = ({ extractedData, missingFields }) => {
       
       // Navigate to dashboard page after a short delay
       setTimeout(() => {
-        navigate('/dashboard');
+        navigate('/profile');
       }, 1500);
     } catch (err) {
       console.error('Save error:', err);

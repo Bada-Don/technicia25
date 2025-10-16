@@ -23,7 +23,7 @@ import StudentSignup from "./pages/auth/StudentSignup";
 import TeacherSignup from "./pages/auth/TeacherSignup";
 import LeaderBoardPage from "./pages/LeaderBoard";
 import UnifiedAuthPage from "./pages/auth/UnifiedAuthPage";
-import Dashboard from "./pages/Dashboard";
+import Dashboard from "./pages/profile";
 import ModernDashboard from "./components/ModernDashboard";
 import StudentOnboarding from "./pages/StudentOnboarding";
 import SkillVerificationTest from "./pages/SkillVerificationTest";
@@ -37,7 +37,7 @@ function App() {
         <Route path="/auth" element={<UnifiedAuthPage />} />
         
         {/* Dashboard - Protected */}
-        <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
+        <Route path="/profile" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
         
         {/* Modern Dashboard - Protected */}
         <Route path="/modern-dashboard" element={<ProtectedRoute><ModernDashboard /></ProtectedRoute>} />

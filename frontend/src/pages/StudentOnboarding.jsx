@@ -7,13 +7,17 @@ const StudentOnboarding = () => {
   const [extractedData, setExtractedData] = useState(null);
   const [missingFields, setMissingFields] = useState([]);
 
+  console.log('StudentOnboarding rendered - step:', step);
+
   const handleResumeSuccess = (data, missing) => {
+    console.log('Resume upload success:', data);
     setExtractedData(data);
     setMissingFields(missing);
     setStep('complete');
   };
 
   const handleSkipUpload = () => {
+    console.log('Skipping resume upload');
     setExtractedData(null);
     setMissingFields(['all']);
     setStep('complete');

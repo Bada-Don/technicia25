@@ -7,6 +7,8 @@ const ResumeUpload = ({ onSuccess, onSkip }) => {
   const [error, setError] = useState(null);
   const [dragActive, setDragActive] = useState(false);
 
+  console.log('ResumeUpload component rendered');
+
   const handleDrag = (e) => {
     e.preventDefault();
     e.stopPropagation();

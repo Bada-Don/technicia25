@@ -51,7 +51,7 @@ This feature allows students to automatically populate their profile by uploadin
    - Orchestrates the upload and completion workflow
    - State management between components
 
-4. **`frontend/src/pages/Dashboard.jsx`**
+4. **`frontend/src/pages/profile.jsx`**
    - Checks profile completion percentage
    - Redirects to onboarding if profile < 50% complete
 
@@ -107,7 +107,7 @@ This feature allows students to automatically populate their profile by uploadin
    - Account is created with `profile_completion_percentage` = 25%
 
 2. **First Login**
-   - After successful login, user is redirected to `/dashboard`
+   - After successful login, user is redirected to `/profile`
    - Dashboard checks `profile_completion_percentage`
    - If < 50%, automatically redirects to `/student/onboarding`
 
@@ -277,7 +277,7 @@ Edit `backend/utils/resume_extractor.py`, line 145 to customize the AI extractio
 
 ### Change Profile Completion Threshold
 
-Edit `frontend/src/pages/Dashboard.jsx`, line 75 to change the redirection threshold (currently 50%).
+Edit `frontend/src/pages/profile.jsx`, line 75 to change the redirection threshold (currently 50%).
 
 ### Modify Form Steps
 

@@ -23,7 +23,7 @@ function Hero() {
       <div className="flex justify-center items-center gap-10 flex-wrap">
         {isAuthenticated ? (
           // Show Dashboard button when logged in
-          <Link to="/dashboard">
+          <Link to="/profile">
             <button className="px-[2.5rem] py-[.75rem] rounded-xl bg-[#7c35c7] hover:bg-[#4d217b] text-white text-xl font-semibold shadow-lg transition-all hover:scale-105">
               <p className="text-lg drop-shadow-md">Go to Dashboard</p>
             </button>

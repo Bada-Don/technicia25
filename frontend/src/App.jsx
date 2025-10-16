@@ -21,7 +21,7 @@ import StudentSignup from "./pages/auth/StudentSignup";
 import TeacherSignup from "./pages/auth/TeacherSignup";
 import LeaderBoardPage from "./pages/LeaderBoard";
 import UnifiedAuthPage from "./pages/auth/UnifiedAuthPage";
-import Dashboard from "./pages/Dashboard";
+import Dashboard from "./pages/profile";
 import StudentOnboarding from "./pages/StudentOnboarding";
 import SkillVerificationTest from "./pages/SkillVerificationTest";
 import TestResult from "./pages/TestResult";
@@ -34,7 +34,7 @@ function App() {
         <Route path="/auth" element={<UnifiedAuthPage />} />
         
         {/* Dashboard - Protected */}
-        <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
+        <Route path="/profile" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
         
         {/* Student Onboarding - Protected */}
         <Route path="/student/onboarding" element={<ProtectedRoute><StudentOnboarding /></ProtectedRoute>} />
