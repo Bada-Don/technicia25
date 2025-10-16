@@ -105,15 +105,31 @@ async def save_user_skills(
                 detail="At least one skill must be provided"
             )
         
+        # Fetch existing skills to preserve their verification status
+        existing_skills_response = db.table("user_skills").select(
+            "skill_id, verification_status"
+        ).eq("user_id", user_id).execute()
+        
+        # Create a map of existing skills with their verification status
+        existing_skills_map = {
+            skill["skill_id"]: skill["verification_status"] 
+            for skill in (existing_skills_response.data or [])
+        }
+        
         # Prepare skills for insertion/update
         skills_to_save = []
         for skill in skills:
+            skill_id_str = str(skill.skill_id)
+            
+            # Preserve verification status for existing skills, set Unverified for new ones
+            verification_status = existing_skills_map.get(skill_id_str, "Unverified")
+            
             skill_data = {
                 "user_id": user_id,
-                "skill_id": str(skill.skill_id),
+                "skill_id": skill_id_str,
                 "proficiency_level": skill.proficiency_level,
                 "years_of_experience": skill.years_of_experience,
-                "verification_status": "Unverified"  # Default status
+                "verification_status": verification_status
             }
             skills_to_save.append(skill_data)
         

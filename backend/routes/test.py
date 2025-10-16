@@ -550,6 +550,87 @@ async def get_test_result(
         )
 
 
+@router.get("/skills-performance", response_model=Dict[str, Any])
+async def get_skills_performance(
+    current_user: TokenData = Depends(get_current_active_user),
+    db: Client = Depends(get_supabase_admin)
+):
+    """
+    Get user's test performance across all skills
+    Returns best score for each skill with percentage
+    """
+    try:
+        # Get all test sessions for user
+        sessions_response = db.table("test_sessions").select(
+            "session_id, skill_id, percentage, obtained_score, total_score, verification_status, completed_at"
+        ).eq("user_id", str(current_user.user_id)).eq("status", "Completed").execute()
+        
+        if not sessions_response.data:
+            return {
+                "message": "No test results found",
+                "total_skills_tested": 0,
+                "average_score": 0,
+                "skills_performance": []
+            }
+        
+        # Group by skill and get best performance
+        skill_performance = {}
+        
+        for session in sessions_response.data:
+            skill_id = session["skill_id"]
+            percentage = session.get("percentage", 0)
+            
+            if skill_id not in skill_performance or percentage > skill_performance[skill_id]["percentage"]:
+                skill_performance[skill_id] = {
+                    "skill_id": skill_id,
+                    "percentage": percentage,
+                    "obtained_score": session.get("obtained_score", 0),
+                    "total_score": session.get("total_score", 0),
+                    "verification_status": session.get("verification_status", "Unverified"),
+                    "completed_at": session.get("completed_at")
+                }
+        
+        # Get skill names
+        skill_ids = list(skill_performance.keys())
+        skills_response = db.table("skills_master").select("skill_id, skill_name").in_(
+            "skill_id", skill_ids
+        ).execute()
+        
+        skills_map = {skill["skill_id"]: skill["skill_name"] for skill in skills_response.data}
+        
+        # Format response
+        skills_data = []
+        for skill_id, perf in skill_performance.items():
+            skills_data.append({
+                "skill_id": skill_id,
+                "skill_name": skills_map.get(skill_id, "Unknown"),
+                "percentage": round(perf["percentage"], 2),
+                "obtained_score": perf["obtained_score"],
+                "total_score": perf["total_score"],
+                "verification_status": perf["verification_status"],
+                "completed_at": perf["completed_at"]
+            })
+        
+        # Sort by percentage descending
+        skills_data.sort(key=lambda x: x["percentage"], reverse=True)
+        
+        # Calculate average
+        avg_score = sum(s["percentage"] for s in skills_data) / len(skills_data) if skills_data else 0
+        
+        return {
+            "message": f"Found test results for {len(skills_data)} skill(s)",
+            "total_skills_tested": len(skills_data),
+            "average_score": round(avg_score, 2),
+            "skills_performance": skills_data
+        }
+        
+    except Exception as e:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Failed to fetch skills performance: {str(e)}"
+        )
+
+
 @router.get("/history", response_model=List[TestResult])
 async def get_test_history(
     current_user: TokenData = Depends(get_current_active_user),

@@ -6,6 +6,7 @@ import RecommendedCourses from '../components/profile page/courseListing.jsx';
 import SkillsTable from '../components/profile page/techSkills.jsx';
 import ProfileInfo from '../components/profile page/personalInfo.jsx';
 import ProfileOverview from '../components/profile page/profileOverview.jsx';
+import SkillsPerformance from '../components/profile page/SkillsPerformance.jsx';
 import ExperienceForm from '../components/profile page/experience.jsx';
 import EducationSection from '../components/profile page/education.jsx';
 import Header from "../components/Header.jsx";
@@ -78,6 +79,8 @@ function Profile() {
                 return <ProfileInfo profileData={profileData} onUpdate={fetchProfileData} />;
             case 'technical-skills':
                 return <SkillsTable profileData={profileData} onUpdate={fetchProfileData} />;
+            case 'skills-performance':
+                return <SkillsPerformance />;
             case 'profile-overview':
                 return <ProfileOverview />;
             case 'experience':
@@ -121,7 +124,7 @@ function Profile() {
                             <ProgressBar progress={profileData.profile_completion_percentage || 0} />
 
                             <div className='mt-10 flex flex-col w-full gap-3'>
-                                {['personal-info', 'technical-skills', 'profile-overview', 'experience', 'education'].map((section) => (
+                                {['personal-info', 'technical-skills', 'skills-performance', 'profile-overview', 'experience', 'education'].map((section) => (
                                     <button 
                                         key={section}
                                         className={`profile-btn text-left pl-5 w-full py-2 rounded ${activeProfileSection === section ? 'bg-purple-600' : 'bg-gray-800 hover:bg-gray-700'}`}
