@@ -77,12 +77,32 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
+  // Refresh user data from server
+  const refreshUser = async () => {
+    try {
+      const userResponse = await api.get('/auth/me');
+      const userData = userResponse.data;
+      
+      localStorage.setItem('user', JSON.stringify(userData));
+      setUser(userData);
+      
+      return { success: true, data: userData };
+    } catch (error) {
+      console.error('Refresh user error:', error);
+      return { 
+        success: false, 
+        error: error.response?.data?.detail || 'Failed to refresh user data' 
+      };
+    }
+  };
+
   const value = {
     user,
     loading,
     login,
     logout,
     register,
+    refreshUser,
     isAuthenticated: !!user,
   };
 

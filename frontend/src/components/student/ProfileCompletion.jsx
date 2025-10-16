@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../../context/AuthContext';
 import api from '../../services/api';
 
 const ProfileCompletion = ({ extractedData, missingFields }) => {
   const navigate = useNavigate();
+  const { refreshUser } = useAuth();
   const [formData, setFormData] = useState({
     first_name: '',
     last_name: '',
@@ -113,12 +115,15 @@ const ProfileCompletion = ({ extractedData, missingFields }) => {
         }
       }
 
+      // Refresh user data in AuthContext
+      await refreshUser();
+      
       // Show success message
       setSuccess(true);
       
-      // Navigate to profile page after a short delay
+      // Navigate to dashboard page after a short delay
       setTimeout(() => {
-        navigate('/profile');
+        navigate('/dashboard');
       }, 1500);
     } catch (err) {
       console.error('Save error:', err);
