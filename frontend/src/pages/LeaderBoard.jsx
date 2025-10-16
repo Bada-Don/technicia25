@@ -1,4 +1,5 @@
 import React, { useEffect, useMemo, useState } from "react";
+import axios from "axios";
 import LeaderboardNavbar from "../components/LeaderboardNavbar";
 
 // ProfilePhoto component for circular profile images
@@ -38,91 +39,31 @@ const ProfilePhoto = ({ name, size = "w-8 h-8" }) => {
   );
 };
 
-// Mock data generator for the updated structure
-const generateMockData = (selectedSkills) => {
-  const names = [
-    "Alex Johnson",
-    "Sarah Chen",
-    "Michael Brown",
-    "Emily Davis",
-    "James Wilson",
-    "Maria Garcia",
-    "David Lee",
-    "Jessica Taylor",
-    "Robert Martinez",
-    "Lisa Anderson",
-    "John Thompson",
-    "Amy White",
-    "Chris Martin",
-    "Rachel Green",
-    "Tom Harris",
-  ];
-  const countries = [
-    "United States",
-    "China",
-    "United Kingdom",
-    "Canada",
-    "Australia",
-    "Spain",
-    "South Korea",
-    "United States",
-    "Mexico",
-    "United States",
-    "Canada",
-    "United States",
-    "United Kingdom",
-    "United States",
-    "United States",
-  ];
-  const technologies = [
-    "React",
-    "Node.js",
-    "Python",
-    "Express",
-    "React",
-    "Python",
-    "Node.js",
-    "Express",
-    "React",
-    "Python",
-    "Node.js",
-    "Express",
-    "React",
-    "Python",
-    "Express",
-  ];
-  const roles = ["Student", "Teacher"];
+// API Configuration
+const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
 
-  // Combine data for all selected skills
-  let combinedData = [];
-
-  for (let i = 0; i < names.length; i++) {
-    const isStudent = Math.random() > 0.4; // More students for variety
-    const role = isStudent ? "Student" : "Teacher";
-    const primarySkill =
-      selectedSkills[Math.floor(Math.random() * selectedSkills.length)];
-
-    combinedData.push({
-      id: `u${i + 1}`,
-      name: names[i],
-      role: role,
-      country: countries[i],
-      technology: technologies[i],
-      skill: primarySkill, // Use single skill for display, even if multiple are selected for context
-      score: Math.floor(Math.random() * 100) + (isStudent ? 0 : 20), // Teachers often have higher scores in this mock
-      skills: selectedSkills, // Pass all selected skills for context
+// Fetch leaderboard data from API
+const fetchLeaderboardData = async (role = "Student") => {
+  try {
+    const response = await axios.get(`${API_BASE_URL}/leaderboard/all`, {
+      params: { role, limit: 200 }
     });
+    return response.data || [];
+  } catch (error) {
+    console.error("Error fetching leaderboard data:", error);
+    return [];
   }
+};
 
-  // Deduplicate and sort
-  const uniqueData = Array.from(new Set(combinedData.map((a) => a.id)))
-    .map((id) => combinedData.find((a) => a.id === id))
-    .sort((a, b) => b.score - a.score);
-
-  // Apply ranks
-  uniqueData.forEach((r, i) => (r.rank = i + 1));
-
-  return uniqueData;
+// Fetch available technologies
+const fetchTechnologies = async () => {
+  try {
+    const response = await axios.get(`${API_BASE_URL}/leaderboard/technologies`);
+    return response.data || [];
+  } catch (error) {
+    console.error("Error fetching technologies:", error);
+    return [];
+  }
 };
 
 const Loader = () => (
@@ -137,11 +78,25 @@ const NoData = ({ message = "No leaderboard data available." }) => (
   </div>
 );
 
-const RankHighlight = ({ rank }) => (
-  <div className="px-2 py-0.5 rounded-md text-xs font-medium bg-purple-600/10 text-purple-400 border border-purple-600/20">
-    #{rank}
-  </div>
-);
+const RankHighlight = ({ rank }) => {
+  let bgColor = "bg-purple-600/10 text-purple-400 border-purple-600/20";
+  
+  // Highlight top 3 ranks
+  if (rank === 1) {
+    bgColor = "bg-yellow-600/20 text-yellow-400 border-yellow-600/40";
+  } else if (rank === 2) {
+    bgColor = "bg-gray-400/20 text-gray-300 border-gray-400/40";
+  } else if (rank === 3) {
+    bgColor = "bg-orange-600/20 text-orange-400 border-orange-600/40";
+  }
+  
+  return (
+    <div className={`px-2 py-1 rounded-md text-xs font-semibold border ${bgColor} inline-flex items-center gap-1`}>
+      {rank <= 3 && <span>🏆</span>}
+      <span>#{rank}</span>
+    </div>
+  );
+};
 
 const LeaderBoardTable = React.memo(function LeaderBoardTable({
   rows,
@@ -161,22 +116,22 @@ const LeaderBoardTable = React.memo(function LeaderBoardTable({
           <col className="w-32" />
           <col className="w-16" />
         </colgroup>
-        <thead className="sticky top-0 bg-[#0d0d0d]">
-          <tr className="text-left text-sm uppercase text-gray-300">
-            <th className="px-4 py-3">Rank</th>
-            <th className="px-4 py-3">Name</th>
-            <th className="px-4 py-3">Role</th>
-            <th className="px-4 py-3">Technology</th>
-            <th className="px-4 py-3">Country</th>
-            <th className="px-4 py-3">Score</th>
+        <thead className="sticky top-0 bg-[#0d0d0d] z-10">
+          <tr className="text-left text-xs uppercase text-gray-400 tracking-wider">
+            <th className="px-4 py-4 font-semibold">Rank</th>
+            <th className="px-4 py-4 font-semibold">Name</th>
+            <th className="px-4 py-4 font-semibold">Role</th>
+            <th className="px-4 py-4 font-semibold">Technology</th>
+            <th className="px-4 py-4 font-semibold">Country</th>
+            <th className="px-4 py-4 font-semibold text-right">Score</th>
           </tr>
         </thead>
         <tbody className="divide-y divide-gray-800">
           {rows.map((row) => (
             <tr
-              key={row.id}
+              key={row.user_id}
               className={`hover:bg-[#111] transition-colors duration-200 ${
-                row.id === currentUserId
+                row.user_id === currentUserId
                   ? "bg-gradient-to-r from-purple-900/40 to-transparent"
                   : ""
               }`}
@@ -189,7 +144,7 @@ const LeaderBoardTable = React.memo(function LeaderBoardTable({
                   <ProfilePhoto name={row.name} />
                   <div>
                     <div className="font-medium text-white">{row.name}</div>
-                    <div className="text-xs text-gray-400">ID: {row.id}</div>
+                    <div className="text-xs text-gray-400">{row.email || `ID: ${row.user_id.slice(0, 8)}...`}</div>
                   </div>
                 </div>
               </td>
@@ -204,8 +159,11 @@ const LeaderBoardTable = React.memo(function LeaderBoardTable({
               <td className="px-4 py-3 align-middle text-gray-300">
                 {row.country}
               </td>
-              <td className="px-4 py-3 align-middle font-semibold text-purple-400">
-                {row.score}
+              <td className="px-4 py-3 align-middle">
+                <div className="flex flex-col items-end">
+                  <span className="font-semibold text-purple-400">{row.percentage}%</span>
+                  <span className="text-xs text-gray-400">({row.score} pts)</span>
+                </div>
               </td>
             </tr>
           ))}
@@ -226,9 +184,9 @@ const LeaderBoardCard = React.memo(function LeaderBoardCard({
     <div className="space-y-3">
       {rows.map((row) => (
         <div
-          key={row.id}
+          key={row.user_id}
           className={`p-4 rounded-2xl border border-gray-800 shadow-sm hover:bg-gray-900/50 transition-colors duration-200 ${
-            row.id === currentUserId
+            row.user_id === currentUserId
               ? "bg-purple-950/40 border-purple-600"
               : "bg-[#070707]"
           }`}
@@ -247,7 +205,10 @@ const LeaderBoardCard = React.memo(function LeaderBoardCard({
                 </span>
               </div>
             </div>
-            <div className="text-xl font-bold text-purple-400">{row.score}</div>
+            <div className="flex flex-col items-end">
+              <div className="text-xl font-bold text-purple-400">{row.percentage}%</div>
+              <div className="text-xs text-gray-400">{row.score} pts</div>
+            </div>
           </div>
         </div>
       ))}
@@ -283,11 +244,10 @@ const RoleTabs = ({ activeRole, onRoleChange }) => {
 };
 
 export default function LeaderBoardPage({
-  initialSkills = ["React.js", "Express.js", "Node.js", "Python"],
-  currentUserId = "u3",
+  currentUserId = null,
 }) {
-  const [availableSkills] = useState(initialSkills);
-  const [selectedSkills, setSelectedSkills] = useState(initialSkills); // Show all skills by default
+  const [availableTechnologies, setAvailableTechnologies] = useState([]);
+  const [selectedTechnology, setSelectedTechnology] = useState("All"); // Show all by default
   const [activeRole, setActiveRole] = useState("Student"); // New state for role filter
   const [searchQuery, setSearchQuery] = useState(""); // New search state
   const [loading, setLoading] = useState(false);
@@ -295,20 +255,26 @@ export default function LeaderBoardPage({
   const [page, setPage] = useState(1);
   const pageSize = 30;
 
-  // Simulate API fetch based on selected skills
+  // Fetch available technologies on mount
+  useEffect(() => {
+    const loadTechnologies = async () => {
+      const techs = await fetchTechnologies();
+      setAvailableTechnologies(techs);
+    };
+    loadTechnologies();
+  }, []);
+
+  // Fetch leaderboard data based on role
   useEffect(() => {
     let cancelled = false;
     const fetchData = async () => {
-      if (selectedSkills.length === 0) return;
-
       setLoading(true);
-      // Simulate network delay
-      await new Promise((resolve) => setTimeout(resolve, 800));
 
       try {
-        // Use the combined mock data generator
-        const data = generateMockData(selectedSkills);
-        if (!cancelled) setRawRows(data);
+        const data = await fetchLeaderboardData(activeRole);
+        if (!cancelled) {
+          setRawRows(data);
+        }
       } catch (err) {
         console.error(err);
         if (!cancelled) setRawRows([]);
@@ -319,35 +285,42 @@ export default function LeaderBoardPage({
 
     fetchData();
     return () => (cancelled = true);
-  }, [selectedSkills]);
+  }, [activeRole]);
 
   // Filter and sort the raw data
   const filteredAndAggregatedRows = useMemo(() => {
     if (!rawRows || rawRows.length === 0) return [];
 
-    // 1. Role Filter
-    let filteredData = rawRows.filter((row) => row.role === activeRole);
+    let filteredData = [...rawRows];
+
+    // 1. Technology Filter
+    if (selectedTechnology !== "All") {
+      filteredData = filteredData.filter(
+        (row) => row.technology?.toLowerCase().includes(selectedTechnology.toLowerCase())
+      );
+    }
 
     // 2. Search Filter
     if (searchQuery.trim()) {
       const query = searchQuery.toLowerCase();
       filteredData = filteredData.filter(
         (row) =>
-          row.name.toLowerCase().includes(query) ||
-          row.country.toLowerCase().includes(query) ||
-          row.technology.toLowerCase().includes(query) ||
-          row.id.toLowerCase().includes(query)
+          (row.name && row.name.toLowerCase().includes(query)) ||
+          (row.country && row.country.toLowerCase().includes(query)) ||
+          (row.technology && row.technology.toLowerCase().includes(query)) ||
+          (row.user_id && row.user_id.toLowerCase().includes(query)) ||
+          (row.email && row.email.toLowerCase().includes(query))
       );
     }
 
-    // 3. Sort by score
-    const sortedArr = [...filteredData].sort((a, b) => b.score - a.score);
+    // 3. Sort by percentage
+    const sortedArr = [...filteredData].sort((a, b) => b.percentage - a.percentage);
 
     // 4. Re-apply ranks after filtering and sorting
     sortedArr.forEach((r, i) => (r.rank = i + 1));
 
     return sortedArr;
-  }, [rawRows, activeRole, searchQuery]);
+  }, [rawRows, selectedTechnology, searchQuery]);
 
   const paginatedRows = useMemo(() => {
     const start = (page - 1) * pageSize;
@@ -378,59 +351,102 @@ export default function LeaderBoardPage({
           {/* Centered Leaderboard Heading */}
           <div className="text-center mb-8">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
-              Leaderboard
+              🏆 Leaderboard
             </h1>
+            <p className="text-gray-400 text-base max-w-2xl mx-auto">
+              Compete with peers and track your progress across different technologies.
+              Rankings are based on test performance.
+            </p>
           </div>
 
-          {/* Badge and Description */}
-          <div className="flex items-center gap-3 mb-6">
-            <div className="px-4 py-2 bg-purple-600/25 border border-purple-500/40 rounded-lg backdrop-blur-sm shadow-sm">
-              <span className="text-purple-300 text-lg font-semibold">
-                🏆 Rankings
-              </span>
+          {/* Filters Section */}
+          <div className="bg-gray-900/40 border border-gray-800 rounded-xl p-4 sm:p-6 mb-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {/* Technology Filter */}
+              <div>
+                <label className="block text-sm font-medium text-gray-300 mb-2">
+                  💻 Technology
+                </label>
+                <select
+                  value={selectedTechnology}
+                  onChange={(e) => {
+                    setSelectedTechnology(e.target.value);
+                    setPage(1);
+                  }}
+                  className="w-full px-4 py-2.5 bg-gray-900 border border-gray-700 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-purple-500 transition-all"
+                >
+                  <option value="All">All Technologies</option>
+                  {availableTechnologies.map((tech) => (
+                    <option key={tech.skill_id} value={tech.skill_name}>
+                      {tech.skill_name} ({tech.total_attempts} tests)
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              {/* Stats Summary */}
+              <div className="flex items-end">
+                <div className="w-full bg-purple-900/20 border border-purple-600/30 rounded-lg px-4 py-2.5">
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <p className="text-xs text-gray-400">Total Participants</p>
+                      <p className="text-lg font-bold text-purple-400">
+                        {filteredAndAggregatedRows.length}
+                      </p>
+                    </div>
+                    <div>
+                      <p className="text-xs text-gray-400">Technologies</p>
+                      <p className="text-lg font-bold text-purple-400">
+                        {availableTechnologies.length}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <p className="text-gray-400 text-sm mb-6">
-            Compete with peers and track your progress across different skills.
-            Rankings are updated in real-time based on performance and
-            achievements.
-          </p>
         </section>
 
         <section className="mb-4 sm:mb-6 text-white">
-          <div className="flex items-center justify-between mb-3 sm:mb-4">
-            <h3 className="text-xl sm:text-2xl font-bold">
-              {searchQuery
-                ? `Search Results - ${activeRole}s`
-                : `Top ${activeRole}s`}
-            </h3>
-            <div className="text-xs sm:text-sm text-gray-400">
-              {searchQuery ? (
-                <span>
-                  Found {filteredAndAggregatedRows.length}{" "}
-                  {activeRole.toLowerCase()}(s)
-                </span>
-              ) : (
-                <span>Showing {filteredAndAggregatedRows.length} users</span>
-              )}
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-4 gap-3">
+            <div>
+              <h3 className="text-xl sm:text-2xl font-bold">
+                {searchQuery
+                  ? `Search Results - ${activeRole}s`
+                  : selectedTechnology !== "All"
+                  ? `${selectedTechnology} - ${activeRole}s`
+                  : `Top ${activeRole}s`}
+              </h3>
+              <p className="text-xs text-gray-400 mt-1">
+                {searchQuery ? (
+                  <span>
+                    Found {filteredAndAggregatedRows.length} result(s)
+                  </span>
+                ) : (
+                  <span>Showing {paginatedRows.length} of {filteredAndAggregatedRows.length} participants</span>
+                )}
+              </p>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="text-xs text-gray-500">Ranked by best score</span>
             </div>
           </div>
 
           {/* Search Results Indicator */}
           {searchQuery && (
-            <div className="mb-4 px-3 py-2 bg-purple-900/20 border border-purple-600/30 rounded-lg">
+            <div className="mb-4 px-4 py-3 bg-purple-900/20 border border-purple-600/30 rounded-lg flex items-center justify-between">
               <span className="text-sm text-purple-300">
                 Searching for:{" "}
-                <span className="font-medium text-purple-200">
+                <span className="font-semibold text-purple-100">
                   "{searchQuery}"
                 </span>
-                <button
-                  onClick={() => setSearchQuery("")}
-                  className="ml-3 text-purple-400 hover:text-purple-200 text-xs underline"
-                >
-                  Clear search
-                </button>
               </span>
+              <button
+                onClick={() => setSearchQuery("")}
+                className="px-3 py-1 text-purple-400 hover:text-purple-200 hover:bg-purple-900/30 text-xs rounded transition-colors"
+              >
+                Clear
+              </button>
             </div>
           )}
 
@@ -469,21 +485,24 @@ export default function LeaderBoardPage({
 
           {/* Pagination Controls */}
           {filteredAndAggregatedRows.length > pageSize && (
-            <div className="flex justify-between items-center mt-4 text-gray-300">
+            <div className="flex flex-col sm:flex-row justify-between items-center mt-6 gap-3 p-4 bg-gray-900/40 border border-gray-800 rounded-lg">
               <div className="text-sm text-gray-400">
-                Page {page} /{" "}
-                {Math.ceil(filteredAndAggregatedRows.length / pageSize)}
+                Page <span className="font-semibold text-purple-400">{page}</span> of{" "}
+                <span className="font-semibold text-purple-400">
+                  {Math.ceil(filteredAndAggregatedRows.length / pageSize)}
+                </span>
+                {" "}• Total: {filteredAndAggregatedRows.length} participants
               </div>
               <div className="flex gap-2">
                 <button
-                  className="px-3 py-1 rounded border border-gray-700 bg-[#121212] hover:bg-purple-900 transition disabled:opacity-50"
+                  className="px-4 py-2 rounded-lg border border-gray-700 bg-[#121212] hover:bg-purple-900 hover:border-purple-600 transition-all disabled:opacity-50 disabled:cursor-not-allowed text-sm font-medium"
                   onClick={() => setPage((p) => Math.max(1, p - 1))}
                   disabled={page === 1}
                 >
-                  Prev
+                  ← Previous
                 </button>
                 <button
-                  className="px-3 py-1 rounded border border-gray-700 bg-[#121212] hover:bg-purple-900 transition disabled:opacity-50"
+                  className="px-4 py-2 rounded-lg border border-gray-700 bg-[#121212] hover:bg-purple-900 hover:border-purple-600 transition-all disabled:opacity-50 disabled:cursor-not-allowed text-sm font-medium"
                   onClick={() =>
                     setPage((p) =>
                       Math.min(
@@ -494,7 +513,7 @@ export default function LeaderBoardPage({
                   }
                   disabled={page * pageSize >= filteredAndAggregatedRows.length}
                 >
-                  Next
+                  Next →
                 </button>
               </div>
             </div>
