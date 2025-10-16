@@ -1,0 +1,841 @@
+[
+  {
+    "id": "SWE-FS-001",
+    "title": "Software Engineer - Full-stack Development",
+    "company": "GlobalTech Solutions",
+    "location": {
+      "city": "Anywhere",
+      "state": "N/A",
+      "country": "USA",
+      "remote": true,
+      "hybrid": false
+    },
+    "department": "Engineering",
+    "employment_type": "Full-time",
+    "experience_level": "Mid",
+    "salary_range": {
+      "min": 100000,
+      "max": 140000,
+      "currency": "USD"
+    },
+    "description": "Join our agile team to design, develop, and maintain both the front-end and back-end components of our flagship product. Focus on scalable and high-performance applications.",
+    "responsibilities": [
+      "Develop and maintain scalable web applications using Python and React.",
+      "Collaborate with product managers and designers to translate requirements into technical specifications.",
+      "Implement and manage CI/CD pipelines."
+    ],
+    "requirements": {
+      "required_skills": ["Python", "React", "RESTful APIs", "SQL"],
+      "preferred_skills": ["Django/Flask", "AWS/Azure"],
+      "education": "Bachelor's",
+      "years_of_experience": 3
+    },
+    "benefits": ["Unlimited PTO", "Health, Dental, and Vision insurance"],
+    "posted_date": "2025-01-15",
+    "application_deadline": "2025-02-15"
+  },
+  {
+    "id": "DS-MLAI-002",
+    "title": "Data Scientist - ML/AI Analytics",
+    "company": "Innovate AI Labs",
+    "location": {
+      "city": "San Francisco",
+      "state": "CA",
+      "country": "USA",
+      "remote": false,
+      "hybrid": true
+    },
+    "department": "Data Science",
+    "employment_type": "Full-time",
+    "experience_level": "Senior",
+    "salary_range": {
+      "min": 130000,
+      "max": 170000,
+      "currency": "USD"
+    },
+    "description": "Lead the development and deployment of advanced machine learning models to solve complex business problems. Drive data-driven decision-making across the organization.",
+    "responsibilities": [
+      "Design, build, and maintain production-ready ML models.",
+      "Conduct complex data analysis and statistical modeling.",
+      "Mentor junior data scientists and collaborate with engineering teams."
+    ],
+    "requirements": {
+      "required_skills": [
+        "Python",
+        "TensorFlow/PyTorch",
+        "Statistical Modeling",
+        "Big Data Technologies (e.g., Spark)"
+      ],
+      "preferred_skills": ["Deep Learning", "A/B Testing experience"],
+      "education": "Master's",
+      "years_of_experience": 5
+    },
+    "benefits": ["Annual conference allowance", "401k matching"],
+    "posted_date": "2025-01-20",
+    "application_deadline": "2025-02-28"
+  },
+  {
+    "id": "DEVOPS-CLD-003",
+    "title": "DevOps Engineer - Cloud Infrastructure",
+    "company": "CloudSphere Tech",
+    "location": {
+      "city": "Austin",
+      "state": "TX",
+      "country": "USA",
+      "remote": false,
+      "hybrid": false
+    },
+    "department": "Engineering",
+    "employment_type": "Full-time",
+    "experience_level": "Mid",
+    "salary_range": {
+      "min": 110000,
+      "max": 150000,
+      "currency": "USD"
+    },
+    "description": "Maintain and scale our cloud infrastructure (AWS) using Infrastructure as Code (IaC) principles. Focus on reliability, security, and automation.",
+    "responsibilities": [
+      "Manage and optimize AWS cloud resources (EC2, S3, RDS, etc.).",
+      "Implement and maintain CI/CD pipelines (GitLab/Jenkins).",
+      "Use configuration management tools like Ansible or Chef."
+    ],
+    "requirements": {
+      "required_skills": [
+        "AWS",
+        "Terraform",
+        "Kubernetes/Docker",
+        "Shell Scripting"
+      ],
+      "preferred_skills": [
+        "Certified AWS Solutions Architect",
+        "Prometheus/Grafana"
+      ],
+      "education": "Bachelor's",
+      "years_of_experience": 3
+    },
+    "benefits": ["On-site gym and cafeteria", "Relocation assistance"],
+    "posted_date": "2025-01-22",
+    "application_deadline": "2025-03-01"
+  },
+  {
+    "id": "PM-SAAS-004",
+    "title": "Product Manager - SaaS Products",
+    "company": "NextGen SaaS",
+    "location": {
+      "city": "Anywhere",
+      "state": "N/A",
+      "country": "USA",
+      "remote": true,
+      "hybrid": false
+    },
+    "department": "Product",
+    "employment_type": "Full-time",
+    "experience_level": "Senior",
+    "salary_range": {
+      "min": 140000,
+      "max": 180000,
+      "currency": "USD"
+    },
+    "description": "Own the product strategy and roadmap for a key SaaS offering. Work closely with engineering, sales, and marketing to ensure market success.",
+    "responsibilities": [
+      "Define and prioritize product features based on market research and customer feedback.",
+      "Manage the product lifecycle from ideation to launch.",
+      "Conduct competitive analysis and market sizing."
+    ],
+    "requirements": {
+      "required_skills": [
+        "SaaS Product Management",
+        "Agile/Scrum",
+        "Roadmapping tools (e.g., Aha!, Jira)"
+      ],
+      "preferred_skills": ["MBA", "Technical background"],
+      "education": "Bachelor's",
+      "years_of_experience": 7
+    },
+    "benefits": ["Equity options", "Annual product development budget"],
+    "posted_date": "2025-01-25",
+    "application_deadline": "2025-03-05"
+  },
+  {
+    "id": "UXUI-MA-005",
+    "title": "UX/UI Designer - Mobile Apps",
+    "company": "Mobile First Inc.",
+    "location": {
+      "city": "New York",
+      "state": "NY",
+      "country": "USA",
+      "remote": false,
+      "hybrid": true
+    },
+    "department": "Design",
+    "employment_type": "Full-time",
+    "experience_level": "Mid",
+    "salary_range": {
+      "min": 90000,
+      "max": 120000,
+      "currency": "USD"
+    },
+    "description": "Design intuitive and aesthetically pleasing user interfaces for our next-generation mobile applications (iOS and Android).",
+    "responsibilities": [
+      "Create wireframes, storyboards, user flows, and site maps.",
+      "Develop and maintain design systems and UI kits.",
+      "Conduct user research and usability testing."
+    ],
+    "requirements": {
+      "required_skills": [
+        "Figma",
+        "Sketch",
+        "Prototyping",
+        "Mobile UX Principles"
+      ],
+      "preferred_skills": ["Motion Design", "HTML/CSS knowledge"],
+      "education": "Bachelor's",
+      "years_of_experience": 3
+    },
+    "benefits": ["Subsidized public transit", "Creative stipend"],
+    "posted_date": "2025-01-28",
+    "application_deadline": "2025-03-10"
+  },
+  {
+    "id": "FED-RV-006",
+    "title": "Frontend Developer - React/Vue",
+    "company": "DevStartups",
+    "location": {
+      "city": "Anywhere",
+      "state": "N/A",
+      "country": "Canada",
+      "remote": true,
+      "hybrid": false
+    },
+    "department": "Engineering",
+    "employment_type": "Full-time",
+    "experience_level": "Entry",
+    "salary_range": {
+      "min": 70000,
+      "max": 100000,
+      "currency": "USD"
+    },
+    "description": "A great opportunity for a junior developer to build high-quality user interfaces and contribute to a modern codebase using cutting-edge frameworks.",
+    "responsibilities": [
+      "Implement responsive and accessible web interfaces.",
+      "Write clean, modular, and well-documented JavaScript/TypeScript code.",
+      "Participate in code reviews and sprint planning."
+    ],
+    "requirements": {
+      "required_skills": [
+        "React or Vue.js",
+        "JavaScript (ES6+)",
+        "HTML5",
+        "CSS3/SASS"
+      ],
+      "preferred_skills": ["State management (Redux/Vuex)", "Webpack/Vite"],
+      "education": "Bachelor's",
+      "years_of_experience": 1
+    },
+    "benefits": ["Mentorship program", "Professional development fund"],
+    "posted_date": "2025-01-30",
+    "application_deadline": "2025-03-15"
+  },
+  {
+    "id": "BED-NP-007",
+    "title": "Backend Developer - Node.js/Python",
+    "company": "API Wizards",
+    "location": {
+      "city": "Seattle",
+      "state": "WA",
+      "country": "USA",
+      "remote": false,
+      "hybrid": false
+    },
+    "department": "Engineering",
+    "employment_type": "Full-time",
+    "experience_level": "Mid",
+    "salary_range": {
+      "min": 105000,
+      "max": 135000,
+      "currency": "USD"
+    },
+    "description": "Design and implement robust, high-performance, and scalable back-end services. Focus on microservices architecture and database optimization.",
+    "responsibilities": [
+      "Develop and maintain server-side logic and APIs using Node.js or Python.",
+      "Ensure performance and scalability of the database (SQL/NoSQL).",
+      "Integrate user-facing elements developed by front-end developers."
+    ],
+    "requirements": {
+      "required_skills": [
+        "Node.js or Python",
+        "Express/Koa/Django/Flask",
+        "MongoDB or PostgreSQL",
+        "Git"
+      ],
+      "preferred_skills": [
+        "Message Queuing (e.g., RabbitMQ)",
+        "Microservices architecture"
+      ],
+      "education": "Bachelor's",
+      "years_of_experience": 3
+    },
+    "benefits": ["Commuter benefits", "Free snacks and drinks"],
+    "posted_date": "2025-02-01",
+    "application_deadline": "2025-03-18"
+  },
+  {
+    "id": "MM-DM-008",
+    "title": "Marketing Manager - Digital Marketing",
+    "company": "Brand Growth Agency",
+    "location": {
+      "city": "Chicago",
+      "state": "IL",
+      "country": "USA",
+      "remote": false,
+      "hybrid": true
+    },
+    "department": "Marketing",
+    "employment_type": "Full-time",
+    "experience_level": "Senior",
+    "salary_range": {
+      "min": 95000,
+      "max": 125000,
+      "currency": "USD"
+    },
+    "description": "Oversee all digital marketing channels, including SEO, SEM, social media, and email campaigns. Drive lead generation and brand awareness.",
+    "responsibilities": [
+      "Develop and execute comprehensive digital marketing strategies.",
+      "Manage PPC campaigns and optimize for ROI.",
+      "Analyze campaign performance using tools like Google Analytics."
+    ],
+    "requirements": {
+      "required_skills": [
+        "SEO/SEM",
+        "Google Ads",
+        "Email Marketing (e.g., Mailchimp)",
+        "Content Strategy"
+      ],
+      "preferred_skills": [
+        "HubSpot or Salesforce Marketing Cloud experience",
+        "Data visualization"
+      ],
+      "education": "Bachelor's",
+      "years_of_experience": 5
+    },
+    "benefits": ["Performance-based bonuses", "Flexible work hours"],
+    "posted_date": "2025-02-05",
+    "application_deadline": "2025-03-20"
+  },
+  {
+    "id": "SR-B2B-009",
+    "title": "Sales Representative - B2B SaaS",
+    "company": "Venture Sales Co.",
+    "location": {
+      "city": "Anywhere",
+      "state": "N/A",
+      "country": "USA",
+      "remote": true,
+      "hybrid": false
+    },
+    "department": "Sales",
+    "employment_type": "Full-time",
+    "experience_level": "Entry",
+    "salary_range": {
+      "min": 60000,
+      "max": 90000,
+      "currency": "USD"
+    },
+    "description": "Identify and qualify new business opportunities for our B2B SaaS product. This role has high earning potential through commission.",
+    "responsibilities": [
+      "Conduct cold calls and emails to prospective clients.",
+      "Schedule product demonstrations for Account Executives.",
+      "Maintain accurate records in the CRM system."
+    ],
+    "requirements": {
+      "required_skills": [
+        "Cold calling",
+        "CRM Software (e.g., Salesforce)",
+        "Excellent communication skills"
+      ],
+      "preferred_skills": ["SaaS sales experience", "Bilingual"],
+      "education": "High School/Associate's",
+      "years_of_experience": 1
+    },
+    "benefits": ["Uncapped commission structure", "Sales training program"],
+    "posted_date": "2025-02-08",
+    "application_deadline": "2025-03-25"
+  },
+  {
+    "id": "HRM-TA-010",
+    "title": "HR Manager - Talent Acquisition",
+    "company": "PeopleFirst Inc.",
+    "location": {
+      "city": "Dallas",
+      "state": "TX",
+      "country": "USA",
+      "remote": false,
+      "hybrid": false
+    },
+    "department": "Human Resources",
+    "employment_type": "Full-time",
+    "experience_level": "Mid",
+    "salary_range": {
+      "min": 85000,
+      "max": 110000,
+      "currency": "USD"
+    },
+    "description": "Manage the full-cycle recruitment process for technical and non-technical roles. Develop and implement strategies to attract top talent.",
+    "responsibilities": [
+      "Source, screen, and interview candidates.",
+      "Manage relationships with hiring managers and external agencies.",
+      "Ensure compliance with all employment laws."
+    ],
+    "requirements": {
+      "required_skills": [
+        "Talent Acquisition",
+        "Applicant Tracking Systems (ATS)",
+        "Interviewing techniques"
+      ],
+      "preferred_skills": [
+        "HR Certification (e.g., PHR, SHRM-CP)",
+        "Experience in a high-growth startup"
+      ],
+      "education": "Bachelor's",
+      "years_of_experience": 4
+    },
+    "benefits": ["Generous paid family leave", "Employee assistance program"],
+    "posted_date": "2025-02-10",
+    "application_deadline": "2025-03-30"
+  },
+  {
+    "id": "BA-DDD-011",
+    "title": "Business Analyst - Data-Driven Decisions",
+    "company": "Decision Dynamics",
+    "location": {
+      "city": "Boston",
+      "state": "MA",
+      "country": "USA",
+      "remote": false,
+      "hybrid": true
+    },
+    "department": "Analytics",
+    "employment_type": "Full-time",
+    "experience_level": "Mid",
+    "salary_range": {
+      "min": 90000,
+      "max": 115000,
+      "currency": "USD"
+    },
+    "description": "Bridge the gap between business needs and technical capabilities by analyzing data, defining requirements, and recommending strategic solutions.",
+    "responsibilities": [
+      "Gather and document business requirements from stakeholders.",
+      "Perform data analysis and generate reports using SQL and Tableau.",
+      "Develop process models and workflow diagrams."
+    ],
+    "requirements": {
+      "required_skills": [
+        "SQL",
+        "Tableau/Power BI",
+        "Requirements Elicitation",
+        "Process Modeling"
+      ],
+      "preferred_skills": ["Financial modeling", "Agile experience"],
+      "education": "Bachelor's",
+      "years_of_experience": 3
+    },
+    "benefits": ["Tuition reimbursement", "Health and wellness stipends"],
+    "posted_date": "2025-02-15",
+    "application_deadline": "2025-04-05"
+  },
+  {
+    "id": "CA-TD-012",
+    "title": "Cybersecurity Analyst - Threat Detection",
+    "company": "SecureFuture Corp",
+    "location": {
+      "city": "Anywhere",
+      "state": "N/A",
+      "country": "USA",
+      "remote": true,
+      "hybrid": false
+    },
+    "department": "Security",
+    "employment_type": "Full-time",
+    "experience_level": "Senior",
+    "salary_range": {
+      "min": 120000,
+      "max": 160000,
+      "currency": "USD"
+    },
+    "description": "Monitor and analyze security alerts, perform threat hunting, and respond to security incidents. Lead the charge in protecting our critical assets.",
+    "responsibilities": [
+      "Monitor security information and event management (SIEM) systems.",
+      "Conduct regular vulnerability assessments and penetration testing.",
+      "Develop and refine incident response protocols."
+    ],
+    "requirements": {
+      "required_skills": [
+        "SIEM tools (Splunk, QRadar)",
+        "Penetration testing",
+        "Network security principles",
+        "Scripting (Python/PowerShell)"
+      ],
+      "preferred_skills": [
+        "CISSP or CISM certification",
+        "Cloud Security (AWS/Azure)"
+      ],
+      "education": "Master's",
+      "years_of_experience": 6
+    },
+    "benefits": [
+      "Security certification bonuses",
+      "Work-from-home setup allowance"
+    ],
+    "posted_date": "2025-02-18",
+    "application_deadline": "2025-04-10"
+  },
+  {
+    "id": "MAD-IA-013",
+    "title": "Mobile App Developer - iOS/Android",
+    "company": "App Innovators Inc.",
+    "location": {
+      "city": "Palo Alto",
+      "state": "CA",
+      "country": "USA",
+      "remote": false,
+      "hybrid": false
+    },
+    "department": "Engineering",
+    "employment_type": "Full-time",
+    "experience_level": "Mid",
+    "salary_range": {
+      "min": 115000,
+      "max": 145000,
+      "currency": "USD"
+    },
+    "description": "Develop and maintain high-quality, performant mobile applications for both iOS and Android platforms using native or cross-platform tools.",
+    "responsibilities": [
+      "Write clean, maintainable code using Swift/Kotlin or Flutter/React Native.",
+      "Collaborate with the UX/UI team on implementation.",
+      "Ensure application performance and optimize for various devices."
+    ],
+    "requirements": {
+      "required_skills": [
+        "Swift or Kotlin/Java",
+        "Mobile Development Lifecycle",
+        "API Integration"
+      ],
+      "preferred_skills": [
+        "Flutter/React Native experience",
+        "Experience with publishing to App Store/Google Play"
+      ],
+      "education": "Bachelor's",
+      "years_of_experience": 4
+    },
+    "benefits": ["Annual tech gadget allowance", "Free catered lunch"],
+    "posted_date": "2025-02-20",
+    "application_deadline": "2025-04-15"
+  },
+  {
+    "id": "QAE-TA-014",
+    "title": "QA Engineer - Test Automation",
+    "company": "Quality Assured",
+    "location": {
+      "city": "Anywhere",
+      "state": "N/A",
+      "country": "USA",
+      "remote": true,
+      "hybrid": false
+    },
+    "department": "Engineering",
+    "employment_type": "Full-time",
+    "experience_level": "Mid",
+    "salary_range": {
+      "min": 95000,
+      "max": 125000,
+      "currency": "USD"
+    },
+    "description": "Design, develop, and execute automated test scripts for our web and mobile platforms. Champion quality throughout the development process.",
+    "responsibilities": [
+      "Create and maintain automated test frameworks using tools like Selenium or Cypress.",
+      "Execute manual and exploratory testing when necessary.",
+      "Log, track, and verify resolution of software defects (JIRA)."
+    ],
+    "requirements": {
+      "required_skills": [
+        "Selenium/Cypress",
+        "JIRA",
+        "Test Planning and Strategy",
+        "Programming experience (e.g., Java, Python)"
+      ],
+      "preferred_skills": [
+        "Performance testing experience",
+        "CI/CD integration"
+      ],
+      "education": "Bachelor's",
+      "years_of_experience": 3
+    },
+    "benefits": ["Fitness reimbursements", "Flexible public holidays"],
+    "posted_date": "2025-02-25",
+    "application_deadline": "2025-04-20"
+  },
+  {
+    "id": "CA-AA-015",
+    "title": "Cloud Architect - AWS/Azure",
+    "company": "InfraScale Experts",
+    "location": {
+      "city": "Anywhere",
+      "state": "N/A",
+      "country": "USA",
+      "remote": true,
+      "hybrid": false
+    },
+    "department": "Engineering",
+    "employment_type": "Full-time",
+    "experience_level": "Lead",
+    "salary_range": {
+      "min": 160000,
+      "max": 200000,
+      "currency": "USD"
+    },
+    "description": "Lead the design and implementation of highly available, scalable, and fault-tolerant cloud infrastructure on multi-cloud environments (AWS and Azure).",
+    "responsibilities": [
+      "Define cloud architecture standards and best practices.",
+      "Oversee cloud migration projects and ensure cost optimization.",
+      "Mentor a team of cloud and DevOps engineers."
+    ],
+    "requirements": {
+      "required_skills": [
+        "AWS/Azure Architecture",
+        "Infrastructure as Code (Terraform/CloudFormation)",
+        "Networking and Security in the Cloud"
+      ],
+      "preferred_skills": [
+        "Certified Solutions Architect - Professional",
+        "FinOps principles"
+      ],
+      "education": "Bachelor's",
+      "years_of_experience": 8
+    },
+    "benefits": ["High-tier health plan coverage", "Executive stock options"],
+    "posted_date": "2025-03-01",
+    "application_deadline": "2025-04-25"
+  },
+  {
+    "id": "CW-TW-016",
+    "title": "Content Writer - Technical Writing",
+    "company": "DocuGenius",
+    "location": {
+      "city": "Anywhere",
+      "state": "N/A",
+      "country": "USA",
+      "remote": true,
+      "hybrid": false
+    },
+    "department": "Marketing",
+    "employment_type": "Full-time",
+    "experience_level": "Entry",
+    "salary_range": {
+      "min": 60000,
+      "max": 80000,
+      "currency": "USD"
+    },
+    "description": "Produce clear, concise, and accurate technical documentation, including user manuals, API documentation, and help articles for our software products.",
+    "responsibilities": [
+      "Write, edit, and proofread technical content for various audiences.",
+      "Collaborate with engineering and product teams to ensure accuracy.",
+      "Maintain a consistent voice and style across all documentation."
+    ],
+    "requirements": {
+      "required_skills": [
+        "Excellent written communication",
+        "Markdown/DITA",
+        "Experience with documentation tools (e.g., Confluence, Read the Docs)"
+      ],
+      "preferred_skills": [
+        "Familiarity with software development processes",
+        "Graphic design basic skills"
+      ],
+      "education": "Bachelor's",
+      "years_of_experience": 1
+    },
+    "benefits": [
+      "Subscription to writing and editing software",
+      "Paid membership to professional writing organizations"
+    ],
+    "posted_date": "2025-03-05",
+    "application_deadline": "2025-04-30"
+  },
+  {
+    "id": "PM-AS-017",
+    "title": "Project Manager - Agile/Scrum",
+    "company": "Process Streamline",
+    "location": {
+      "city": "Denver",
+      "state": "CO",
+      "country": "USA",
+      "remote": false,
+      "hybrid": true
+    },
+    "department": "Operations",
+    "employment_type": "Full-time",
+    "experience_level": "Senior",
+    "salary_range": {
+      "min": 120000,
+      "max": 150000,
+      "currency": "USD"
+    },
+    "description": "Lead cross-functional teams using Agile methodologies. Ensure projects are delivered on time, within budget, and meet defined quality standards.",
+    "responsibilities": [
+      "Facilitate Scrum ceremonies (Daily Scrum, Sprint Planning, Retrospective).",
+      "Manage project timelines, scope, and resources.",
+      "Communicate project status and risks to stakeholders."
+    ],
+    "requirements": {
+      "required_skills": [
+        "Agile/Scrum",
+        "JIRA/Confluence",
+        "Risk Management",
+        "Stakeholder Communication"
+      ],
+      "preferred_skills": [
+        "PMP or Scrum Master Certification (CSM)",
+        "Experience with SAFe framework"
+      ],
+      "education": "Bachelor's",
+      "years_of_experience": 6
+    },
+    "benefits": [
+      "Annual bonus based on project success",
+      "Ski pass and winter sport perks"
+    ],
+    "posted_date": "2025-03-10",
+    "application_deadline": "2025-05-05"
+  },
+  {
+    "id": "DBA-SN-018",
+    "title": "Database Administrator - SQL/NoSQL",
+    "company": "Data Fortress",
+    "location": {
+      "city": "Atlanta",
+      "state": "GA",
+      "country": "USA",
+      "remote": false,
+      "hybrid": false
+    },
+    "department": "Engineering",
+    "employment_type": "Full-time",
+    "experience_level": "Mid",
+    "salary_range": {
+      "min": 95000,
+      "max": 120000,
+      "currency": "USD"
+    },
+    "description": "Manage and maintain the performance, integrity, and security of our various SQL and NoSQL databases. Focus on high availability and backup strategies.",
+    "responsibilities": [
+      "Install, configure, and upgrade database software (e.g., MySQL, PostgreSQL, MongoDB).",
+      "Monitor database performance and optimize queries.",
+      "Implement and test disaster recovery plans."
+    ],
+    "requirements": {
+      "required_skills": [
+        "MySQL/PostgreSQL",
+        "Database optimization/Tuning",
+        "Backup and Recovery",
+        "NoSQL (e.g., MongoDB, Cassandra)"
+      ],
+      "preferred_skills": [
+        "Cloud database services (RDS, Cosmos DB)",
+        "Database security experience"
+      ],
+      "education": "Bachelor's",
+      "years_of_experience": 3
+    },
+    "benefits": [
+      "Paid technical training and certification exams",
+      "Life and disability insurance"
+    ],
+    "posted_date": "2025-03-15",
+    "application_deadline": "2025-05-10"
+  },
+  {
+    "id": "MLE-MD-019",
+    "title": "ML Engineer - Model Deployment",
+    "company": "Algorithm Dynamics",
+    "location": {
+      "city": "Anywhere",
+      "state": "N/A",
+      "country": "UK",
+      "remote": true,
+      "hybrid": false
+    },
+    "department": "Engineering",
+    "employment_type": "Full-time",
+    "experience_level": "Mid",
+    "salary_range": {
+      "min": 125000,
+      "max": 165000,
+      "currency": "USD"
+    },
+    "description": "Focus on the transition of machine learning models from research to production. Build robust MLOps pipelines and monitor model performance in real-time.",
+    "responsibilities": [
+      "Build and maintain MLOps pipelines for automated training and deployment.",
+      "Containerize models using Docker and deploy via Kubernetes.",
+      "Work with Data Scientists to improve model scalability and latency."
+    ],
+    "requirements": {
+      "required_skills": [
+        "PyTorch/TensorFlow",
+        "Docker/Kubernetes",
+        "CI/CD for ML",
+        "Cloud platforms (AWS SageMaker/Azure ML)"
+      ],
+      "preferred_skills": [
+        "Airflow/Kubeflow",
+        "Model monitoring tools (e.g., Prometheus)"
+      ],
+      "education": "Master's",
+      "years_of_experience": 4
+    },
+    "benefits": [
+      "Access to cutting-edge research papers",
+      "Extended parental leave"
+    ],
+    "posted_date": "2025-03-20",
+    "application_deadline": "2025-05-15"
+  },
+  {
+    "id": "CSM-CR-020",
+    "title": "Customer Success Manager - Client Relations",
+    "company": "Client Value Co.",
+    "location": {
+      "city": "Miami",
+      "state": "FL",
+      "country": "USA",
+      "remote": false,
+      "hybrid": true
+    },
+    "department": "Customer Success",
+    "employment_type": "Full-time",
+    "experience_level": "Mid",
+    "salary_range": {
+      "min": 75000,
+      "max": 105000,
+      "currency": "USD"
+    },
+    "description": "Be the primary point of contact for a portfolio of key clients. Drive product adoption, ensure customer satisfaction, and identify upsell opportunities.",
+    "responsibilities": [
+      "Onboard new customers and provide product training.",
+      "Conduct quarterly business reviews (QBRs) with clients.",
+      "Track customer health and reduce churn."
+    ],
+    "requirements": {
+      "required_skills": [
+        "Account Management",
+        "CRM Software (e.g., HubSpot, Gainsight)",
+        "Strong presentation skills"
+      ],
+      "preferred_skills": ["SaaS background", "Negotiation skills"],
+      "education": "Bachelor's",
+      "years_of_experience": 3
+    },
+    "benefits": ["Generous referral bonus program", "Team social events"],
+    "posted_date": "2025-03-25",
+    "application_deadline": "2025-05-20"
+  }
+]
