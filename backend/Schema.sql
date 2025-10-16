@@ -116,8 +116,8 @@ CREATE TABLE education_history (
     created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
     CONSTRAINT date_order CHECK (end_date IS NULL OR end_date >= start_date),
     CONSTRAINT enrollment_logic CHECK (
-        (currently_enrolled = TRUE AND end_date IS NULL) OR 
-        (currently_enrolled = FALSE)
+        (currently_enrolled = TRUE AND (end_date IS NULL OR end_date > CURRENT_DATE)) OR 
+        (currently_enrolled = FALSE AND (end_date IS NULL OR end_date <= CURRENT_DATE))
     )
 );
 

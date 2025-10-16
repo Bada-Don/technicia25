@@ -1,10 +1,16 @@
 import React, { useState, useEffect } from "react";
-import "./dashboard.css";
+import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext';
+import api from '../services/api';
+// import "./dashboard.css";
 
 const Dashboard = () => {
+  const navigate = useNavigate();
+  const { user } = useAuth();
   const [activeSection, setActiveSection] = useState("personal");
   const [showNotification, setShowNotification] = useState(false);
   const [notificationMessage, setNotificationMessage] = useState("");
+  const [loading, setLoading] = useState(true);
 
   // Sample user data
   const userData = {
@@ -57,12 +63,33 @@ const Dashboard = () => {
     }, 3000);
   };
 
-  // Welcome message on component mount
+  // Check profile completion on mount
   useEffect(() => {
-    setTimeout(() => {
-      showNotificationMessage("Welcome to your dashboard! 👋", "info");
-    }, 1000);
-  }, []);
+    const checkProfileCompletion = async () => {
+      try {
+        // Only check for students
+        if (user && user.user && user.user.user_role === 'Student') {
+          const profileCompletion = user.user.profile_completion_percentage;
+          
+          // Redirect to onboarding if profile is not complete (less than 50%)
+          if (profileCompletion < 50) {
+            navigate('/student/onboarding');
+            return;
+          }
+        }
+        
+        setLoading(false);
+        setTimeout(() => {
+          showNotificationMessage("Welcome to your dashboard! 👋", "info");
+        }, 1000);
+      } catch (error) {
+        console.error('Error checking profile:', error);
+        setLoading(false);
+      }
+    };
+
+    checkProfileCompletion();
+  }, [user, navigate]);
 
   return (
     <>

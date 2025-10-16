@@ -22,6 +22,7 @@ import TeacherSignup from "./pages/auth/TeacherSignup";
 import LeaderBoardPage from "./pages/LeaderBoard";
 import UnifiedAuthPage from "./pages/auth/UnifiedAuthPage";
 import Dashboard from "./pages/Dashboard";
+import StudentOnboarding from "./pages/StudentOnboarding";
 function App() {
   return (
     <Router>
@@ -31,6 +32,9 @@ function App() {
         
         {/* Dashboard - Protected */}
         <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
+        
+        {/* Student Onboarding - Protected */}
+        <Route path="/student/onboarding" element={<ProtectedRoute><StudentOnboarding /></ProtectedRoute>} />
 
         {/* OLD Routes - Keep for backward compatibility */}
         <Route path="/signup" element={<CompanySignupPage />} />

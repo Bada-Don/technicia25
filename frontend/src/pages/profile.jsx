@@ -9,6 +9,7 @@ import ProfileOverview from '../components/profile page/profileOverview.jsx';
 import ExperienceForm from '../components/profile page/experience.jsx';
 import EducationSection from '../components/profile page/education.jsx';
 import Header from "../components/Header.jsx";
+import api from '../services/api';
 
 const ProgressBar = ({ progress }) => {
     return (
@@ -26,12 +27,46 @@ function Profile() {
     const location = useLocation();
     const [activeTab, setActiveTab] = useState(location.state?.activeTab || 'profile');
     const [activeProfileSection, setActiveProfileSection] = useState('personal-info');
+    const [profileData, setProfileData] = useState(null);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         if (location.state?.activeTab) {
             setActiveTab(location.state.activeTab);
         }
     }, [location]);
+
+    useEffect(() => {
+        fetchProfileData();
+    }, []);
+
+    const fetchProfileData = async () => {
+        try {
+            const response = await api.get('/student/profile/complete');
+            setProfileData(response.data);
+        } catch (error) {
+            console.error('Error fetching profile:', error);
+        } finally {
+            setLoading(false);
+        }
+    };
+
+    const calculateYearsOfExperience = () => {
+        if (!profileData?.work_experience || profileData.work_experience.length === 0) {
+            return 0;
+        }
+        
+        let totalMonths = 0;
+        profileData.work_experience.forEach(exp => {
+            const startDate = new Date(exp.start_date);
+            const endDate = exp.currently_working ? new Date() : new Date(exp.end_date);
+            const months = (endDate.getFullYear() - startDate.getFullYear()) * 12 + 
+                          (endDate.getMonth() - startDate.getMonth());
+            totalMonths += months;
+        });
+        
+        return (totalMonths / 12).toFixed(1);
+    };
 
     const handleProfileSectionChange = (section) => {
         setActiveProfileSection(section);
@@ -40,19 +75,33 @@ function Profile() {
     const renderProfileContent = () => {
         switch (activeProfileSection) {
             case 'personal-info':
-                return <ProfileInfo />;
+                return <ProfileInfo profileData={profileData} onUpdate={fetchProfileData} />;
             case 'technical-skills':
                 return <SkillsTable />;
             case 'profile-overview':
                 return <ProfileOverview />;
             case 'experience':
-                return <ExperienceForm />;
+                return <ExperienceForm profileData={profileData} onUpdate={fetchProfileData} />;
             case 'education':
-                return <EducationSection />;
+                return <EducationSection profileData={profileData} onUpdate={fetchProfileData} />;
             default:
-                return <ProfileInfo />;
+                return <ProfileInfo profileData={profileData} onUpdate={fetchProfileData} />;
         }
     };
+
+    if (loading) {
+        return (
+            <>
+                <Header />
+                <div className="flex items-center justify-center min-h-screen bg-black text-white">
+                    <div className="text-center">
+                        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-500 mx-auto mb-4"></div>
+                        <p>Loading profile...</p>
+                    </div>
+                </div>
+            </>
+        );
+    }
 
     return (
         <>
@@ -61,11 +110,15 @@ function Profile() {
                 <SecondaryNavBar activeTab={activeTab} setActiveTab={setActiveTab} />
                 
                 <section className="flex flex-row w-full flex-grow">
-                    {activeTab === 'profile' && (
+                    {activeTab === 'profile' && profileData && (
                         <section className="left-sec w-1/5 p-6">
-                            <h3 className="text-xl font-bold">Harshit Singla</h3>
-                            <p className="text-sm mb-2">1.3 Years of experience</p>
-                            <ProgressBar progress={40} />
+                            <h3 className="text-xl font-bold">
+                                {profileData.profile?.first_name} {profileData.profile?.last_name}
+                            </h3>
+                            <p className="text-sm mb-2">
+                                {calculateYearsOfExperience()} Years of experience
+                            </p>
+                            <ProgressBar progress={profileData.profile_completion_percentage || 0} />
 
                             <div className='mt-10 flex flex-col w-full gap-3'>
                                 {['personal-info', 'technical-skills', 'profile-overview', 'experience', 'education'].map((section) => (

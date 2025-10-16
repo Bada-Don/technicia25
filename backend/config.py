@@ -13,6 +13,9 @@ class Settings(BaseSettings):
     algorithm: str = "HS256"
     access_token_expire_minutes: int = 30
     
+    # Google AI Configuration
+    google_api_key: Optional[str] = None
+    
     # Application Configuration
     app_name: str = "Technicia Platform"
     debug: bool = True
@@ -20,7 +23,8 @@ class Settings(BaseSettings):
     model_config = SettingsConfigDict(
         env_file=".env",
         env_file_encoding="utf-8",
-        case_sensitive=False
+        case_sensitive=False,
+        extra="allow"  # Allow extra fields from .env
     )
 
 
